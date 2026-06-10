@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sfm screenshots by scene</title>
+<style>:root { color-scheme: light; --zoom: 2; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: #eef1f4; color: #1c2529;
+  font: 14px/1.5 -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+header {
+  position: sticky; top: 0; z-index: 10;
+  background: #fff; border-bottom: 1px solid #d4dade;
+  padding: 12px 20px; display: flex; align-items: baseline; gap: 18px;
+}
+header h1 { font-size: 16px; margin: 0; color: #11181c; font-weight: 600; }
+header .meta { color: #6b7780; font-size: 12px; }
+nav { margin-left: auto; display: flex; gap: 6px; }
+nav a {
+  color: #1f7a74; text-decoration: none; padding: 5px 12px;
+  border: 1px solid #1f7a7444; border-radius: 6px;
+}
+nav a.active { background: #1f7a7415; border-color: #1f7a74; color: #11181c; }
+.zoom { color: #6b7780; font-size: 12px; display: flex; align-items: center; gap: 6px; }
+.zoom select {
+  font: inherit; color: #11181c; background: #fff;
+  border: 1px solid #d4dade; border-radius: 6px; padding: 4px 6px;
+}
+main { padding: 20px; }
+section.group { margin: 0 0 36px; }
+section.group > h2 {
+  font-size: 15px; color: #11181c; margin: 0 0 4px;
+  border-left: 3px solid #1f7a74; padding-left: 10px;
+}
+section.group > .sub { color: #6b7780; font-size: 12px; margin: 0 0 14px; padding-left: 13px; }
+.row { display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start; }
+.row.stack { flex-direction: column; }  /* by-profile: one image per row */
+figure {
+  margin: 0; background: #fff; border: 1px solid #d4dade;
+  border-radius: 8px; padding: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.08);
+}
+figure img {
+  display: block; background: #000; border-radius: 3px;
+  image-rendering: pixelated;
+  width: calc(var(--w, 320) * var(--zoom) * 1px);
+  height: auto;  /* keep aspect; --zoom (set by the header dropdown) drives size */
+}
+figcaption {
+  margin-top: 8px; color: #1f7a74; font-size: 12px;
+  display: flex; justify-content: space-between; gap: 12px;
+}
+figcaption .dim { color: #6b7780; }
+.empty { color: #c2554f; font-size: 12px; padding: 24px; }</style>
+</head>
+<body>
+<header>
+  <h1>Sfm screenshots</h1>
+  <span class="meta">generated 2026-06-10 10:41 UTC</span>
+  <nav><a href="index.html">By profile</a><a href="by-scene.html" class="active">By scene</a></nav>
+  <label class="zoom">Zoom<select id="zoom"><option value="1">1x</option><option value="2">2x</option><option value="3">3x</option><option value="4">4x</option></select></label>
+</header>
+<main>
+<section class="group">
+<h2>Boot</h2>
+<p class="sub">Smart Factory Monitor 起動直後に一瞬だけ出すシンプルなスプラッシュ。動的な進捗や状態表示はユーザープログラム側で描画する。</p>
+<div class="row">
+<figure><img src="shots/Core/Boot.png" alt="" style="--w:320" width="320" height="240" loading="lazy"><figcaption><span>Core</span><span class="dim">320×240</span></figcaption></figure>
+<figure><img src="shots/Stick/Boot.png" alt="" style="--w:135" width="135" height="240" loading="lazy"><figcaption><span>Stick</span><span class="dim">135×240</span></figcaption></figure>
+<figure><img src="shots/AtomS3/Boot.png" alt="" style="--w:128" width="128" height="128" loading="lazy"><figcaption><span>AtomS3</span><span class="dim">128×128</span></figcaption></figure>
+</div></section>
+<section class="group">
+<h2>Dashboard</h2>
+<p class="sub">Smart Factory Monitor のメインダッシュボード。全プロファイルで同じパーツIDを持ち、使わない部品は visible=false で非表示にする。</p>
+<div class="row">
+<figure><img src="shots/Core/Dashboard.png" alt="" style="--w:320" width="320" height="240" loading="lazy"><figcaption><span>Core</span><span class="dim">320×240</span></figcaption></figure>
+<figure><img src="shots/Stick/Dashboard.png" alt="" style="--w:135" width="135" height="240" loading="lazy"><figcaption><span>Stick</span><span class="dim">135×240</span></figcaption></figure>
+<figure><img src="shots/AtomS3/Dashboard.png" alt="" style="--w:128" width="128" height="128" loading="lazy"><figcaption><span>AtomS3</span><span class="dim">128×128</span></figcaption></figure>
+</div></section>
+<section class="group">
+<h2>AlertList</h2>
+<p class="sub">Smart Factory Monitor のアラート一覧画面。全プロファイルで同じパーツIDを持ち、使わない部品は visible=false で非表示にする。</p>
+<div class="row">
+<figure><img src="shots/Core/AlertList.png" alt="" style="--w:320" width="320" height="240" loading="lazy"><figcaption><span>Core</span><span class="dim">320×240</span></figcaption></figure>
+<figure><img src="shots/Stick/AlertList.png" alt="" style="--w:135" width="135" height="240" loading="lazy"><figcaption><span>Stick</span><span class="dim">135×240</span></figcaption></figure>
+<figure><img src="shots/AtomS3/AlertList.png" alt="" style="--w:128" width="128" height="128" loading="lazy"><figcaption><span>AtomS3</span><span class="dim">128×128</span></figcaption></figure>
+</div></section>
+<section class="group">
+<h2>SensorDetail</h2>
+<p class="sub">Smart Factory Monitor のセンサー詳細画面。温度センサーの現在値、状態、統計値、しきい値、トレンド表示領域を持つ。トレンド線などの動的描画はユーザープログラム側で行う。</p>
+<div class="row">
+<figure><img src="shots/Core/SensorDetail.png" alt="" style="--w:320" width="320" height="240" loading="lazy"><figcaption><span>Core</span><span class="dim">320×240</span></figcaption></figure>
+<figure><img src="shots/Stick/SensorDetail.png" alt="" style="--w:135" width="135" height="240" loading="lazy"><figcaption><span>Stick</span><span class="dim">135×240</span></figcaption></figure>
+<figure><img src="shots/AtomS3/SensorDetail.png" alt="" style="--w:128" width="128" height="128" loading="lazy"><figcaption><span>AtomS3</span><span class="dim">128×128</span></figcaption></figure>
+</div></section>
+<section class="group">
+<h2>EquipmentStatus</h2>
+<p class="sub">Smart Factory Monitor の設備状態画面。各ラインや装置の稼働状態、負荷、エラーコードを表示する。全プロファイルで同じパーツIDを持ち、使わない部品は visible=false で非表示にする。</p>
+<div class="row">
+<figure><img src="shots/Core/EquipmentStatus.png" alt="" style="--w:320" width="320" height="240" loading="lazy"><figcaption><span>Core</span><span class="dim">320×240</span></figcaption></figure>
+<figure><img src="shots/Stick/EquipmentStatus.png" alt="" style="--w:135" width="135" height="240" loading="lazy"><figcaption><span>Stick</span><span class="dim">135×240</span></figcaption></figure>
+<figure><img src="shots/AtomS3/EquipmentStatus.png" alt="" style="--w:128" width="128" height="128" loading="lazy"><figcaption><span>AtomS3</span><span class="dim">128×128</span></figcaption></figure>
+</div></section>
+<section class="group">
+<h2>NetworkStatus</h2>
+<p class="sub">Smart Factory Monitor のネットワーク状態画面。Wi-Fi、MQTT、IP、RSSI、Device ID を表示する。全プロファイルで同じパーツIDを持ち、使わない部品は visible=false で非表示にする。</p>
+<div class="row">
+<figure><img src="shots/Core/NetworkStatus.png" alt="" style="--w:320" width="320" height="240" loading="lazy"><figcaption><span>Core</span><span class="dim">320×240</span></figcaption></figure>
+<figure><img src="shots/Stick/NetworkStatus.png" alt="" style="--w:135" width="135" height="240" loading="lazy"><figcaption><span>Stick</span><span class="dim">135×240</span></figcaption></figure>
+<figure><img src="shots/AtomS3/NetworkStatus.png" alt="" style="--w:128" width="128" height="128" loading="lazy"><figcaption><span>AtomS3</span><span class="dim">128×128</span></figcaption></figure>
+</div></section>
+<section class="group">
+<h2>Settings</h2>
+<p class="sub">Smart Factory Monitor の設定画面。明るさ、アラート音、送信間隔、Device ID を表示する。全プロファイルで同じパーツIDを持ち、使わない部品は visible=false で非表示にする。</p>
+<div class="row">
+<figure><img src="shots/Core/Settings.png" alt="" style="--w:320" width="320" height="240" loading="lazy"><figcaption><span>Core</span><span class="dim">320×240</span></figcaption></figure>
+<figure><img src="shots/Stick/Settings.png" alt="" style="--w:135" width="135" height="240" loading="lazy"><figcaption><span>Stick</span><span class="dim">135×240</span></figcaption></figure>
+<figure><img src="shots/AtomS3/Settings.png" alt="" style="--w:128" width="128" height="128" loading="lazy"><figcaption><span>AtomS3</span><span class="dim">128×128</span></figcaption></figure>
+</div></section>
+</main>
+<script>
+(function() {
+  var root = document.documentElement;
+  var sel = document.getElementById("zoom");
+  var z = localStorage.getItem("shotZoom") || "2";
+  root.style.setProperty("--zoom", z);
+  sel.value = z;
+  sel.addEventListener("change", function() {
+    root.style.setProperty("--zoom", sel.value);
+    localStorage.setItem("shotZoom", sel.value);
+  });
+})();
+</script>
+</body>
+</html>
