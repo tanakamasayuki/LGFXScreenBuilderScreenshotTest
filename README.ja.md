@@ -5,6 +5,8 @@
 `lang-ship:host` SDL バックエンドでレンダリングし、**全プロファイル × 全シーン**
 の一覧を生成する。
 
+> 📷 **出力結果（公開ギャラリー）: <https://tanakamasayuki.github.io/LGFXScreenBuilderScreenshotTest/>**
+
 **`Sfm.h` が唯一のソース。** LGFXScreenBuilder で *「AIレイアウトを埋め込む」*
 オプションを ON にしてエクスポートすると、各シーンの AI レイアウト JSON が
 コメントブロックとして入る（SPEC §10.2）。コンパイル時に除去されるので実機には
@@ -17,11 +19,11 @@
 または codegen を実行。いずれも *AIレイアウト埋め込み* ON で）。実際に採用する側は
 コミットしなくてよい — [自分のプロジェクトで使う](#自分のプロジェクトで使う) を参照。
 
-一覧は CI で再生成され、`docs/` から GitHub Pages で公開される:
+一覧は CI で再生成され、`docs/` から GitHub Pages で公開される
+（<https://tanakamasayuki.github.io/LGFXScreenBuilderScreenshotTest/>）:
 
-- **プロファイル別**（`docs/index.html`）— 各デバイスプロファイルの全シーン。
-- **シーン別**（`docs/by-scene.html`）— シーンごとに全プロファイルを横並びにし、
-  デバイス間のレイアウト差分を確認できる。
+- **プロファイル別**（[index.html](https://tanakamasayuki.github.io/LGFXScreenBuilderScreenshotTest/index.html)）— 各デバイスプロファイルの全シーン。
+- **シーン別**（[by-scene.html](https://tanakamasayuki.github.io/LGFXScreenBuilderScreenshotTest/by-scene.html)）— シーンごとに全プロファイルを横並びにし、デバイス間のレイアウト差分を確認できる。
 - 各シーンに **⧉ AI JSON** ボタンがあり、その画面のレイアウト JSON をコピーできる。
   おかしい画面はそのまま AI に貼って直せる。
 
