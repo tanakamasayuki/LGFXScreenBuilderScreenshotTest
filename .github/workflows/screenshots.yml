@@ -1,0 +1,94 @@
+name: Screenshots
+
+# Capture every profile x scene to PNG on the headless lang-ship:host backend,
+# regenerate the docs/ gallery, and commit it back so GitHub Pages stays current.
+#
+# 全プロファイル x 全シーンをヘッドレス lang-ship:host で PNG 化し、docs/ ギャラリーを
+# 再生成してコミットする（GitHub Pages を最新に保つ）。
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    # Do NOT include docs/** here, or the gallery commit would retrigger the run.
+    paths:
+      - "Sfm.lgfxsb.json"
+      - "Sfm.h"
+      - "screenshot/**"
+      - "gen_gallery.py"
+      - ".github/workflows/screenshots.yml"
+
+permissions:
+  contents: write # commit the regenerated gallery back to the branch
+
+concurrency:
+  group: screenshots-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      # Check out both repos as siblings so sketch.yaml's `dir: ../../LGFXScreenBuilder`
+      # resolves exactly like the local dev layout.
+      - name: Checkout screenshot repo
+        uses: actions/checkout@v4
+        with:
+          path: LGFXScreenBuilderScreenshotTest
+
+      - name: Checkout LGFXScreenBuilder library
+        uses: actions/checkout@v4
+        with:
+          repository: tanakamasayuki/LGFXScreenBuilder
+          path: LGFXScreenBuilder
+
+      - name: Install SDL2 (headless LovyanGFX backend)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libsdl2-dev
+
+      - name: Setup arduino-cli
+        uses: arduino/setup-arduino-cli@v2
+
+      # No `config init` / `core update-index` / additional_urls needed: the
+      # sketch.yaml `host` profile is self-contained and auto-installs the
+      # platform (from its platform_index_url) and libraries on first compile.
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      # The sketch.yaml `host` profile auto-installs the lang-ship:host platform
+      # (from its platform_index_url) and the LovyanGFX library on first compile.
+      - name: Capture screenshots
+        working-directory: LGFXScreenBuilderScreenshotTest
+        run: uv run pytest screenshot/ -v
+
+      - name: Generate gallery
+        working-directory: LGFXScreenBuilderScreenshotTest
+        run: python3 gen_gallery.py
+
+      - name: Commit gallery
+        working-directory: LGFXScreenBuilderScreenshotTest
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --cached --quiet; then
+            echo "No gallery changes."
+          else
+            git commit -m "chore: update screenshot gallery [skip ci]"
+            git push
+          fi
+
+      - name: Upload gallery artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gallery
+          path: LGFXScreenBuilderScreenshotTest/docs
+          if-no-files-found: ignore
