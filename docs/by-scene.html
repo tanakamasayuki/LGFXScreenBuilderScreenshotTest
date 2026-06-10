@@ -33,6 +33,7 @@ section.group { margin: 0 0 36px; }
 section.group > h2 {
   font-size: 15px; color: #11181c; margin: 0 0 4px;
   border-left: 3px solid #1f7a74; padding-left: 10px;
+  display: flex; align-items: center; gap: 10px;
 }
 section.group > .sub { color: #6b7780; font-size: 12px; margin: 0 0 14px; padding-left: 13px; }
 .row { display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start; }
@@ -49,21 +50,29 @@ figure img {
 }
 figcaption {
   margin-top: 8px; color: #1f7a74; font-size: 12px;
-  display: flex; justify-content: space-between; gap: 12px;
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
 }
 figcaption .dim { color: #6b7780; }
+.copy {
+  font: inherit; font-size: 11px; cursor: pointer;
+  color: #1f7a74; background: #1f7a740f; border: 1px solid #1f7a7455;
+  border-radius: 6px; padding: 2px 8px; white-space: nowrap;
+}
+.copy:hover { background: #1f7a741f; }
+.copy.ok { color: #fff; background: #1f7a74; border-color: #1f7a74; }
 .empty { color: #c2554f; font-size: 12px; padding: 24px; }</style>
+<script src="ai-layouts.js"></script>
 </head>
 <body>
 <header>
   <h1>Sfm screenshots</h1>
-  <span class="meta">generated 2026-06-10 10:41 UTC</span>
+  <span class="meta">generated 2026-06-10 11:10 UTC</span>
   <nav><a href="index.html">By profile</a><a href="by-scene.html" class="active">By scene</a></nav>
   <label class="zoom">Zoom<select id="zoom"><option value="1">1x</option><option value="2">2x</option><option value="3">3x</option><option value="4">4x</option></select></label>
 </header>
 <main>
 <section class="group">
-<h2>Boot</h2>
+<h2><span>Boot</span><button class="copy" data-scene="Boot" title="Copy AI layout JSON">⧉ AI JSON</button></h2>
 <p class="sub">Smart Factory Monitor 起動直後に一瞬だけ出すシンプルなスプラッシュ。動的な進捗や状態表示はユーザープログラム側で描画する。</p>
 <div class="row">
 <figure><img src="shots/Core/Boot.png" alt="" style="--w:320" width="320" height="240" loading="lazy"><figcaption><span>Core</span><span class="dim">320×240</span></figcaption></figure>
@@ -71,7 +80,7 @@ figcaption .dim { color: #6b7780; }
 <figure><img src="shots/AtomS3/Boot.png" alt="" style="--w:128" width="128" height="128" loading="lazy"><figcaption><span>AtomS3</span><span class="dim">128×128</span></figcaption></figure>
 </div></section>
 <section class="group">
-<h2>Dashboard</h2>
+<h2><span>Dashboard</span><button class="copy" data-scene="Dashboard" title="Copy AI layout JSON">⧉ AI JSON</button></h2>
 <p class="sub">Smart Factory Monitor のメインダッシュボード。全プロファイルで同じパーツIDを持ち、使わない部品は visible=false で非表示にする。</p>
 <div class="row">
 <figure><img src="shots/Core/Dashboard.png" alt="" style="--w:320" width="320" height="240" loading="lazy"><figcaption><span>Core</span><span class="dim">320×240</span></figcaption></figure>
@@ -79,7 +88,7 @@ figcaption .dim { color: #6b7780; }
 <figure><img src="shots/AtomS3/Dashboard.png" alt="" style="--w:128" width="128" height="128" loading="lazy"><figcaption><span>AtomS3</span><span class="dim">128×128</span></figcaption></figure>
 </div></section>
 <section class="group">
-<h2>AlertList</h2>
+<h2><span>AlertList</span><button class="copy" data-scene="AlertList" title="Copy AI layout JSON">⧉ AI JSON</button></h2>
 <p class="sub">Smart Factory Monitor のアラート一覧画面。全プロファイルで同じパーツIDを持ち、使わない部品は visible=false で非表示にする。</p>
 <div class="row">
 <figure><img src="shots/Core/AlertList.png" alt="" style="--w:320" width="320" height="240" loading="lazy"><figcaption><span>Core</span><span class="dim">320×240</span></figcaption></figure>
@@ -87,7 +96,7 @@ figcaption .dim { color: #6b7780; }
 <figure><img src="shots/AtomS3/AlertList.png" alt="" style="--w:128" width="128" height="128" loading="lazy"><figcaption><span>AtomS3</span><span class="dim">128×128</span></figcaption></figure>
 </div></section>
 <section class="group">
-<h2>SensorDetail</h2>
+<h2><span>SensorDetail</span><button class="copy" data-scene="SensorDetail" title="Copy AI layout JSON">⧉ AI JSON</button></h2>
 <p class="sub">Smart Factory Monitor のセンサー詳細画面。温度センサーの現在値、状態、統計値、しきい値、トレンド表示領域を持つ。トレンド線などの動的描画はユーザープログラム側で行う。</p>
 <div class="row">
 <figure><img src="shots/Core/SensorDetail.png" alt="" style="--w:320" width="320" height="240" loading="lazy"><figcaption><span>Core</span><span class="dim">320×240</span></figcaption></figure>
@@ -95,7 +104,7 @@ figcaption .dim { color: #6b7780; }
 <figure><img src="shots/AtomS3/SensorDetail.png" alt="" style="--w:128" width="128" height="128" loading="lazy"><figcaption><span>AtomS3</span><span class="dim">128×128</span></figcaption></figure>
 </div></section>
 <section class="group">
-<h2>EquipmentStatus</h2>
+<h2><span>EquipmentStatus</span><button class="copy" data-scene="EquipmentStatus" title="Copy AI layout JSON">⧉ AI JSON</button></h2>
 <p class="sub">Smart Factory Monitor の設備状態画面。各ラインや装置の稼働状態、負荷、エラーコードを表示する。全プロファイルで同じパーツIDを持ち、使わない部品は visible=false で非表示にする。</p>
 <div class="row">
 <figure><img src="shots/Core/EquipmentStatus.png" alt="" style="--w:320" width="320" height="240" loading="lazy"><figcaption><span>Core</span><span class="dim">320×240</span></figcaption></figure>
@@ -103,7 +112,7 @@ figcaption .dim { color: #6b7780; }
 <figure><img src="shots/AtomS3/EquipmentStatus.png" alt="" style="--w:128" width="128" height="128" loading="lazy"><figcaption><span>AtomS3</span><span class="dim">128×128</span></figcaption></figure>
 </div></section>
 <section class="group">
-<h2>NetworkStatus</h2>
+<h2><span>NetworkStatus</span><button class="copy" data-scene="NetworkStatus" title="Copy AI layout JSON">⧉ AI JSON</button></h2>
 <p class="sub">Smart Factory Monitor のネットワーク状態画面。Wi-Fi、MQTT、IP、RSSI、Device ID を表示する。全プロファイルで同じパーツIDを持ち、使わない部品は visible=false で非表示にする。</p>
 <div class="row">
 <figure><img src="shots/Core/NetworkStatus.png" alt="" style="--w:320" width="320" height="240" loading="lazy"><figcaption><span>Core</span><span class="dim">320×240</span></figcaption></figure>
@@ -111,7 +120,7 @@ figcaption .dim { color: #6b7780; }
 <figure><img src="shots/AtomS3/NetworkStatus.png" alt="" style="--w:128" width="128" height="128" loading="lazy"><figcaption><span>AtomS3</span><span class="dim">128×128</span></figcaption></figure>
 </div></section>
 <section class="group">
-<h2>Settings</h2>
+<h2><span>Settings</span><button class="copy" data-scene="Settings" title="Copy AI layout JSON">⧉ AI JSON</button></h2>
 <p class="sub">Smart Factory Monitor の設定画面。明るさ、アラート音、送信間隔、Device ID を表示する。全プロファイルで同じパーツIDを持ち、使わない部品は visible=false で非表示にする。</p>
 <div class="row">
 <figure><img src="shots/Core/Settings.png" alt="" style="--w:320" width="320" height="240" loading="lazy"><figcaption><span>Core</span><span class="dim">320×240</span></figcaption></figure>
@@ -129,6 +138,18 @@ figcaption .dim { color: #6b7780; }
   sel.addEventListener("change", function() {
     root.style.setProperty("--zoom", sel.value);
     localStorage.setItem("shotZoom", sel.value);
+  });
+  // Copy a scene's AI-layout JSON (one scene x all profiles) to the clipboard.
+  document.addEventListener("click", function(ev) {
+    var btn = ev.target.closest(".copy");
+    if (!btn) return;
+    var data = (window.AI_LAYOUTS || {})[btn.dataset.scene];
+    if (!data) return;
+    navigator.clipboard.writeText(JSON.stringify(data)).then(function() {
+      var prev = btn.textContent;
+      btn.textContent = "Copied!"; btn.classList.add("ok");
+      setTimeout(function() { btn.textContent = prev; btn.classList.remove("ok"); }, 1200);
+    });
   });
 })();
 </script>
