@@ -79,12 +79,19 @@ docs/                      # committed gallery (GitHub Pages source)
    imports it and runs this right after capture, so the gallery is built **and
    verified** (every profile × scene present, pages non-empty) in the same run.
 
+**Why LovyanGFX?** Capture renders through
+[LovyanGFX](https://github.com/lovyan03/LovyanGFX). Even if your application
+draws via **M5Unified / M5GFX**, the drawing API is compatible, so screens come
+out identical here. LovyanGFX also lets the off-screen device be sized to any
+resolution, which is exactly what makes capturing every profile on a single
+headless host convenient.
+
 ## Run locally
 
 Requires `arduino-cli`, `uv`, and SDL2 (`sudo apt-get install -y libsdl2-dev`).
-The [`LGFXScreenBuilder`](https://github.com/tanakamasayuki/LGFXScreenBuilder)
-library repo must sit next to this one (sibling directory), matching
-`sketch.yaml`'s `dir: ../../LGFXScreenBuilder`.
+No manual library download is needed: `sketch.yaml` pins
+[`LGFXScreenBuilder`](https://github.com/tanakamasayuki/LGFXScreenBuilder) (and
+LovyanGFX) by version, so arduino-cli auto-installs them on first compile.
 
 ```bash
 uv run pytest screenshot/ -v   # capture → screenshot/output/*.png, then build + verify docs/
@@ -97,9 +104,10 @@ existing shots: `uv run python screenshot/gen_gallery.py`.)
 
 ## Use it in your own project
 
-The harness depends only on the generated header (plus the LGFXScreenBuilder
-library to build), so it drops into any project. Setup is a one-time step; after
-that you only ever touch the header.
+The harness depends only on the generated header (the LGFXScreenBuilder library
+needed to build is pinned by version in `sketch.yaml` and auto-installed), so it
+drops into any project. Setup is a one-time step; after that you only ever touch
+the header.
 
 1. In LGFXScreenBuilder, export the header with **"Embed AI layouts" on** (so
    the gallery can read scenes/profiles/layouts from the `.h` alone).
@@ -131,5 +139,6 @@ it to an external store. Periodically squashing history also keeps things lean.
 ## CI
 
 `.github/workflows/screenshots.yml` runs on pushes that touch the project or
-harness (and on demand). It checks out this repo and the library repo as
-siblings, captures, regenerates `docs/`, and commits the gallery back.
+harness (and on demand). It checks out this repo, captures (the platform and
+libraries auto-install from `sketch.yaml` on first compile), regenerates
+`docs/`, and commits the gallery back.

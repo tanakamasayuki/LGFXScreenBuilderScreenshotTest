@@ -27,8 +27,8 @@ jobs:
   capture:
     runs-on: ubuntu-latest
     steps:
-      # Check out both repos as siblings so sketch.yaml's `dir: ../../LGFXScreenBuilder`
-      # resolves exactly like the local dev layout.
+      # Only this repo is checked out: sketch.yaml pins LGFXScreenBuilder (and
+      # LovyanGFX) by version, so arduino-cli auto-installs them on first compile.
       - name: Checkout screenshot repo
         uses: actions/checkout@v4
         with:
