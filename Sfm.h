@@ -833,19 +833,19 @@ static const lgfxsb::PartLayout kLayouts[] = {
   {12, 36, 104, 20, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // NetworkStatus.wifiPanel
   {36, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "WiFi"},  // NetworkStatus.wifiTitle
   {36, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.wifiStatusLabel
-  {84, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "OK"},  // NetworkStatus.wifiStatusValue
+  {77, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "OK"},  // NetworkStatus.wifiStatusValue
   {36, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "SSID"},  // NetworkStatus.ssidLabel
   {84, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "AP01"},  // NetworkStatus.ssidValue
   {12, 64, 104, 20, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // NetworkStatus.mqttPanel
   {36, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "MQTT"},  // NetworkStatus.mqttTitle
   {36, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.mqttStatusLabel
-  {84, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "OK"},  // NetworkStatus.mqttStatusValue
+  {77, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "OK"},  // NetworkStatus.mqttStatusValue
   {36, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "BRK"},  // NetworkStatus.brokerLabel
   {84, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "10.0"},  // NetworkStatus.brokerValue
   {12, 92, 104, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // NetworkStatus.ipPanel
   {64, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "DEVICE"},  // NetworkStatus.ipTitle
   {36, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "IP"},  // NetworkStatus.ipLabel
-  {84, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 0.75f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "192.168.10.42"},  // NetworkStatus.ipValue
+  {77, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "192.168.100.142"},  // NetworkStatus.ipValue
   {36, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "RS"},  // NetworkStatus.rssiLabel
   {84, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "-58"},  // NetworkStatus.rssiValue
   {12, 92, 104, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, false, nullptr, nullptr},  // NetworkStatus.devicePanel
@@ -8741,7 +8741,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
             {
               "id": "wifiStatusValue",
               "type": "Text",
-              "x": 84,
+              "x": 77,
               "y": 46,
               "datum": "MC",
               "size": 1,
@@ -8813,7 +8813,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
             {
               "id": "mqttStatusValue",
               "type": "Text",
-              "x": 84,
+              "x": 77,
               "y": 74,
               "datum": "MC",
               "size": 1,
@@ -8885,12 +8885,12 @@ class Screen : public lgfxsb::RendererT<Canvas> {
             {
               "id": "ipValue",
               "type": "Text",
-              "x": 84,
+              "x": 77,
               "y": 105,
               "datum": "MC",
-              "size": 0.75,
+              "size": 1,
               "color": "#ffffff",
-              "text": "192.168.10.42",
+              "text": "192.168.100.142",
               "font": "Font0",
               "visible": true
             },

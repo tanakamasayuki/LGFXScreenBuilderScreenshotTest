@@ -3178,7 +3178,7 @@
             "visible": true
           },
           "ipLabel": {
-            "x": 34,
+            "x": 28,
             "y": 166,
             "datum": "MC",
             "size": 1,
@@ -3188,7 +3188,7 @@
             "visible": true
           },
           "ipValue": {
-            "x": 88,
+            "x": 78,
             "y": 166,
             "datum": "MC",
             "size": 1,
@@ -3228,7 +3228,7 @@
             "visible": true
           },
           "deviceLabel": {
-            "x": 38,
+            "x": 28,
             "y": 197,
             "datum": "MC",
             "size": 1,
@@ -3238,7 +3238,7 @@
             "visible": true
           },
           "deviceValue": {
-            "x": 86,
+            "x": 78,
             "y": 197,
             "datum": "MC",
             "size": 1,
@@ -4842,7 +4842,7 @@
             "visible": false
           },
           "wifiStatusValue": {
-            "x": 84,
+            "x": 77,
             "y": 46,
             "datum": "MC",
             "size": 1,
@@ -4902,7 +4902,7 @@
             "visible": false
           },
           "mqttStatusValue": {
-            "x": 84,
+            "x": 77,
             "y": 74,
             "datum": "MC",
             "size": 1,
@@ -4962,12 +4962,12 @@
             "visible": true
           },
           "ipValue": {
-            "x": 84,
+            "x": 77,
             "y": 105,
             "datum": "MC",
             "size": 1,
             "color": "#ffffff",
-            "text": "192.168.10.42",
+            "text": "192.168.100.142",
             "font": "Font0",
             "visible": true
           },
