@@ -34,12 +34,6 @@ jobs:
         with:
           path: LGFXScreenBuilderScreenshotTest
 
-      - name: Checkout LGFXScreenBuilder library
-        uses: actions/checkout@v4
-        with:
-          repository: tanakamasayuki/LGFXScreenBuilder
-          path: LGFXScreenBuilder
-
       - name: Install SDL2 (headless LovyanGFX backend)
         run: |
           sudo apt-get update
