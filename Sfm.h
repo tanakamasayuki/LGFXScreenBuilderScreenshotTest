@@ -353,531 +353,531 @@ static const lgfxsb::PartLayout kLayouts[] = {
   // ---- Profile: Core 320x240 rot0 ----
   {58, 52, 204, 126, 0, 0, 10, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Boot.frame
   {114, 76, 92, 38, 0, 0, 6, 0, 0.0f, 0x101a1f, true, true, nullptr, nullptr},  // Boot.logoBox
-  {160, 95, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Orbitron_Light_24, "SFM"},  // Boot.logoText
-  {160, 133, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18, "FACTORY MONITOR"},  // Boot.titleText
-  {160, 155, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "SMART FACTORY"},  // Boot.subTitleText
+  {160, 95, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Orbitron_Light_24, "SFM"},  // Boot.logoText
+  {160, 133, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18, "FACTORY MONITOR"},  // Boot.titleText
+  {160, 155, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "SMART FACTORY"},  // Boot.subTitleText
   {98, 194, 124, 4, 0, 0, 2, 0, 0.0f, 0x1e2a30, true, true, nullptr, nullptr},  // Boot.progressGuide
   {118, 204, 84, 14, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Boot.statusArea
-  {160, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x455a57, true, true, &lgfx::v1::fonts::Font0, "v1.0.0 / CORE"},  // Boot.versionText
-  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "FACTORY MONITOR"},  // Dashboard.titleText
-  {282, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "14:32"},  // Dashboard.clockText
+  {160, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x455a57, true, true, &lgfx::v1::fonts::Font0, "v1.0.0 / CORE"},  // Boot.versionText
+  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidLeft, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "FACTORY MONITOR"},  // Dashboard.titleText
+  {282, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "14:32"},  // Dashboard.clockText
   {0, 30, 0, 0, 320, 30, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Dashboard.headerLine
   {10, 42, 95, 62, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Dashboard.tempCard
-  {57, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "TEMP"},  // Dashboard.tempLabel
-  {57, 80, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18, "26.4C"},  // Dashboard.tempValue
+  {57, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "TEMP"},  // Dashboard.tempLabel
+  {57, 80, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18, "26.4C"},  // Dashboard.tempValue
   {113, 42, 95, 62, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Dashboard.humCard
-  {160, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "HUM"},  // Dashboard.humLabel
-  {160, 80, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18, "48%"},  // Dashboard.humValue
+  {160, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "HUM"},  // Dashboard.humLabel
+  {160, 80, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18, "48%"},  // Dashboard.humValue
   {216, 42, 94, 62, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Dashboard.co2Card
-  {263, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "CO2"},  // Dashboard.co2Label
-  {263, 80, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18, "780"},  // Dashboard.co2Value
+  {263, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "CO2"},  // Dashboard.co2Label
+  {263, 80, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18, "780"},  // Dashboard.co2Value
   {10, 116, 145, 66, 0, 0, 6, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Dashboard.linePanel
-  {82, 130, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "LINE STATUS"},  // Dashboard.lineTitle
-  {45, 151, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "LINE-1"},  // Dashboard.line1Name
-  {112, 151, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // Dashboard.line1Value
-  {45, 167, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "LINE-2"},  // Dashboard.line2Name
-  {112, 167, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "IDLE"},  // Dashboard.line2Value
+  {82, 130, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "LINE STATUS"},  // Dashboard.lineTitle
+  {45, 151, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "LINE-1"},  // Dashboard.line1Name
+  {112, 151, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // Dashboard.line1Value
+  {45, 167, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "LINE-2"},  // Dashboard.line2Name
+  {112, 167, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "IDLE"},  // Dashboard.line2Value
   {165, 116, 145, 66, 0, 0, 6, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Dashboard.alertPanel
-  {237, 130, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "ALERTS"},  // Dashboard.alertTitle
-  {205, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu24, "2"},  // Dashboard.alertCount
-  {265, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "WARN"},  // Dashboard.alertState
+  {237, 130, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "ALERTS"},  // Dashboard.alertTitle
+  {205, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu24, "2"},  // Dashboard.alertCount
+  {265, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "WARN"},  // Dashboard.alertState
   {0, 210, 0, 0, 320, 210, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Dashboard.footerLine
-  {54, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "MENU"},  // Dashboard.btnA
-  {160, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "DETAIL"},  // Dashboard.btnB
-  {266, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "ACK"},  // Dashboard.btnC
-  {10, 17, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18, "ALERTS"},  // AlertList.titleText
-  {286, 17, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu18, "3"},  // AlertList.countText
+  {54, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "MENU"},  // Dashboard.btnA
+  {160, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "DETAIL"},  // Dashboard.btnB
+  {266, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "ACK"},  // Dashboard.btnC
+  {10, 17, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidLeft, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18, "ALERTS"},  // AlertList.titleText
+  {286, 17, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu18, "3"},  // AlertList.countText
   {0, 34, 0, 0, 320, 34, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // AlertList.headerLine
   {10, 46, 300, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // AlertList.row1
-  {31, 65, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "!"},  // AlertList.level1
-  {166, 58, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "MOTOR OVERLOAD"},  // AlertList.message1
-  {166, 73, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "14:28  CRITICAL"},  // AlertList.meta1
+  {31, 65, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "!"},  // AlertList.level1
+  {166, 58, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "MOTOR OVERLOAD"},  // AlertList.message1
+  {166, 73, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "14:28  CRITICAL"},  // AlertList.meta1
   {10, 94, 300, 38, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // AlertList.row2
-  {31, 113, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "!"},  // AlertList.level2
-  {166, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "TEMP HIGH"},  // AlertList.message2
-  {166, 121, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "14:12  WARNING"},  // AlertList.meta2
+  {31, 113, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "!"},  // AlertList.level2
+  {166, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "TEMP HIGH"},  // AlertList.message2
+  {166, 121, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "14:12  WARNING"},  // AlertList.meta2
   {10, 142, 300, 38, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // AlertList.row3
-  {31, 161, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu12, "i"},  // AlertList.level3
-  {166, 154, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "FILTER MAINTENANCE"},  // AlertList.message3
-  {166, 169, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "09:40  INFO"},  // AlertList.meta3
+  {31, 161, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu12, "i"},  // AlertList.level3
+  {166, 154, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "FILTER MAINTENANCE"},  // AlertList.message3
+  {166, 169, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "09:40  INFO"},  // AlertList.meta3
   {0, 210, 0, 0, 320, 210, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // AlertList.footerLine
-  {54, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "BACK"},  // AlertList.btnA
-  {160, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "OPEN"},  // AlertList.btnB
-  {266, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "ACK"},  // AlertList.btnC
-  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "SENSOR DETAIL"},  // SensorDetail.titleText
-  {252, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "TEMP-01"},  // SensorDetail.sensorNameText
+  {54, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "BACK"},  // AlertList.btnA
+  {160, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "OPEN"},  // AlertList.btnB
+  {266, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "ACK"},  // AlertList.btnC
+  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidLeft, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "SENSOR DETAIL"},  // SensorDetail.titleText
+  {252, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "TEMP-01"},  // SensorDetail.sensorNameText
   {0, 30, 0, 0, 320, 30, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // SensorDetail.headerLine
   {10, 42, 140, 76, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // SensorDetail.mainCard
-  {80, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "TEMPERATURE"},  // SensorDetail.valueLabel
-  {80, 83, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu24, "26.4"},  // SensorDetail.valueText
-  {126, 84, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu12, "C"},  // SensorDetail.unitText
-  {80, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "NORMAL"},  // SensorDetail.stateText
+  {80, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "TEMPERATURE"},  // SensorDetail.valueLabel
+  {80, 83, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu24, "26.4"},  // SensorDetail.valueText
+  {126, 84, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu12, "C"},  // SensorDetail.unitText
+  {80, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "NORMAL"},  // SensorDetail.stateText
   {160, 42, 46, 36, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.minCard
-  {183, 53, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MIN"},  // SensorDetail.minLabel
-  {183, 68, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "23.1"},  // SensorDetail.minValue
+  {183, 53, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MIN"},  // SensorDetail.minLabel
+  {183, 68, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "23.1"},  // SensorDetail.minValue
   {215, 42, 46, 36, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.avgCard
-  {238, 53, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "AVG"},  // SensorDetail.avgLabel
-  {238, 68, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "25.8"},  // SensorDetail.avgValue
+  {238, 53, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "AVG"},  // SensorDetail.avgLabel
+  {238, 68, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "25.8"},  // SensorDetail.avgValue
   {270, 42, 40, 36, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.maxCard
-  {290, 53, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MAX"},  // SensorDetail.maxLabel
-  {290, 68, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "29.4"},  // SensorDetail.maxValue
+  {290, 53, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MAX"},  // SensorDetail.maxLabel
+  {290, 68, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "29.4"},  // SensorDetail.maxValue
   {160, 86, 150, 32, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.thresholdPanel
-  {235, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "THRESHOLD"},  // SensorDetail.thresholdTitle
-  {190, 110, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "HI"},  // SensorDetail.highLabel
-  {218, 110, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "30.0"},  // SensorDetail.highValue
-  {258, 110, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "LO"},  // SensorDetail.lowLabel
-  {286, 110, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "18.0"},  // SensorDetail.lowValue
+  {235, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "THRESHOLD"},  // SensorDetail.thresholdTitle
+  {190, 110, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "HI"},  // SensorDetail.highLabel
+  {218, 110, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "30.0"},  // SensorDetail.highValue
+  {258, 110, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "LO"},  // SensorDetail.lowLabel
+  {286, 110, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "18.0"},  // SensorDetail.lowValue
   {10, 130, 300, 68, 0, 0, 6, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.trendPanel
-  {42, 142, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "TREND"},  // SensorDetail.trendTitle
+  {42, 142, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "TREND"},  // SensorDetail.trendTitle
   {20, 152, 0, 0, 300, 152, 0, 0, 0.0f, 0x1e2a30, true, true, nullptr, nullptr},  // SensorDetail.trendGrid1
   {20, 168, 0, 0, 300, 168, 0, 0, 0.0f, 0x1e2a30, true, true, nullptr, nullptr},  // SensorDetail.trendGrid2
   {20, 184, 0, 0, 300, 184, 0, 0, 0.0f, 0x1e2a30, true, true, nullptr, nullptr},  // SensorDetail.trendGrid3
   {20, 144, 0, 0, 20, 190, 0, 0, 0.0f, 0x1e2a30, true, true, nullptr, nullptr},  // SensorDetail.trendAxisL
   {300, 144, 0, 0, 300, 190, 0, 0, 0.0f, 0x1e2a30, true, true, nullptr, nullptr},  // SensorDetail.trendAxisR
   {0, 210, 0, 0, 320, 210, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // SensorDetail.footerLine
-  {54, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "BACK"},  // SensorDetail.btnA
-  {160, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "NEXT"},  // SensorDetail.btnB
-  {266, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "ACK"},  // SensorDetail.btnC
-  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "EQUIPMENT"},  // EquipmentStatus.titleText
-  {262, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "4 RUN / 1 ERR"},  // EquipmentStatus.summaryText
+  {54, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "BACK"},  // SensorDetail.btnA
+  {160, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "NEXT"},  // SensorDetail.btnB
+  {266, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "ACK"},  // SensorDetail.btnC
+  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidLeft, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "EQUIPMENT"},  // EquipmentStatus.titleText
+  {262, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "4 RUN / 1 ERR"},  // EquipmentStatus.summaryText
   {0, 30, 0, 0, 320, 30, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // EquipmentStatus.headerLine
   {10, 40, 300, 18, 0, 0, 4, 0, 0.0f, 0x101a1f, true, true, nullptr, nullptr},  // EquipmentStatus.tableHeader
-  {48, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "UNIT"},  // EquipmentStatus.headName
-  {132, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "STATE"},  // EquipmentStatus.headState
-  {210, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "LOAD"},  // EquipmentStatus.headLoad
-  {278, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "CODE"},  // EquipmentStatus.headCode
+  {48, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "UNIT"},  // EquipmentStatus.headName
+  {132, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "STATE"},  // EquipmentStatus.headState
+  {210, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "LOAD"},  // EquipmentStatus.headLoad
+  {278, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "CODE"},  // EquipmentStatus.headCode
   {10, 64, 300, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row1
-  {48, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "LINE-1"},  // EquipmentStatus.name1
-  {132, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // EquipmentStatus.state1
-  {210, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "92%"},  // EquipmentStatus.load1
-  {278, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code1
+  {48, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "LINE-1"},  // EquipmentStatus.name1
+  {132, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // EquipmentStatus.state1
+  {210, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "92%"},  // EquipmentStatus.load1
+  {278, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code1
   {10, 96, 300, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row2
-  {48, 109, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "LINE-2"},  // EquipmentStatus.name2
-  {132, 109, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "IDLE"},  // EquipmentStatus.state2
-  {210, 109, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "0%"},  // EquipmentStatus.load2
-  {278, 109, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code2
+  {48, 109, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "LINE-2"},  // EquipmentStatus.name2
+  {132, 109, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "IDLE"},  // EquipmentStatus.state2
+  {210, 109, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "0%"},  // EquipmentStatus.load2
+  {278, 109, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code2
   {10, 128, 300, 26, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // EquipmentStatus.row3
-  {48, 141, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "LINE-3"},  // EquipmentStatus.name3
-  {132, 141, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "ERROR"},  // EquipmentStatus.state3
-  {210, 141, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "--"},  // EquipmentStatus.load3
-  {278, 141, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "E104"},  // EquipmentStatus.code3
+  {48, 141, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "LINE-3"},  // EquipmentStatus.name3
+  {132, 141, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "ERROR"},  // EquipmentStatus.state3
+  {210, 141, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "--"},  // EquipmentStatus.load3
+  {278, 141, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "E104"},  // EquipmentStatus.code3
   {10, 160, 300, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row4
-  {48, 173, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "PUMP-A"},  // EquipmentStatus.name4
-  {132, 173, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // EquipmentStatus.state4
-  {210, 173, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "68%"},  // EquipmentStatus.load4
-  {278, 173, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code4
+  {48, 173, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "PUMP-A"},  // EquipmentStatus.name4
+  {132, 173, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // EquipmentStatus.state4
+  {210, 173, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "68%"},  // EquipmentStatus.load4
+  {278, 173, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code4
   {10, 192, 300, 14, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row5
-  {48, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "FAN-B"},  // EquipmentStatus.name5
-  {132, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "OFF"},  // EquipmentStatus.state5
-  {210, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "0%"},  // EquipmentStatus.load5
-  {278, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code5
+  {48, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "FAN-B"},  // EquipmentStatus.name5
+  {132, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "OFF"},  // EquipmentStatus.state5
+  {210, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "0%"},  // EquipmentStatus.load5
+  {278, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code5
   {0, 214, 0, 0, 320, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // EquipmentStatus.footerLine
-  {54, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "BACK"},  // EquipmentStatus.btnA
-  {160, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "DETAIL"},  // EquipmentStatus.btnB
-  {266, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "RESET"},  // EquipmentStatus.btnC
-  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "NETWORK"},  // NetworkStatus.titleText
-  {268, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "ONLINE"},  // NetworkStatus.summaryText
+  {54, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "BACK"},  // EquipmentStatus.btnA
+  {160, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "DETAIL"},  // EquipmentStatus.btnB
+  {266, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "RESET"},  // EquipmentStatus.btnC
+  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidLeft, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "NETWORK"},  // NetworkStatus.titleText
+  {268, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "ONLINE"},  // NetworkStatus.summaryText
   {0, 30, 0, 0, 320, 30, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // NetworkStatus.headerLine
   {10, 42, 145, 70, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // NetworkStatus.wifiPanel
-  {82, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "WI-FI"},  // NetworkStatus.wifiTitle
-  {48, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.wifiStatusLabel
-  {112, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "CONNECTED"},  // NetworkStatus.wifiStatusValue
-  {48, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "SSID"},  // NetworkStatus.ssidLabel
-  {112, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "Factory_AP_01"},  // NetworkStatus.ssidValue
+  {82, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "WI-FI"},  // NetworkStatus.wifiTitle
+  {48, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.wifiStatusLabel
+  {112, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "CONNECTED"},  // NetworkStatus.wifiStatusValue
+  {48, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "SSID"},  // NetworkStatus.ssidLabel
+  {112, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "Factory_AP_01"},  // NetworkStatus.ssidValue
   {165, 42, 145, 70, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // NetworkStatus.mqttPanel
-  {237, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "MQTT"},  // NetworkStatus.mqttTitle
-  {202, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.mqttStatusLabel
-  {266, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "CONNECTED"},  // NetworkStatus.mqttStatusValue
-  {202, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BROKER"},  // NetworkStatus.brokerLabel
-  {266, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "10.0.0.12"},  // NetworkStatus.brokerValue
+  {237, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "MQTT"},  // NetworkStatus.mqttTitle
+  {202, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.mqttStatusLabel
+  {266, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "CONNECTED"},  // NetworkStatus.mqttStatusValue
+  {202, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BROKER"},  // NetworkStatus.brokerLabel
+  {266, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "10.0.0.12"},  // NetworkStatus.brokerValue
   {10, 124, 300, 54, 0, 0, 6, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // NetworkStatus.ipPanel
-  {160, 138, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "DEVICE NETWORK"},  // NetworkStatus.ipTitle
-  {54, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "IP"},  // NetworkStatus.ipLabel
-  {128, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "192.168.100.142"},  // NetworkStatus.ipValue
-  {218, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "RSSI"},  // NetworkStatus.rssiLabel
-  {278, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "-58dBm"},  // NetworkStatus.rssiValue
+  {160, 138, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "DEVICE NETWORK"},  // NetworkStatus.ipTitle
+  {54, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "IP"},  // NetworkStatus.ipLabel
+  {128, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "192.168.100.142"},  // NetworkStatus.ipValue
+  {218, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "RSSI"},  // NetworkStatus.rssiLabel
+  {278, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "-58dBm"},  // NetworkStatus.rssiValue
   {10, 186, 300, 18, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // NetworkStatus.devicePanel
-  {62, 195, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "DEVICE"},  // NetworkStatus.deviceLabel
-  {190, 195, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "M5-FAC-001"},  // NetworkStatus.deviceValue
+  {62, 195, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "DEVICE"},  // NetworkStatus.deviceLabel
+  {190, 195, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "M5-FAC-001"},  // NetworkStatus.deviceValue
   {0, 214, 0, 0, 320, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // NetworkStatus.footerLine
-  {54, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "BACK"},  // NetworkStatus.btnA
-  {160, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "SCAN"},  // NetworkStatus.btnB
-  {266, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "RESET"},  // NetworkStatus.btnC
-  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "SETTINGS"},  // Settings.titleText
-  {268, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "DEVICE"},  // Settings.summaryText
+  {54, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "BACK"},  // NetworkStatus.btnA
+  {160, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "SCAN"},  // NetworkStatus.btnB
+  {266, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "RESET"},  // NetworkStatus.btnC
+  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidLeft, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "SETTINGS"},  // Settings.titleText
+  {268, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "DEVICE"},  // Settings.summaryText
   {0, 30, 0, 0, 320, 30, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Settings.headerLine
   {10, 44, 300, 34, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Settings.brightnessRow
-  {82, 61, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "BRIGHTNESS"},  // Settings.brightnessLabel
-  {235, 61, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "80%"},  // Settings.brightnessValue
-  {235, 72, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "LCD LEVEL"},  // Settings.brightnessNote
+  {82, 61, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "BRIGHTNESS"},  // Settings.brightnessLabel
+  {235, 61, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "80%"},  // Settings.brightnessValue
+  {235, 72, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "LCD LEVEL"},  // Settings.brightnessNote
   {10, 88, 300, 34, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Settings.alertSoundRow
-  {82, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "ALERT SOUND"},  // Settings.alertSoundLabel
-  {235, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "ON"},  // Settings.alertSoundValue
-  {235, 116, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "BUZZER"},  // Settings.alertSoundNote
+  {82, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "ALERT SOUND"},  // Settings.alertSoundLabel
+  {235, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "ON"},  // Settings.alertSoundValue
+  {235, 116, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "BUZZER"},  // Settings.alertSoundNote
   {10, 132, 300, 34, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Settings.sendIntervalRow
-  {82, 149, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "SEND INTERVAL"},  // Settings.sendIntervalLabel
-  {235, 149, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "5 sec"},  // Settings.sendIntervalValue
-  {235, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "MQTT"},  // Settings.sendIntervalNote
+  {82, 149, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "SEND INTERVAL"},  // Settings.sendIntervalLabel
+  {235, 149, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "5 sec"},  // Settings.sendIntervalValue
+  {235, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "MQTT"},  // Settings.sendIntervalNote
   {10, 176, 300, 28, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Settings.deviceIdRow
-  {82, 190, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "DEVICE ID"},  // Settings.deviceIdLabel
-  {235, 190, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "M5-FAC-001"},  // Settings.deviceIdValue
-  {235, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "FACTORY NODE"},  // Settings.deviceIdNote
+  {82, 190, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "DEVICE ID"},  // Settings.deviceIdLabel
+  {235, 190, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "M5-FAC-001"},  // Settings.deviceIdValue
+  {235, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "FACTORY NODE"},  // Settings.deviceIdNote
   {0, 214, 0, 0, 320, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Settings.footerLine
-  {54, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "BACK"},  // Settings.btnA
-  {160, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "EDIT"},  // Settings.btnB
-  {266, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "SAVE"},  // Settings.btnC
+  {54, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "BACK"},  // Settings.btnA
+  {160, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "EDIT"},  // Settings.btnB
+  {266, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "SAVE"},  // Settings.btnC
   // ---- Profile: Stick 135x240 rot0 ----
   {13, 52, 109, 126, 0, 0, 9, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Boot.frame
   {33, 78, 69, 34, 0, 0, 6, 0, 0.0f, 0x101a1f, true, true, nullptr, nullptr},  // Boot.logoBox
-  {67, 95, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 0.8f, 0xffffff, true, true, &lgfx::v1::fonts::Orbitron_Light_24, "SFM"},  // Boot.logoText
-  {67, 132, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "FACTORY"},  // Boot.titleText
-  {67, 150, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "MONITOR"},  // Boot.subTitleText
+  {67, 95, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 0.8f, 0xffffff, true, true, &lgfx::v1::fonts::Orbitron_Light_24, "SFM"},  // Boot.logoText
+  {67, 132, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "FACTORY"},  // Boot.titleText
+  {67, 150, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "MONITOR"},  // Boot.subTitleText
   {27, 196, 81, 4, 0, 0, 2, 0, 0.0f, 0x1e2a30, true, true, nullptr, nullptr},  // Boot.progressGuide
   {39, 207, 57, 14, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Boot.statusArea
-  {67, 229, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x455a57, true, true, &lgfx::v1::fonts::Font0, "v1.0"},  // Boot.versionText
-  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "SFM"},  // Dashboard.titleText
-  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::DejaVu12, "14:32"},  // Dashboard.clockText
+  {67, 229, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x455a57, true, true, &lgfx::v1::fonts::Font0, "v1.0"},  // Boot.versionText
+  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "SFM"},  // Dashboard.titleText
+  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::DejaVu12, "14:32"},  // Dashboard.clockText
   {8, 26, 0, 0, 127, 26, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Dashboard.headerLine
   {10, 36, 115, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Dashboard.tempCard
-  {34, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "TEMP"},  // Dashboard.tempLabel
-  {88, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "26.4C"},  // Dashboard.tempValue
+  {34, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "TEMP"},  // Dashboard.tempLabel
+  {88, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "26.4C"},  // Dashboard.tempValue
   {10, 82, 115, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Dashboard.humCard
-  {34, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "HUM"},  // Dashboard.humLabel
-  {88, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "48%"},  // Dashboard.humValue
+  {34, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "HUM"},  // Dashboard.humLabel
+  {88, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "48%"},  // Dashboard.humValue
   {10, 82, 115, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, false, nullptr, nullptr},  // Dashboard.co2Card
-  {34, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::DejaVu9, "CO2"},  // Dashboard.co2Label
-  {88, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::DejaVu9, "780"},  // Dashboard.co2Value
+  {34, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::DejaVu9, "CO2"},  // Dashboard.co2Label
+  {88, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::DejaVu9, "780"},  // Dashboard.co2Value
   {10, 128, 115, 38, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Dashboard.linePanel
-  {34, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "LINE"},  // Dashboard.lineTitle
-  {34, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::DejaVu9, "LINE-1"},  // Dashboard.line1Name
-  {88, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // Dashboard.line1Value
-  {34, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::DejaVu9, "LINE-2"},  // Dashboard.line2Name
-  {88, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::DejaVu9, "IDLE"},  // Dashboard.line2Value
+  {34, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "LINE"},  // Dashboard.lineTitle
+  {34, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::DejaVu9, "LINE-1"},  // Dashboard.line1Name
+  {88, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // Dashboard.line1Value
+  {34, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::DejaVu9, "LINE-2"},  // Dashboard.line2Name
+  {88, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::DejaVu9, "IDLE"},  // Dashboard.line2Value
   {10, 174, 115, 30, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Dashboard.alertPanel
-  {40, 189, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "ALERT"},  // Dashboard.alertTitle
-  {96, 189, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "2"},  // Dashboard.alertCount
-  {96, 189, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "WARN"},  // Dashboard.alertState
+  {40, 189, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "ALERT"},  // Dashboard.alertTitle
+  {96, 189, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "2"},  // Dashboard.alertCount
+  {96, 189, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "WARN"},  // Dashboard.alertState
   {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Dashboard.footerLine
-  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MENU"},  // Dashboard.btnA
-  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "SEL"},  // Dashboard.btnB
-  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "ACK"},  // Dashboard.btnC
-  {67, 14, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "ALERTS"},  // AlertList.titleText
-  {116, 14, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "3"},  // AlertList.countText
+  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MENU"},  // Dashboard.btnA
+  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "SEL"},  // Dashboard.btnB
+  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "ACK"},  // Dashboard.btnC
+  {67, 14, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "ALERTS"},  // AlertList.titleText
+  {116, 14, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "3"},  // AlertList.countText
   {8, 28, 0, 0, 127, 28, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // AlertList.headerLine
   {8, 42, 119, 42, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // AlertList.row1
-  {19, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "!"},  // AlertList.level1
-  {73, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "MOTOR ERR"},  // AlertList.message1
-  {73, 73, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "14:28 CRIT"},  // AlertList.meta1
+  {19, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "!"},  // AlertList.level1
+  {73, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "MOTOR ERR"},  // AlertList.message1
+  {73, 73, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "14:28 CRIT"},  // AlertList.meta1
   {8, 94, 119, 42, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // AlertList.row2
-  {19, 115, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "!"},  // AlertList.level2
-  {73, 108, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "TEMP HIGH"},  // AlertList.message2
-  {73, 125, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "14:12 WARN"},  // AlertList.meta2
+  {19, 115, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "!"},  // AlertList.level2
+  {73, 108, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "TEMP HIGH"},  // AlertList.message2
+  {73, 125, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "14:12 WARN"},  // AlertList.meta2
   {8, 146, 119, 42, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // AlertList.row3
-  {19, 167, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "i"},  // AlertList.level3
-  {73, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "FILTER"},  // AlertList.message3
-  {73, 177, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "09:40 INFO"},  // AlertList.meta3
+  {19, 167, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "i"},  // AlertList.level3
+  {73, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "FILTER"},  // AlertList.message3
+  {73, 177, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "09:40 INFO"},  // AlertList.meta3
   {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // AlertList.footerLine
-  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BACK"},  // AlertList.btnA
-  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "OPEN"},  // AlertList.btnB
-  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "ACK"},  // AlertList.btnC
-  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "SENSOR"},  // SensorDetail.titleText
-  {67, 25, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "TEMP-01"},  // SensorDetail.sensorNameText
+  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BACK"},  // AlertList.btnA
+  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "OPEN"},  // AlertList.btnB
+  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "ACK"},  // AlertList.btnC
+  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "SENSOR"},  // SensorDetail.titleText
+  {67, 25, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "TEMP-01"},  // SensorDetail.sensorNameText
   {8, 34, 0, 0, 127, 34, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // SensorDetail.headerLine
   {10, 44, 115, 58, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // SensorDetail.mainCard
-  {67, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "TEMP"},  // SensorDetail.valueLabel
-  {67, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "26.4C"},  // SensorDetail.valueText
-  {104, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "C"},  // SensorDetail.unitText
-  {67, 94, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "NORMAL"},  // SensorDetail.stateText
+  {67, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "TEMP"},  // SensorDetail.valueLabel
+  {67, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "26.4C"},  // SensorDetail.valueText
+  {104, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "C"},  // SensorDetail.unitText
+  {67, 94, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "NORMAL"},  // SensorDetail.stateText
   {10, 112, 35, 30, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.minCard
-  {27, 122, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MIN"},  // SensorDetail.minLabel
-  {27, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "23.1"},  // SensorDetail.minValue
+  {27, 122, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MIN"},  // SensorDetail.minLabel
+  {27, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "23.1"},  // SensorDetail.minValue
   {50, 112, 35, 30, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.avgCard
-  {67, 122, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "AVG"},  // SensorDetail.avgLabel
-  {67, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "25.8"},  // SensorDetail.avgValue
+  {67, 122, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "AVG"},  // SensorDetail.avgLabel
+  {67, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "25.8"},  // SensorDetail.avgValue
   {90, 112, 35, 30, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.maxCard
-  {107, 122, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MAX"},  // SensorDetail.maxLabel
-  {107, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "29.4"},  // SensorDetail.maxValue
+  {107, 122, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MAX"},  // SensorDetail.maxLabel
+  {107, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "29.4"},  // SensorDetail.maxValue
   {10, 152, 115, 30, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.thresholdPanel
-  {67, 162, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "LIMIT"},  // SensorDetail.thresholdTitle
-  {30, 176, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "HI"},  // SensorDetail.highLabel
-  {54, 176, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "30.0"},  // SensorDetail.highValue
-  {82, 176, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "LO"},  // SensorDetail.lowLabel
-  {106, 176, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "18.0"},  // SensorDetail.lowValue
+  {67, 162, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "LIMIT"},  // SensorDetail.thresholdTitle
+  {30, 176, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "HI"},  // SensorDetail.highLabel
+  {54, 176, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "30.0"},  // SensorDetail.highValue
+  {82, 176, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "LO"},  // SensorDetail.lowLabel
+  {106, 176, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "18.0"},  // SensorDetail.lowValue
   {10, 190, 115, 16, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.trendPanel
-  {67, 198, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "TREND AREA"},  // SensorDetail.trendTitle
+  {67, 198, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "TREND AREA"},  // SensorDetail.trendTitle
   {14, 195, 0, 0, 121, 195, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendGrid1
   {14, 198, 0, 0, 121, 198, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendGrid2
   {14, 201, 0, 0, 121, 201, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendGrid3
   {14, 194, 0, 0, 14, 202, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendAxisL
   {121, 194, 0, 0, 121, 202, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendAxisR
   {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // SensorDetail.footerLine
-  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BACK"},  // SensorDetail.btnA
-  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "NEXT"},  // SensorDetail.btnB
-  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "ACK"},  // SensorDetail.btnC
-  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "EQUIP"},  // EquipmentStatus.titleText
-  {67, 25, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "4RUN 1ERR"},  // EquipmentStatus.summaryText
+  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BACK"},  // SensorDetail.btnA
+  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "NEXT"},  // SensorDetail.btnB
+  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "ACK"},  // SensorDetail.btnC
+  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "EQUIP"},  // EquipmentStatus.titleText
+  {67, 25, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "4RUN 1ERR"},  // EquipmentStatus.summaryText
   {8, 34, 0, 0, 127, 34, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // EquipmentStatus.headerLine
   {10, 42, 115, 14, 0, 0, 4, 0, 0.0f, 0x101a1f, true, true, nullptr, nullptr},  // EquipmentStatus.tableHeader
-  {34, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "UNIT"},  // EquipmentStatus.headName
-  {82, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "STAT"},  // EquipmentStatus.headState
-  {112, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "%"},  // EquipmentStatus.headLoad
-  {112, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "CODE"},  // EquipmentStatus.headCode
+  {34, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "UNIT"},  // EquipmentStatus.headName
+  {82, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "STAT"},  // EquipmentStatus.headState
+  {112, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "%"},  // EquipmentStatus.headLoad
+  {112, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "CODE"},  // EquipmentStatus.headCode
   {10, 64, 115, 24, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row1
-  {34, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "L1"},  // EquipmentStatus.name1
-  {82, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // EquipmentStatus.state1
-  {112, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "92"},  // EquipmentStatus.load1
-  {112, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code1
+  {34, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "L1"},  // EquipmentStatus.name1
+  {82, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // EquipmentStatus.state1
+  {112, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "92"},  // EquipmentStatus.load1
+  {112, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code1
   {10, 94, 115, 24, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row2
-  {34, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "L2"},  // EquipmentStatus.name2
-  {82, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "IDL"},  // EquipmentStatus.state2
-  {112, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "0"},  // EquipmentStatus.load2
-  {112, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code2
+  {34, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "L2"},  // EquipmentStatus.name2
+  {82, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "IDL"},  // EquipmentStatus.state2
+  {112, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "0"},  // EquipmentStatus.load2
+  {112, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code2
   {10, 124, 115, 24, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // EquipmentStatus.row3
-  {34, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "L3"},  // EquipmentStatus.name3
-  {82, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "ERR"},  // EquipmentStatus.state3
-  {112, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.load3
-  {112, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "E104"},  // EquipmentStatus.code3
+  {34, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "L3"},  // EquipmentStatus.name3
+  {82, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "ERR"},  // EquipmentStatus.state3
+  {112, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.load3
+  {112, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "E104"},  // EquipmentStatus.code3
   {10, 154, 115, 24, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row4
-  {34, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "PMP"},  // EquipmentStatus.name4
-  {82, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // EquipmentStatus.state4
-  {112, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "68"},  // EquipmentStatus.load4
-  {112, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code4
+  {34, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "PMP"},  // EquipmentStatus.name4
+  {82, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // EquipmentStatus.state4
+  {112, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "68"},  // EquipmentStatus.load4
+  {112, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code4
   {10, 184, 115, 20, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row5
-  {34, 194, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "FAN"},  // EquipmentStatus.name5
-  {82, 194, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "OFF"},  // EquipmentStatus.state5
-  {112, 194, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "0"},  // EquipmentStatus.load5
-  {112, 194, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code5
+  {34, 194, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "FAN"},  // EquipmentStatus.name5
+  {82, 194, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "OFF"},  // EquipmentStatus.state5
+  {112, 194, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "0"},  // EquipmentStatus.load5
+  {112, 194, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code5
   {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // EquipmentStatus.footerLine
-  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BACK"},  // EquipmentStatus.btnA
-  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "OPEN"},  // EquipmentStatus.btnB
-  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "RST"},  // EquipmentStatus.btnC
-  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "NETWORK"},  // NetworkStatus.titleText
-  {67, 25, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "ONLINE"},  // NetworkStatus.summaryText
+  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BACK"},  // EquipmentStatus.btnA
+  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "OPEN"},  // EquipmentStatus.btnB
+  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "RST"},  // EquipmentStatus.btnC
+  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "NETWORK"},  // NetworkStatus.titleText
+  {67, 25, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "ONLINE"},  // NetworkStatus.summaryText
   {8, 34, 0, 0, 127, 34, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // NetworkStatus.headerLine
   {10, 44, 115, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // NetworkStatus.wifiPanel
-  {34, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "WiFi"},  // NetworkStatus.wifiTitle
-  {34, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.wifiStatusLabel
-  {88, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "OK"},  // NetworkStatus.wifiStatusValue
-  {34, 73, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "SSID"},  // NetworkStatus.ssidLabel
-  {88, 73, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "AP01"},  // NetworkStatus.ssidValue
+  {34, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "WiFi"},  // NetworkStatus.wifiTitle
+  {34, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.wifiStatusLabel
+  {88, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "OK"},  // NetworkStatus.wifiStatusValue
+  {34, 73, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "SSID"},  // NetworkStatus.ssidLabel
+  {88, 73, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "AP01"},  // NetworkStatus.ssidValue
   {10, 92, 115, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // NetworkStatus.mqttPanel
-  {34, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "MQTT"},  // NetworkStatus.mqttTitle
-  {34, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.mqttStatusLabel
-  {88, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "OK"},  // NetworkStatus.mqttStatusValue
-  {34, 121, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "BRK"},  // NetworkStatus.brokerLabel
-  {88, 121, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "10.0"},  // NetworkStatus.brokerValue
+  {34, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "MQTT"},  // NetworkStatus.mqttTitle
+  {34, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.mqttStatusLabel
+  {88, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "OK"},  // NetworkStatus.mqttStatusValue
+  {34, 121, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "BRK"},  // NetworkStatus.brokerLabel
+  {88, 121, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "10.0"},  // NetworkStatus.brokerValue
   {10, 140, 115, 38, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // NetworkStatus.ipPanel
-  {67, 150, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "DEVICE"},  // NetworkStatus.ipTitle
-  {28, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "IP"},  // NetworkStatus.ipLabel
-  {78, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "192.168.100.142"},  // NetworkStatus.ipValue
-  {34, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "RSSI"},  // NetworkStatus.rssiLabel
-  {88, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "-58"},  // NetworkStatus.rssiValue
+  {67, 150, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "DEVICE"},  // NetworkStatus.ipTitle
+  {28, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "IP"},  // NetworkStatus.ipLabel
+  {78, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "192.168.100.142"},  // NetworkStatus.ipValue
+  {34, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "RSSI"},  // NetworkStatus.rssiLabel
+  {88, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "-58"},  // NetworkStatus.rssiValue
   {10, 188, 115, 18, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // NetworkStatus.devicePanel
-  {28, 197, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "ID"},  // NetworkStatus.deviceLabel
-  {78, 197, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "FAC-001"},  // NetworkStatus.deviceValue
+  {28, 197, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "ID"},  // NetworkStatus.deviceLabel
+  {78, 197, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "FAC-001"},  // NetworkStatus.deviceValue
   {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // NetworkStatus.footerLine
-  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BACK"},  // NetworkStatus.btnA
-  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "SCAN"},  // NetworkStatus.btnB
-  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "RST"},  // NetworkStatus.btnC
-  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "SETTINGS"},  // Settings.titleText
-  {67, 25, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "DEVICE"},  // Settings.summaryText
+  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BACK"},  // NetworkStatus.btnA
+  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "SCAN"},  // NetworkStatus.btnB
+  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "RST"},  // NetworkStatus.btnC
+  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "SETTINGS"},  // Settings.titleText
+  {67, 25, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "DEVICE"},  // Settings.summaryText
   {8, 34, 0, 0, 127, 34, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Settings.headerLine
   {10, 46, 115, 34, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Settings.brightnessRow
-  {42, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "BRIGHT"},  // Settings.brightnessLabel
-  {96, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "80%"},  // Settings.brightnessValue
-  {96, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "LCD"},  // Settings.brightnessNote
+  {42, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "BRIGHT"},  // Settings.brightnessLabel
+  {96, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "80%"},  // Settings.brightnessValue
+  {96, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "LCD"},  // Settings.brightnessNote
   {10, 90, 115, 34, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Settings.alertSoundRow
-  {42, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "SOUND"},  // Settings.alertSoundLabel
-  {96, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "ON"},  // Settings.alertSoundValue
-  {96, 118, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "BUZ"},  // Settings.alertSoundNote
+  {42, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "SOUND"},  // Settings.alertSoundLabel
+  {96, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "ON"},  // Settings.alertSoundValue
+  {96, 118, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "BUZ"},  // Settings.alertSoundNote
   {10, 134, 115, 34, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Settings.sendIntervalRow
-  {42, 151, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "INTVL"},  // Settings.sendIntervalLabel
-  {96, 151, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "5s"},  // Settings.sendIntervalValue
-  {96, 162, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "MQTT"},  // Settings.sendIntervalNote
+  {42, 151, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "INTVL"},  // Settings.sendIntervalLabel
+  {96, 151, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "5s"},  // Settings.sendIntervalValue
+  {96, 162, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "MQTT"},  // Settings.sendIntervalNote
   {10, 178, 115, 28, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Settings.deviceIdRow
-  {42, 192, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "ID"},  // Settings.deviceIdLabel
-  {96, 192, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "FAC-001"},  // Settings.deviceIdValue
-  {96, 202, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "NODE"},  // Settings.deviceIdNote
+  {42, 192, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "ID"},  // Settings.deviceIdLabel
+  {96, 192, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "FAC-001"},  // Settings.deviceIdValue
+  {96, 202, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "NODE"},  // Settings.deviceIdNote
   {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Settings.footerLine
-  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BACK"},  // Settings.btnA
-  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "EDIT"},  // Settings.btnB
-  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "SAVE"},  // Settings.btnC
+  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BACK"},  // Settings.btnA
+  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "EDIT"},  // Settings.btnB
+  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "SAVE"},  // Settings.btnC
   // ---- Profile: AtomS3 128x128 rot0 ----
   {10, 10, 108, 92, 0, 0, 8, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Boot.frame
   {33, 24, 62, 28, 0, 0, 5, 0, 0.0f, 0x101a1f, true, true, nullptr, nullptr},  // Boot.logoBox
-  {64, 38, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 0.65f, 0xffffff, true, true, &lgfx::v1::fonts::Orbitron_Light_24, "SFM"},  // Boot.logoText
-  {64, 66, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "FACTORY"},  // Boot.titleText
-  {64, 80, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "MONITOR"},  // Boot.subTitleText
+  {64, 38, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 0.65f, 0xffffff, true, true, &lgfx::v1::fonts::Orbitron_Light_24, "SFM"},  // Boot.logoText
+  {64, 66, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "FACTORY"},  // Boot.titleText
+  {64, 80, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "MONITOR"},  // Boot.subTitleText
   {28, 108, 72, 4, 0, 0, 2, 0, 0.0f, 0x1e2a30, true, true, nullptr, nullptr},  // Boot.progressGuide
   {118, 204, 84, 14, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Boot.statusArea
-  {64, 122, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x455a57, true, true, &lgfx::v1::fonts::Font0, "v1.0"},  // Boot.versionText
-  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "SFM"},  // Dashboard.titleText
-  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "14:32"},  // Dashboard.clockText
+  {64, 122, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x455a57, true, true, &lgfx::v1::fonts::Font0, "v1.0"},  // Boot.versionText
+  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "SFM"},  // Dashboard.titleText
+  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "14:32"},  // Dashboard.clockText
   {12, 18, 0, 0, 116, 18, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Dashboard.headerLine
   {12, 26, 104, 27, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Dashboard.tempCard
-  {36, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "TMP"},  // Dashboard.tempLabel
-  {84, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "26.4"},  // Dashboard.tempValue
+  {36, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "TMP"},  // Dashboard.tempLabel
+  {84, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "26.4"},  // Dashboard.tempValue
   {12, 26, 104, 27, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, false, nullptr, nullptr},  // Dashboard.humCard
-  {36, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "HUM"},  // Dashboard.humLabel
-  {84, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "48%"},  // Dashboard.humValue
+  {36, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "HUM"},  // Dashboard.humLabel
+  {84, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "48%"},  // Dashboard.humValue
   {12, 26, 104, 27, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, false, nullptr, nullptr},  // Dashboard.co2Card
-  {36, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "CO2"},  // Dashboard.co2Label
-  {84, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "780"},  // Dashboard.co2Value
+  {36, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "CO2"},  // Dashboard.co2Label
+  {84, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "780"},  // Dashboard.co2Value
   {12, 61, 104, 27, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Dashboard.linePanel
-  {36, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "LN"},  // Dashboard.lineTitle
-  {36, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "L1"},  // Dashboard.line1Name
-  {84, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "RUN"},  // Dashboard.line1Value
-  {36, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "L2"},  // Dashboard.line2Name
-  {84, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "IDL"},  // Dashboard.line2Value
+  {36, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "LN"},  // Dashboard.lineTitle
+  {36, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "L1"},  // Dashboard.line1Name
+  {84, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "RUN"},  // Dashboard.line1Value
+  {36, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "L2"},  // Dashboard.line2Name
+  {84, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "IDL"},  // Dashboard.line2Value
   {12, 96, 104, 22, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Dashboard.alertPanel
-  {44, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "ALT"},  // Dashboard.alertTitle
-  {84, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "2"},  // Dashboard.alertCount
-  {84, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "WRN"},  // Dashboard.alertState
+  {44, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "ALT"},  // Dashboard.alertTitle
+  {84, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "2"},  // Dashboard.alertCount
+  {84, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "WRN"},  // Dashboard.alertState
   {12, 121, 0, 0, 116, 121, 0, 0, 0.0f, 0x233532, true, false, nullptr, nullptr},  // Dashboard.footerLine
-  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "A"},  // Dashboard.btnA
-  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // Dashboard.btnB
-  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "C"},  // Dashboard.btnC
-  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "ALERTS"},  // AlertList.titleText
-  {112, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "3"},  // AlertList.countText
+  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "A"},  // Dashboard.btnA
+  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // Dashboard.btnB
+  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "C"},  // Dashboard.btnC
+  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "ALERTS"},  // AlertList.titleText
+  {112, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "3"},  // AlertList.countText
   {12, 18, 0, 0, 116, 18, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // AlertList.headerLine
   {12, 26, 104, 28, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // AlertList.row1
-  {25, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "!"},  // AlertList.level1
-  {72, 36, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "MOTOR"},  // AlertList.message1
-  {72, 47, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "CRIT"},  // AlertList.meta1
+  {25, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "!"},  // AlertList.level1
+  {72, 36, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "MOTOR"},  // AlertList.message1
+  {72, 47, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "CRIT"},  // AlertList.meta1
   {12, 62, 104, 28, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // AlertList.row2
-  {25, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "!"},  // AlertList.level2
-  {72, 72, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "TEMP"},  // AlertList.message2
-  {72, 83, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "WARN"},  // AlertList.meta2
+  {25, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "!"},  // AlertList.level2
+  {72, 72, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "TEMP"},  // AlertList.message2
+  {72, 83, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "WARN"},  // AlertList.meta2
   {12, 96, 104, 22, 0, 0, 4, 0, 0.0f, 0x233532, false, false, nullptr, nullptr},  // AlertList.row3
-  {25, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "i"},  // AlertList.level3
-  {72, 103, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "FILTER"},  // AlertList.message3
-  {72, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "INFO"},  // AlertList.meta3
+  {25, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "i"},  // AlertList.level3
+  {72, 103, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "FILTER"},  // AlertList.message3
+  {72, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "INFO"},  // AlertList.meta3
   {12, 121, 0, 0, 116, 121, 0, 0, 0.0f, 0x233532, true, false, nullptr, nullptr},  // AlertList.footerLine
-  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // AlertList.btnA
-  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "O"},  // AlertList.btnB
-  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "A"},  // AlertList.btnC
-  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "SENSOR"},  // SensorDetail.titleText
-  {64, 20, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "TEMP-01"},  // SensorDetail.sensorNameText
+  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // AlertList.btnA
+  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "O"},  // AlertList.btnB
+  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "A"},  // AlertList.btnC
+  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "SENSOR"},  // SensorDetail.titleText
+  {64, 20, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "TEMP-01"},  // SensorDetail.sensorNameText
   {12, 28, 0, 0, 116, 28, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // SensorDetail.headerLine
   {12, 36, 104, 36, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // SensorDetail.mainCard
-  {38, 54, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "TMP"},  // SensorDetail.valueLabel
-  {84, 54, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "26.4"},  // SensorDetail.valueText
-  {108, 54, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "C"},  // SensorDetail.unitText
-  {64, 65, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "NORMAL"},  // SensorDetail.stateText
+  {38, 54, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "TMP"},  // SensorDetail.valueLabel
+  {84, 54, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "26.4"},  // SensorDetail.valueText
+  {108, 54, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "C"},  // SensorDetail.unitText
+  {64, 65, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "NORMAL"},  // SensorDetail.stateText
   {12, 80, 31, 22, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.minCard
-  {27, 88, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MIN"},  // SensorDetail.minLabel
-  {27, 98, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "23"},  // SensorDetail.minValue
+  {27, 88, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MIN"},  // SensorDetail.minLabel
+  {27, 98, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "23"},  // SensorDetail.minValue
   {48, 80, 32, 22, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.avgCard
-  {64, 88, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "AVG"},  // SensorDetail.avgLabel
-  {64, 98, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "26"},  // SensorDetail.avgValue
+  {64, 88, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "AVG"},  // SensorDetail.avgLabel
+  {64, 98, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "26"},  // SensorDetail.avgValue
   {85, 80, 31, 22, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.maxCard
-  {100, 88, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MAX"},  // SensorDetail.maxLabel
-  {100, 98, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "29"},  // SensorDetail.maxValue
+  {100, 88, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MAX"},  // SensorDetail.maxLabel
+  {100, 98, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "29"},  // SensorDetail.maxValue
   {12, 108, 104, 12, 0, 0, 3, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.thresholdPanel
-  {64, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "HI 30  LO 18"},  // SensorDetail.thresholdTitle
-  {24, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "HI"},  // SensorDetail.highLabel
-  {48, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "30"},  // SensorDetail.highValue
-  {78, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "LO"},  // SensorDetail.lowLabel
-  {102, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "18"},  // SensorDetail.lowValue
+  {64, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "HI 30  LO 18"},  // SensorDetail.thresholdTitle
+  {24, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "HI"},  // SensorDetail.highLabel
+  {48, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "30"},  // SensorDetail.highValue
+  {78, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "LO"},  // SensorDetail.lowLabel
+  {102, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "18"},  // SensorDetail.lowValue
   {12, 108, 104, 12, 0, 0, 3, 0, 0.0f, 0x233532, false, false, nullptr, nullptr},  // SensorDetail.trendPanel
-  {64, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "TREND"},  // SensorDetail.trendTitle
+  {64, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "TREND"},  // SensorDetail.trendTitle
   {12, 112, 0, 0, 116, 112, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendGrid1
   {12, 115, 0, 0, 116, 115, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendGrid2
   {12, 118, 0, 0, 116, 118, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendGrid3
   {12, 110, 0, 0, 12, 118, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendAxisL
   {116, 110, 0, 0, 116, 118, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendAxisR
   {12, 122, 0, 0, 116, 122, 0, 0, 0.0f, 0x233532, true, false, nullptr, nullptr},  // SensorDetail.footerLine
-  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // SensorDetail.btnA
-  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "N"},  // SensorDetail.btnB
-  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "A"},  // SensorDetail.btnC
-  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "EQUIP"},  // EquipmentStatus.titleText
-  {64, 20, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "1 ERR"},  // EquipmentStatus.summaryText
+  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // SensorDetail.btnA
+  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "N"},  // SensorDetail.btnB
+  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "A"},  // SensorDetail.btnC
+  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "EQUIP"},  // EquipmentStatus.titleText
+  {64, 20, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "1 ERR"},  // EquipmentStatus.summaryText
   {12, 28, 0, 0, 116, 28, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // EquipmentStatus.headerLine
   {12, 36, 104, 12, 0, 0, 3, 0, 0.0f, 0x101a1f, true, true, nullptr, nullptr},  // EquipmentStatus.tableHeader
-  {36, 42, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "UNIT"},  // EquipmentStatus.headName
-  {84, 42, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "STAT"},  // EquipmentStatus.headState
-  {84, 42, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "%"},  // EquipmentStatus.headLoad
-  {84, 42, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "CODE"},  // EquipmentStatus.headCode
+  {36, 42, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "UNIT"},  // EquipmentStatus.headName
+  {84, 42, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "STAT"},  // EquipmentStatus.headState
+  {84, 42, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "%"},  // EquipmentStatus.headLoad
+  {84, 42, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "CODE"},  // EquipmentStatus.headCode
   {12, 54, 104, 18, 0, 0, 3, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row1
-  {36, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "L1"},  // EquipmentStatus.name1
-  {84, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "RUN"},  // EquipmentStatus.state1
-  {104, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "92"},  // EquipmentStatus.load1
-  {104, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code1
+  {36, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "L1"},  // EquipmentStatus.name1
+  {84, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "RUN"},  // EquipmentStatus.state1
+  {104, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "92"},  // EquipmentStatus.load1
+  {104, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code1
   {12, 78, 104, 18, 0, 0, 3, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // EquipmentStatus.row2
-  {36, 87, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "L3"},  // EquipmentStatus.name2
-  {84, 87, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "ERR"},  // EquipmentStatus.state2
-  {104, 87, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.load2
-  {104, 87, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "E104"},  // EquipmentStatus.code2
+  {36, 87, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "L3"},  // EquipmentStatus.name2
+  {84, 87, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "ERR"},  // EquipmentStatus.state2
+  {104, 87, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.load2
+  {104, 87, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "E104"},  // EquipmentStatus.code2
   {12, 102, 104, 18, 0, 0, 3, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row3
-  {36, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "PMP"},  // EquipmentStatus.name3
-  {84, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "RUN"},  // EquipmentStatus.state3
-  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "68"},  // EquipmentStatus.load3
-  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code3
+  {36, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "PMP"},  // EquipmentStatus.name3
+  {84, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "RUN"},  // EquipmentStatus.state3
+  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "68"},  // EquipmentStatus.load3
+  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code3
   {12, 102, 104, 18, 0, 0, 3, 0, 0.0f, 0x233532, false, false, nullptr, nullptr},  // EquipmentStatus.row4
-  {36, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "L2"},  // EquipmentStatus.name4
-  {84, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "IDL"},  // EquipmentStatus.state4
-  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "0"},  // EquipmentStatus.load4
-  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code4
+  {36, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "L2"},  // EquipmentStatus.name4
+  {84, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "IDL"},  // EquipmentStatus.state4
+  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "0"},  // EquipmentStatus.load4
+  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code4
   {12, 102, 104, 18, 0, 0, 3, 0, 0.0f, 0x233532, false, false, nullptr, nullptr},  // EquipmentStatus.row5
-  {36, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "FAN"},  // EquipmentStatus.name5
-  {84, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "OFF"},  // EquipmentStatus.state5
-  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "0"},  // EquipmentStatus.load5
-  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code5
+  {36, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "FAN"},  // EquipmentStatus.name5
+  {84, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "OFF"},  // EquipmentStatus.state5
+  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "0"},  // EquipmentStatus.load5
+  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code5
   {12, 122, 0, 0, 116, 122, 0, 0, 0.0f, 0x233532, true, false, nullptr, nullptr},  // EquipmentStatus.footerLine
-  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // EquipmentStatus.btnA
-  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "O"},  // EquipmentStatus.btnB
-  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "R"},  // EquipmentStatus.btnC
-  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "NETWORK"},  // NetworkStatus.titleText
-  {64, 20, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "ONLINE"},  // NetworkStatus.summaryText
+  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // EquipmentStatus.btnA
+  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "O"},  // EquipmentStatus.btnB
+  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "R"},  // EquipmentStatus.btnC
+  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "NETWORK"},  // NetworkStatus.titleText
+  {64, 20, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "ONLINE"},  // NetworkStatus.summaryText
   {12, 28, 0, 0, 116, 28, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // NetworkStatus.headerLine
   {12, 36, 104, 20, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // NetworkStatus.wifiPanel
-  {36, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "WiFi"},  // NetworkStatus.wifiTitle
-  {36, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.wifiStatusLabel
-  {85, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "OK"},  // NetworkStatus.wifiStatusValue
-  {36, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "SSID"},  // NetworkStatus.ssidLabel
-  {84, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "AP01"},  // NetworkStatus.ssidValue
+  {36, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "WiFi"},  // NetworkStatus.wifiTitle
+  {36, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.wifiStatusLabel
+  {85, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "OK"},  // NetworkStatus.wifiStatusValue
+  {36, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "SSID"},  // NetworkStatus.ssidLabel
+  {84, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "AP01"},  // NetworkStatus.ssidValue
   {12, 64, 104, 20, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // NetworkStatus.mqttPanel
-  {36, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "MQTT"},  // NetworkStatus.mqttTitle
-  {36, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.mqttStatusLabel
-  {85, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "OK"},  // NetworkStatus.mqttStatusValue
-  {36, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "BRK"},  // NetworkStatus.brokerLabel
-  {84, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "10.0"},  // NetworkStatus.brokerValue
+  {36, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "MQTT"},  // NetworkStatus.mqttTitle
+  {36, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.mqttStatusLabel
+  {85, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "OK"},  // NetworkStatus.mqttStatusValue
+  {36, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "BRK"},  // NetworkStatus.brokerLabel
+  {84, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "10.0"},  // NetworkStatus.brokerValue
   {12, 92, 104, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // NetworkStatus.ipPanel
-  {64, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "DEVICE"},  // NetworkStatus.ipTitle
-  {36, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "IP"},  // NetworkStatus.ipLabel
-  {64, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "192.168.100.142"},  // NetworkStatus.ipValue
-  {36, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "RS"},  // NetworkStatus.rssiLabel
-  {84, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "-58"},  // NetworkStatus.rssiValue
+  {64, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "DEVICE"},  // NetworkStatus.ipTitle
+  {36, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "IP"},  // NetworkStatus.ipLabel
+  {64, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "192.168.100.142"},  // NetworkStatus.ipValue
+  {36, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "RS"},  // NetworkStatus.rssiLabel
+  {84, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "-58"},  // NetworkStatus.rssiValue
   {12, 92, 104, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, false, nullptr, nullptr},  // NetworkStatus.devicePanel
-  {36, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "ID"},  // NetworkStatus.deviceLabel
-  {84, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "001"},  // NetworkStatus.deviceValue
+  {36, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "ID"},  // NetworkStatus.deviceLabel
+  {84, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "001"},  // NetworkStatus.deviceValue
   {12, 122, 0, 0, 116, 122, 0, 0, 0.0f, 0x233532, true, false, nullptr, nullptr},  // NetworkStatus.footerLine
-  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // NetworkStatus.btnA
-  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "S"},  // NetworkStatus.btnB
-  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "R"},  // NetworkStatus.btnC
-  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "SETTINGS"},  // Settings.titleText
-  {64, 20, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "DEVICE"},  // Settings.summaryText
+  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // NetworkStatus.btnA
+  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "S"},  // NetworkStatus.btnB
+  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "R"},  // NetworkStatus.btnC
+  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "SETTINGS"},  // Settings.titleText
+  {64, 20, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "DEVICE"},  // Settings.summaryText
   {12, 28, 0, 0, 116, 28, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Settings.headerLine
   {12, 36, 104, 18, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Settings.brightnessRow
-  {40, 45, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "BRT"},  // Settings.brightnessLabel
-  {86, 45, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "80%"},  // Settings.brightnessValue
-  {86, 52, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "LCD"},  // Settings.brightnessNote
+  {40, 45, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "BRT"},  // Settings.brightnessLabel
+  {86, 45, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "80%"},  // Settings.brightnessValue
+  {86, 52, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "LCD"},  // Settings.brightnessNote
   {12, 61, 104, 18, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Settings.alertSoundRow
-  {40, 70, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "SND"},  // Settings.alertSoundLabel
-  {86, 70, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "ON"},  // Settings.alertSoundValue
-  {86, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "BUZ"},  // Settings.alertSoundNote
+  {40, 70, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "SND"},  // Settings.alertSoundLabel
+  {86, 70, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "ON"},  // Settings.alertSoundValue
+  {86, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "BUZ"},  // Settings.alertSoundNote
   {12, 86, 104, 18, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Settings.sendIntervalRow
-  {40, 95, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "INT"},  // Settings.sendIntervalLabel
-  {86, 95, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "5s"},  // Settings.sendIntervalValue
-  {86, 102, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "MQTT"},  // Settings.sendIntervalNote
+  {40, 95, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "INT"},  // Settings.sendIntervalLabel
+  {86, 95, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "5s"},  // Settings.sendIntervalValue
+  {86, 102, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "MQTT"},  // Settings.sendIntervalNote
   {12, 110, 104, 10, 0, 0, 3, 0, 0.0f, 0x233532, false, false, nullptr, nullptr},  // Settings.deviceIdRow
-  {40, 115, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "ID"},  // Settings.deviceIdLabel
-  {86, 115, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "001"},  // Settings.deviceIdValue
-  {86, 115, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "NODE"},  // Settings.deviceIdNote
+  {40, 115, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "ID"},  // Settings.deviceIdLabel
+  {86, 115, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "001"},  // Settings.deviceIdValue
+  {86, 115, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "NODE"},  // Settings.deviceIdNote
   {12, 122, 0, 0, 116, 122, 0, 0, 0.0f, 0x233532, true, false, nullptr, nullptr},  // Settings.footerLine
-  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // Settings.btnA
-  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "E"},  // Settings.btnB
-  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "S"},  // Settings.btnC
+  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // Settings.btnA
+  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "E"},  // Settings.btnB
+  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MidCenter, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "S"},  // Settings.btnC
 };
 
 static const lgfxsb::ProfileDesc kProfiles[] = {
