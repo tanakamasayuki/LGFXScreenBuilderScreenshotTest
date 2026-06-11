@@ -4842,7 +4842,7 @@
             "visible": false
           },
           "wifiStatusValue": {
-            "x": 77,
+            "x": 85,
             "y": 46,
             "datum": "MC",
             "size": 1,
@@ -4902,7 +4902,7 @@
             "visible": false
           },
           "mqttStatusValue": {
-            "x": 77,
+            "x": 85,
             "y": 74,
             "datum": "MC",
             "size": 1,
@@ -4959,10 +4959,10 @@
             "color": "#6f8f89",
             "text": "IP",
             "font": "Font0",
-            "visible": true
+            "visible": false
           },
           "ipValue": {
-            "x": 77,
+            "x": 64,
             "y": 105,
             "datum": "MC",
             "size": 1,
