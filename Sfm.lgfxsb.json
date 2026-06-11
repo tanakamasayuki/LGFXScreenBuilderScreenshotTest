@@ -3193,7 +3193,7 @@
             "datum": "MC",
             "size": 1,
             "color": "#ffffff",
-            "text": ".10.42",
+            "text": "192.168.10.42",
             "font": "Font0",
             "visible": true
           },
@@ -4967,7 +4967,7 @@
             "datum": "MC",
             "size": 1,
             "color": "#ffffff",
-            "text": ".10.42",
+            "text": "192.168.10.42",
             "font": "Font0",
             "visible": true
           },

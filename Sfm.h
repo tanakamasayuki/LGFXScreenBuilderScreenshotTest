@@ -10,331 +10,331 @@ enum class Profile : uint8_t { Auto = 0, Core, Stick, AtomS3 };
 namespace Scene {
   struct Boot {
     static constexpr lgfxsb::SceneId id = 0;
-    const char* logoText = "SFM";
-    const char* titleText = "FACTORY MONITOR";
-    const char* subTitleText = "SMART FACTORY";
-    const char* versionText = "v1.0.0 / CORE";
+    const char* logoText = nullptr;  // design: SFM
+    const char* titleText = nullptr;  // design: FACTORY MONITOR
+    const char* subTitleText = nullptr;  // design: SMART FACTORY
+    const char* versionText = nullptr;  // design: v1.0.0 / CORE
   };
   struct Dashboard {
     static constexpr lgfxsb::SceneId id = 1;
-    const char* titleText = "FACTORY MONITOR";
-    const char* clockText = "14:32";
-    const char* tempLabel = "TEMP";
-    const char* tempValue = "26.4C";
-    const char* humLabel = "HUM";
-    const char* humValue = "48%";
-    const char* co2Label = "CO2";
-    const char* co2Value = "780";
-    const char* lineTitle = "LINE STATUS";
-    const char* line1Name = "LINE-1";
-    const char* line1Value = "RUN";
-    const char* line2Name = "LINE-2";
-    const char* line2Value = "IDLE";
-    const char* alertTitle = "ALERTS";
-    const char* alertCount = "2";
-    const char* alertState = "WARN";
-    const char* btnA = "MENU";
-    const char* btnB = "DETAIL";
-    const char* btnC = "ACK";
+    const char* titleText = nullptr;  // design: FACTORY MONITOR
+    const char* clockText = nullptr;  // design: 14:32
+    const char* tempLabel = nullptr;  // design: TEMP
+    const char* tempValue = nullptr;  // design: 26.4C
+    const char* humLabel = nullptr;  // design: HUM
+    const char* humValue = nullptr;  // design: 48%
+    const char* co2Label = nullptr;  // design: CO2
+    const char* co2Value = nullptr;  // design: 780
+    const char* lineTitle = nullptr;  // design: LINE STATUS
+    const char* line1Name = nullptr;  // design: LINE-1
+    const char* line1Value = nullptr;  // design: RUN
+    const char* line2Name = nullptr;  // design: LINE-2
+    const char* line2Value = nullptr;  // design: IDLE
+    const char* alertTitle = nullptr;  // design: ALERTS
+    const char* alertCount = nullptr;  // design: 2
+    const char* alertState = nullptr;  // design: WARN
+    const char* btnA = nullptr;  // design: MENU
+    const char* btnB = nullptr;  // design: DETAIL
+    const char* btnC = nullptr;  // design: ACK
   };
   struct AlertList {
     static constexpr lgfxsb::SceneId id = 2;
-    const char* titleText = "ALERTS";
-    const char* countText = "3";
-    const char* level1 = "!";
-    const char* message1 = "MOTOR OVERLOAD";
-    const char* meta1 = "14:28  CRITICAL";
-    const char* level2 = "!";
-    const char* message2 = "TEMP HIGH";
-    const char* meta2 = "14:12  WARNING";
-    const char* level3 = "i";
-    const char* message3 = "FILTER MAINTENANCE";
-    const char* meta3 = "09:40  INFO";
-    const char* btnA = "BACK";
-    const char* btnB = "OPEN";
-    const char* btnC = "ACK";
+    const char* titleText = nullptr;  // design: ALERTS
+    const char* countText = nullptr;  // design: 3
+    const char* level1 = nullptr;  // design: !
+    const char* message1 = nullptr;  // design: MOTOR OVERLOAD
+    const char* meta1 = nullptr;  // design: 14:28 CRITICAL
+    const char* level2 = nullptr;  // design: !
+    const char* message2 = nullptr;  // design: TEMP HIGH
+    const char* meta2 = nullptr;  // design: 14:12 WARNING
+    const char* level3 = nullptr;  // design: i
+    const char* message3 = nullptr;  // design: FILTER MAINTENANCE
+    const char* meta3 = nullptr;  // design: 09:40 INFO
+    const char* btnA = nullptr;  // design: BACK
+    const char* btnB = nullptr;  // design: OPEN
+    const char* btnC = nullptr;  // design: ACK
   };
   struct SensorDetail {
     static constexpr lgfxsb::SceneId id = 3;
-    const char* titleText = "SENSOR DETAIL";
-    const char* sensorNameText = "TEMP-01";
-    const char* valueLabel = "TEMPERATURE";
-    const char* valueText = "26.4";
-    const char* unitText = "C";
-    const char* stateText = "NORMAL";
-    const char* minLabel = "MIN";
-    const char* minValue = "23.1";
-    const char* avgLabel = "AVG";
-    const char* avgValue = "25.8";
-    const char* maxLabel = "MAX";
-    const char* maxValue = "29.4";
-    const char* thresholdTitle = "THRESHOLD";
-    const char* highLabel = "HI";
-    const char* highValue = "30.0";
-    const char* lowLabel = "LO";
-    const char* lowValue = "18.0";
-    const char* trendTitle = "TREND";
-    const char* btnA = "BACK";
-    const char* btnB = "NEXT";
-    const char* btnC = "ACK";
+    const char* titleText = nullptr;  // design: SENSOR DETAIL
+    const char* sensorNameText = nullptr;  // design: TEMP-01
+    const char* valueLabel = nullptr;  // design: TEMPERATURE
+    const char* valueText = nullptr;  // design: 26.4
+    const char* unitText = nullptr;  // design: C
+    const char* stateText = nullptr;  // design: NORMAL
+    const char* minLabel = nullptr;  // design: MIN
+    const char* minValue = nullptr;  // design: 23.1
+    const char* avgLabel = nullptr;  // design: AVG
+    const char* avgValue = nullptr;  // design: 25.8
+    const char* maxLabel = nullptr;  // design: MAX
+    const char* maxValue = nullptr;  // design: 29.4
+    const char* thresholdTitle = nullptr;  // design: THRESHOLD
+    const char* highLabel = nullptr;  // design: HI
+    const char* highValue = nullptr;  // design: 30.0
+    const char* lowLabel = nullptr;  // design: LO
+    const char* lowValue = nullptr;  // design: 18.0
+    const char* trendTitle = nullptr;  // design: TREND
+    const char* btnA = nullptr;  // design: BACK
+    const char* btnB = nullptr;  // design: NEXT
+    const char* btnC = nullptr;  // design: ACK
   };
   struct EquipmentStatus {
     static constexpr lgfxsb::SceneId id = 4;
-    const char* titleText = "EQUIPMENT";
-    const char* summaryText = "4 RUN / 1 ERR";
-    const char* headName = "UNIT";
-    const char* headState = "STATE";
-    const char* headLoad = "LOAD";
-    const char* headCode = "CODE";
-    const char* name1 = "LINE-1";
-    const char* state1 = "RUN";
-    const char* load1 = "92%";
-    const char* code1 = "--";
-    const char* name2 = "LINE-2";
-    const char* state2 = "IDLE";
-    const char* load2 = "0%";
-    const char* code2 = "--";
-    const char* name3 = "LINE-3";
-    const char* state3 = "ERROR";
-    const char* load3 = "--";
-    const char* code3 = "E104";
-    const char* name4 = "PUMP-A";
-    const char* state4 = "RUN";
-    const char* load4 = "68%";
-    const char* code4 = "--";
-    const char* name5 = "FAN-B";
-    const char* state5 = "OFF";
-    const char* load5 = "0%";
-    const char* code5 = "--";
-    const char* btnA = "BACK";
-    const char* btnB = "DETAIL";
-    const char* btnC = "RESET";
+    const char* titleText = nullptr;  // design: EQUIPMENT
+    const char* summaryText = nullptr;  // design: 4 RUN / 1 ERR
+    const char* headName = nullptr;  // design: UNIT
+    const char* headState = nullptr;  // design: STATE
+    const char* headLoad = nullptr;  // design: LOAD
+    const char* headCode = nullptr;  // design: CODE
+    const char* name1 = nullptr;  // design: LINE-1
+    const char* state1 = nullptr;  // design: RUN
+    const char* load1 = nullptr;  // design: 92%
+    const char* code1 = nullptr;  // design: --
+    const char* name2 = nullptr;  // design: LINE-2
+    const char* state2 = nullptr;  // design: IDLE
+    const char* load2 = nullptr;  // design: 0%
+    const char* code2 = nullptr;  // design: --
+    const char* name3 = nullptr;  // design: LINE-3
+    const char* state3 = nullptr;  // design: ERROR
+    const char* load3 = nullptr;  // design: --
+    const char* code3 = nullptr;  // design: E104
+    const char* name4 = nullptr;  // design: PUMP-A
+    const char* state4 = nullptr;  // design: RUN
+    const char* load4 = nullptr;  // design: 68%
+    const char* code4 = nullptr;  // design: --
+    const char* name5 = nullptr;  // design: FAN-B
+    const char* state5 = nullptr;  // design: OFF
+    const char* load5 = nullptr;  // design: 0%
+    const char* code5 = nullptr;  // design: --
+    const char* btnA = nullptr;  // design: BACK
+    const char* btnB = nullptr;  // design: DETAIL
+    const char* btnC = nullptr;  // design: RESET
   };
   struct NetworkStatus {
     static constexpr lgfxsb::SceneId id = 5;
-    const char* titleText = "NETWORK";
-    const char* summaryText = "ONLINE";
-    const char* wifiTitle = "WI-FI";
-    const char* wifiStatusLabel = "STATE";
-    const char* wifiStatusValue = "CONNECTED";
-    const char* ssidLabel = "SSID";
-    const char* ssidValue = "Factory_AP_01";
-    const char* mqttTitle = "MQTT";
-    const char* mqttStatusLabel = "STATE";
-    const char* mqttStatusValue = "CONNECTED";
-    const char* brokerLabel = "BROKER";
-    const char* brokerValue = "10.0.0.12";
-    const char* ipTitle = "DEVICE NETWORK";
-    const char* ipLabel = "IP";
-    const char* ipValue = "192.168.10.42";
-    const char* rssiLabel = "RSSI";
-    const char* rssiValue = "-58dBm";
-    const char* deviceLabel = "DEVICE";
-    const char* deviceValue = "M5-FAC-001";
-    const char* btnA = "BACK";
-    const char* btnB = "SCAN";
-    const char* btnC = "RESET";
+    const char* titleText = nullptr;  // design: NETWORK
+    const char* summaryText = nullptr;  // design: ONLINE
+    const char* wifiTitle = nullptr;  // design: WI-FI
+    const char* wifiStatusLabel = nullptr;  // design: STATE
+    const char* wifiStatusValue = nullptr;  // design: CONNECTED
+    const char* ssidLabel = nullptr;  // design: SSID
+    const char* ssidValue = nullptr;  // design: Factory_AP_01
+    const char* mqttTitle = nullptr;  // design: MQTT
+    const char* mqttStatusLabel = nullptr;  // design: STATE
+    const char* mqttStatusValue = nullptr;  // design: CONNECTED
+    const char* brokerLabel = nullptr;  // design: BROKER
+    const char* brokerValue = nullptr;  // design: 10.0.0.12
+    const char* ipTitle = nullptr;  // design: DEVICE NETWORK
+    const char* ipLabel = nullptr;  // design: IP
+    const char* ipValue = nullptr;  // design: 192.168.10.42
+    const char* rssiLabel = nullptr;  // design: RSSI
+    const char* rssiValue = nullptr;  // design: -58dBm
+    const char* deviceLabel = nullptr;  // design: DEVICE
+    const char* deviceValue = nullptr;  // design: M5-FAC-001
+    const char* btnA = nullptr;  // design: BACK
+    const char* btnB = nullptr;  // design: SCAN
+    const char* btnC = nullptr;  // design: RESET
   };
   struct Settings {
     static constexpr lgfxsb::SceneId id = 6;
-    const char* titleText = "SETTINGS";
-    const char* summaryText = "DEVICE";
-    const char* brightnessLabel = "BRIGHTNESS";
-    const char* brightnessValue = "80%";
-    const char* brightnessNote = "LCD LEVEL";
-    const char* alertSoundLabel = "ALERT SOUND";
-    const char* alertSoundValue = "ON";
-    const char* alertSoundNote = "BUZZER";
-    const char* sendIntervalLabel = "SEND INTERVAL";
-    const char* sendIntervalValue = "5 sec";
-    const char* sendIntervalNote = "MQTT";
-    const char* deviceIdLabel = "DEVICE ID";
-    const char* deviceIdValue = "M5-FAC-001";
-    const char* deviceIdNote = "FACTORY NODE";
-    const char* btnA = "BACK";
-    const char* btnB = "EDIT";
-    const char* btnC = "SAVE";
+    const char* titleText = nullptr;  // design: SETTINGS
+    const char* summaryText = nullptr;  // design: DEVICE
+    const char* brightnessLabel = nullptr;  // design: BRIGHTNESS
+    const char* brightnessValue = nullptr;  // design: 80%
+    const char* brightnessNote = nullptr;  // design: LCD LEVEL
+    const char* alertSoundLabel = nullptr;  // design: ALERT SOUND
+    const char* alertSoundValue = nullptr;  // design: ON
+    const char* alertSoundNote = nullptr;  // design: BUZZER
+    const char* sendIntervalLabel = nullptr;  // design: SEND INTERVAL
+    const char* sendIntervalValue = nullptr;  // design: 5 sec
+    const char* sendIntervalNote = nullptr;  // design: MQTT
+    const char* deviceIdLabel = nullptr;  // design: DEVICE ID
+    const char* deviceIdValue = nullptr;  // design: M5-FAC-001
+    const char* deviceIdNote = nullptr;  // design: FACTORY NODE
+    const char* btnA = nullptr;  // design: BACK
+    const char* btnB = nullptr;  // design: EDIT
+    const char* btnC = nullptr;  // design: SAVE
   };
 }
 
 namespace detail {
 
 static const lgfxsb::PartDesc kParts[] = {
-  {"frame", lgfxsb::PartType::Rect, nullptr, -1},  // 0 Boot.frame
-  {"logoBox", lgfxsb::PartType::Rect, nullptr, -1},  // 1 Boot.logoBox
-  {"logoText", lgfxsb::PartType::Text, "SFM", -1},  // 2 Boot.logoText
-  {"titleText", lgfxsb::PartType::Text, "FACTORY MONITOR", -1},  // 3 Boot.titleText
-  {"subTitleText", lgfxsb::PartType::Text, "SMART FACTORY", -1},  // 4 Boot.subTitleText
-  {"progressGuide", lgfxsb::PartType::Rect, nullptr, -1},  // 5 Boot.progressGuide
-  {"statusArea", lgfxsb::PartType::Rect, nullptr, -1},  // 6 Boot.statusArea
-  {"versionText", lgfxsb::PartType::Text, "v1.0.0 / CORE", -1},  // 7 Boot.versionText
-  {"titleText", lgfxsb::PartType::Text, "FACTORY MONITOR", -1},  // 8 Dashboard.titleText
-  {"clockText", lgfxsb::PartType::Text, "14:32", -1},  // 9 Dashboard.clockText
-  {"headerLine", lgfxsb::PartType::Line, nullptr, -1},  // 10 Dashboard.headerLine
-  {"tempCard", lgfxsb::PartType::Rect, nullptr, -1},  // 11 Dashboard.tempCard
-  {"tempLabel", lgfxsb::PartType::Text, "TEMP", -1},  // 12 Dashboard.tempLabel
-  {"tempValue", lgfxsb::PartType::Text, "26.4C", -1},  // 13 Dashboard.tempValue
-  {"humCard", lgfxsb::PartType::Rect, nullptr, -1},  // 14 Dashboard.humCard
-  {"humLabel", lgfxsb::PartType::Text, "HUM", -1},  // 15 Dashboard.humLabel
-  {"humValue", lgfxsb::PartType::Text, "48%", -1},  // 16 Dashboard.humValue
-  {"co2Card", lgfxsb::PartType::Rect, nullptr, -1},  // 17 Dashboard.co2Card
-  {"co2Label", lgfxsb::PartType::Text, "CO2", -1},  // 18 Dashboard.co2Label
-  {"co2Value", lgfxsb::PartType::Text, "780", -1},  // 19 Dashboard.co2Value
-  {"linePanel", lgfxsb::PartType::Rect, nullptr, -1},  // 20 Dashboard.linePanel
-  {"lineTitle", lgfxsb::PartType::Text, "LINE STATUS", -1},  // 21 Dashboard.lineTitle
-  {"line1Name", lgfxsb::PartType::Text, "LINE-1", -1},  // 22 Dashboard.line1Name
-  {"line1Value", lgfxsb::PartType::Text, "RUN", -1},  // 23 Dashboard.line1Value
-  {"line2Name", lgfxsb::PartType::Text, "LINE-2", -1},  // 24 Dashboard.line2Name
-  {"line2Value", lgfxsb::PartType::Text, "IDLE", -1},  // 25 Dashboard.line2Value
-  {"alertPanel", lgfxsb::PartType::Rect, nullptr, -1},  // 26 Dashboard.alertPanel
-  {"alertTitle", lgfxsb::PartType::Text, "ALERTS", -1},  // 27 Dashboard.alertTitle
-  {"alertCount", lgfxsb::PartType::Text, "2", -1},  // 28 Dashboard.alertCount
-  {"alertState", lgfxsb::PartType::Text, "WARN", -1},  // 29 Dashboard.alertState
-  {"footerLine", lgfxsb::PartType::Line, nullptr, -1},  // 30 Dashboard.footerLine
-  {"btnA", lgfxsb::PartType::Text, "MENU", -1},  // 31 Dashboard.btnA
-  {"btnB", lgfxsb::PartType::Text, "DETAIL", -1},  // 32 Dashboard.btnB
-  {"btnC", lgfxsb::PartType::Text, "ACK", -1},  // 33 Dashboard.btnC
-  {"titleText", lgfxsb::PartType::Text, "ALERTS", -1},  // 34 AlertList.titleText
-  {"countText", lgfxsb::PartType::Text, "3", -1},  // 35 AlertList.countText
-  {"headerLine", lgfxsb::PartType::Line, nullptr, -1},  // 36 AlertList.headerLine
-  {"row1", lgfxsb::PartType::Rect, nullptr, -1},  // 37 AlertList.row1
-  {"level1", lgfxsb::PartType::Text, "!", -1},  // 38 AlertList.level1
-  {"message1", lgfxsb::PartType::Text, "MOTOR OVERLOAD", -1},  // 39 AlertList.message1
-  {"meta1", lgfxsb::PartType::Text, "14:28  CRITICAL", -1},  // 40 AlertList.meta1
-  {"row2", lgfxsb::PartType::Rect, nullptr, -1},  // 41 AlertList.row2
-  {"level2", lgfxsb::PartType::Text, "!", -1},  // 42 AlertList.level2
-  {"message2", lgfxsb::PartType::Text, "TEMP HIGH", -1},  // 43 AlertList.message2
-  {"meta2", lgfxsb::PartType::Text, "14:12  WARNING", -1},  // 44 AlertList.meta2
-  {"row3", lgfxsb::PartType::Rect, nullptr, -1},  // 45 AlertList.row3
-  {"level3", lgfxsb::PartType::Text, "i", -1},  // 46 AlertList.level3
-  {"message3", lgfxsb::PartType::Text, "FILTER MAINTENANCE", -1},  // 47 AlertList.message3
-  {"meta3", lgfxsb::PartType::Text, "09:40  INFO", -1},  // 48 AlertList.meta3
-  {"footerLine", lgfxsb::PartType::Line, nullptr, -1},  // 49 AlertList.footerLine
-  {"btnA", lgfxsb::PartType::Text, "BACK", -1},  // 50 AlertList.btnA
-  {"btnB", lgfxsb::PartType::Text, "OPEN", -1},  // 51 AlertList.btnB
-  {"btnC", lgfxsb::PartType::Text, "ACK", -1},  // 52 AlertList.btnC
-  {"titleText", lgfxsb::PartType::Text, "SENSOR DETAIL", -1},  // 53 SensorDetail.titleText
-  {"sensorNameText", lgfxsb::PartType::Text, "TEMP-01", -1},  // 54 SensorDetail.sensorNameText
-  {"headerLine", lgfxsb::PartType::Line, nullptr, -1},  // 55 SensorDetail.headerLine
-  {"mainCard", lgfxsb::PartType::Rect, nullptr, -1},  // 56 SensorDetail.mainCard
-  {"valueLabel", lgfxsb::PartType::Text, "TEMPERATURE", -1},  // 57 SensorDetail.valueLabel
-  {"valueText", lgfxsb::PartType::Text, "26.4", -1},  // 58 SensorDetail.valueText
-  {"unitText", lgfxsb::PartType::Text, "C", -1},  // 59 SensorDetail.unitText
-  {"stateText", lgfxsb::PartType::Text, "NORMAL", -1},  // 60 SensorDetail.stateText
-  {"minCard", lgfxsb::PartType::Rect, nullptr, -1},  // 61 SensorDetail.minCard
-  {"minLabel", lgfxsb::PartType::Text, "MIN", -1},  // 62 SensorDetail.minLabel
-  {"minValue", lgfxsb::PartType::Text, "23.1", -1},  // 63 SensorDetail.minValue
-  {"avgCard", lgfxsb::PartType::Rect, nullptr, -1},  // 64 SensorDetail.avgCard
-  {"avgLabel", lgfxsb::PartType::Text, "AVG", -1},  // 65 SensorDetail.avgLabel
-  {"avgValue", lgfxsb::PartType::Text, "25.8", -1},  // 66 SensorDetail.avgValue
-  {"maxCard", lgfxsb::PartType::Rect, nullptr, -1},  // 67 SensorDetail.maxCard
-  {"maxLabel", lgfxsb::PartType::Text, "MAX", -1},  // 68 SensorDetail.maxLabel
-  {"maxValue", lgfxsb::PartType::Text, "29.4", -1},  // 69 SensorDetail.maxValue
-  {"thresholdPanel", lgfxsb::PartType::Rect, nullptr, -1},  // 70 SensorDetail.thresholdPanel
-  {"thresholdTitle", lgfxsb::PartType::Text, "THRESHOLD", -1},  // 71 SensorDetail.thresholdTitle
-  {"highLabel", lgfxsb::PartType::Text, "HI", -1},  // 72 SensorDetail.highLabel
-  {"highValue", lgfxsb::PartType::Text, "30.0", -1},  // 73 SensorDetail.highValue
-  {"lowLabel", lgfxsb::PartType::Text, "LO", -1},  // 74 SensorDetail.lowLabel
-  {"lowValue", lgfxsb::PartType::Text, "18.0", -1},  // 75 SensorDetail.lowValue
-  {"trendPanel", lgfxsb::PartType::Rect, nullptr, -1},  // 76 SensorDetail.trendPanel
-  {"trendTitle", lgfxsb::PartType::Text, "TREND", -1},  // 77 SensorDetail.trendTitle
-  {"trendGrid1", lgfxsb::PartType::Line, nullptr, -1},  // 78 SensorDetail.trendGrid1
-  {"trendGrid2", lgfxsb::PartType::Line, nullptr, -1},  // 79 SensorDetail.trendGrid2
-  {"trendGrid3", lgfxsb::PartType::Line, nullptr, -1},  // 80 SensorDetail.trendGrid3
-  {"trendAxisL", lgfxsb::PartType::Line, nullptr, -1},  // 81 SensorDetail.trendAxisL
-  {"trendAxisR", lgfxsb::PartType::Line, nullptr, -1},  // 82 SensorDetail.trendAxisR
-  {"footerLine", lgfxsb::PartType::Line, nullptr, -1},  // 83 SensorDetail.footerLine
-  {"btnA", lgfxsb::PartType::Text, "BACK", -1},  // 84 SensorDetail.btnA
-  {"btnB", lgfxsb::PartType::Text, "NEXT", -1},  // 85 SensorDetail.btnB
-  {"btnC", lgfxsb::PartType::Text, "ACK", -1},  // 86 SensorDetail.btnC
-  {"titleText", lgfxsb::PartType::Text, "EQUIPMENT", -1},  // 87 EquipmentStatus.titleText
-  {"summaryText", lgfxsb::PartType::Text, "4 RUN / 1 ERR", -1},  // 88 EquipmentStatus.summaryText
-  {"headerLine", lgfxsb::PartType::Line, nullptr, -1},  // 89 EquipmentStatus.headerLine
-  {"tableHeader", lgfxsb::PartType::Rect, nullptr, -1},  // 90 EquipmentStatus.tableHeader
-  {"headName", lgfxsb::PartType::Text, "UNIT", -1},  // 91 EquipmentStatus.headName
-  {"headState", lgfxsb::PartType::Text, "STATE", -1},  // 92 EquipmentStatus.headState
-  {"headLoad", lgfxsb::PartType::Text, "LOAD", -1},  // 93 EquipmentStatus.headLoad
-  {"headCode", lgfxsb::PartType::Text, "CODE", -1},  // 94 EquipmentStatus.headCode
-  {"row1", lgfxsb::PartType::Rect, nullptr, -1},  // 95 EquipmentStatus.row1
-  {"name1", lgfxsb::PartType::Text, "LINE-1", -1},  // 96 EquipmentStatus.name1
-  {"state1", lgfxsb::PartType::Text, "RUN", -1},  // 97 EquipmentStatus.state1
-  {"load1", lgfxsb::PartType::Text, "92%", -1},  // 98 EquipmentStatus.load1
-  {"code1", lgfxsb::PartType::Text, "--", -1},  // 99 EquipmentStatus.code1
-  {"row2", lgfxsb::PartType::Rect, nullptr, -1},  // 100 EquipmentStatus.row2
-  {"name2", lgfxsb::PartType::Text, "LINE-2", -1},  // 101 EquipmentStatus.name2
-  {"state2", lgfxsb::PartType::Text, "IDLE", -1},  // 102 EquipmentStatus.state2
-  {"load2", lgfxsb::PartType::Text, "0%", -1},  // 103 EquipmentStatus.load2
-  {"code2", lgfxsb::PartType::Text, "--", -1},  // 104 EquipmentStatus.code2
-  {"row3", lgfxsb::PartType::Rect, nullptr, -1},  // 105 EquipmentStatus.row3
-  {"name3", lgfxsb::PartType::Text, "LINE-3", -1},  // 106 EquipmentStatus.name3
-  {"state3", lgfxsb::PartType::Text, "ERROR", -1},  // 107 EquipmentStatus.state3
-  {"load3", lgfxsb::PartType::Text, "--", -1},  // 108 EquipmentStatus.load3
-  {"code3", lgfxsb::PartType::Text, "E104", -1},  // 109 EquipmentStatus.code3
-  {"row4", lgfxsb::PartType::Rect, nullptr, -1},  // 110 EquipmentStatus.row4
-  {"name4", lgfxsb::PartType::Text, "PUMP-A", -1},  // 111 EquipmentStatus.name4
-  {"state4", lgfxsb::PartType::Text, "RUN", -1},  // 112 EquipmentStatus.state4
-  {"load4", lgfxsb::PartType::Text, "68%", -1},  // 113 EquipmentStatus.load4
-  {"code4", lgfxsb::PartType::Text, "--", -1},  // 114 EquipmentStatus.code4
-  {"row5", lgfxsb::PartType::Rect, nullptr, -1},  // 115 EquipmentStatus.row5
-  {"name5", lgfxsb::PartType::Text, "FAN-B", -1},  // 116 EquipmentStatus.name5
-  {"state5", lgfxsb::PartType::Text, "OFF", -1},  // 117 EquipmentStatus.state5
-  {"load5", lgfxsb::PartType::Text, "0%", -1},  // 118 EquipmentStatus.load5
-  {"code5", lgfxsb::PartType::Text, "--", -1},  // 119 EquipmentStatus.code5
-  {"footerLine", lgfxsb::PartType::Line, nullptr, -1},  // 120 EquipmentStatus.footerLine
-  {"btnA", lgfxsb::PartType::Text, "BACK", -1},  // 121 EquipmentStatus.btnA
-  {"btnB", lgfxsb::PartType::Text, "DETAIL", -1},  // 122 EquipmentStatus.btnB
-  {"btnC", lgfxsb::PartType::Text, "RESET", -1},  // 123 EquipmentStatus.btnC
-  {"titleText", lgfxsb::PartType::Text, "NETWORK", -1},  // 124 NetworkStatus.titleText
-  {"summaryText", lgfxsb::PartType::Text, "ONLINE", -1},  // 125 NetworkStatus.summaryText
-  {"headerLine", lgfxsb::PartType::Line, nullptr, -1},  // 126 NetworkStatus.headerLine
-  {"wifiPanel", lgfxsb::PartType::Rect, nullptr, -1},  // 127 NetworkStatus.wifiPanel
-  {"wifiTitle", lgfxsb::PartType::Text, "WI-FI", -1},  // 128 NetworkStatus.wifiTitle
-  {"wifiStatusLabel", lgfxsb::PartType::Text, "STATE", -1},  // 129 NetworkStatus.wifiStatusLabel
-  {"wifiStatusValue", lgfxsb::PartType::Text, "CONNECTED", -1},  // 130 NetworkStatus.wifiStatusValue
-  {"ssidLabel", lgfxsb::PartType::Text, "SSID", -1},  // 131 NetworkStatus.ssidLabel
-  {"ssidValue", lgfxsb::PartType::Text, "Factory_AP_01", -1},  // 132 NetworkStatus.ssidValue
-  {"mqttPanel", lgfxsb::PartType::Rect, nullptr, -1},  // 133 NetworkStatus.mqttPanel
-  {"mqttTitle", lgfxsb::PartType::Text, "MQTT", -1},  // 134 NetworkStatus.mqttTitle
-  {"mqttStatusLabel", lgfxsb::PartType::Text, "STATE", -1},  // 135 NetworkStatus.mqttStatusLabel
-  {"mqttStatusValue", lgfxsb::PartType::Text, "CONNECTED", -1},  // 136 NetworkStatus.mqttStatusValue
-  {"brokerLabel", lgfxsb::PartType::Text, "BROKER", -1},  // 137 NetworkStatus.brokerLabel
-  {"brokerValue", lgfxsb::PartType::Text, "10.0.0.12", -1},  // 138 NetworkStatus.brokerValue
-  {"ipPanel", lgfxsb::PartType::Rect, nullptr, -1},  // 139 NetworkStatus.ipPanel
-  {"ipTitle", lgfxsb::PartType::Text, "DEVICE NETWORK", -1},  // 140 NetworkStatus.ipTitle
-  {"ipLabel", lgfxsb::PartType::Text, "IP", -1},  // 141 NetworkStatus.ipLabel
-  {"ipValue", lgfxsb::PartType::Text, "192.168.10.42", -1},  // 142 NetworkStatus.ipValue
-  {"rssiLabel", lgfxsb::PartType::Text, "RSSI", -1},  // 143 NetworkStatus.rssiLabel
-  {"rssiValue", lgfxsb::PartType::Text, "-58dBm", -1},  // 144 NetworkStatus.rssiValue
-  {"devicePanel", lgfxsb::PartType::Rect, nullptr, -1},  // 145 NetworkStatus.devicePanel
-  {"deviceLabel", lgfxsb::PartType::Text, "DEVICE", -1},  // 146 NetworkStatus.deviceLabel
-  {"deviceValue", lgfxsb::PartType::Text, "M5-FAC-001", -1},  // 147 NetworkStatus.deviceValue
-  {"footerLine", lgfxsb::PartType::Line, nullptr, -1},  // 148 NetworkStatus.footerLine
-  {"btnA", lgfxsb::PartType::Text, "BACK", -1},  // 149 NetworkStatus.btnA
-  {"btnB", lgfxsb::PartType::Text, "SCAN", -1},  // 150 NetworkStatus.btnB
-  {"btnC", lgfxsb::PartType::Text, "RESET", -1},  // 151 NetworkStatus.btnC
-  {"titleText", lgfxsb::PartType::Text, "SETTINGS", -1},  // 152 Settings.titleText
-  {"summaryText", lgfxsb::PartType::Text, "DEVICE", -1},  // 153 Settings.summaryText
-  {"headerLine", lgfxsb::PartType::Line, nullptr, -1},  // 154 Settings.headerLine
-  {"brightnessRow", lgfxsb::PartType::Rect, nullptr, -1},  // 155 Settings.brightnessRow
-  {"brightnessLabel", lgfxsb::PartType::Text, "BRIGHTNESS", -1},  // 156 Settings.brightnessLabel
-  {"brightnessValue", lgfxsb::PartType::Text, "80%", -1},  // 157 Settings.brightnessValue
-  {"brightnessNote", lgfxsb::PartType::Text, "LCD LEVEL", -1},  // 158 Settings.brightnessNote
-  {"alertSoundRow", lgfxsb::PartType::Rect, nullptr, -1},  // 159 Settings.alertSoundRow
-  {"alertSoundLabel", lgfxsb::PartType::Text, "ALERT SOUND", -1},  // 160 Settings.alertSoundLabel
-  {"alertSoundValue", lgfxsb::PartType::Text, "ON", -1},  // 161 Settings.alertSoundValue
-  {"alertSoundNote", lgfxsb::PartType::Text, "BUZZER", -1},  // 162 Settings.alertSoundNote
-  {"sendIntervalRow", lgfxsb::PartType::Rect, nullptr, -1},  // 163 Settings.sendIntervalRow
-  {"sendIntervalLabel", lgfxsb::PartType::Text, "SEND INTERVAL", -1},  // 164 Settings.sendIntervalLabel
-  {"sendIntervalValue", lgfxsb::PartType::Text, "5 sec", -1},  // 165 Settings.sendIntervalValue
-  {"sendIntervalNote", lgfxsb::PartType::Text, "MQTT", -1},  // 166 Settings.sendIntervalNote
-  {"deviceIdRow", lgfxsb::PartType::Rect, nullptr, -1},  // 167 Settings.deviceIdRow
-  {"deviceIdLabel", lgfxsb::PartType::Text, "DEVICE ID", -1},  // 168 Settings.deviceIdLabel
-  {"deviceIdValue", lgfxsb::PartType::Text, "M5-FAC-001", -1},  // 169 Settings.deviceIdValue
-  {"deviceIdNote", lgfxsb::PartType::Text, "FACTORY NODE", -1},  // 170 Settings.deviceIdNote
-  {"footerLine", lgfxsb::PartType::Line, nullptr, -1},  // 171 Settings.footerLine
-  {"btnA", lgfxsb::PartType::Text, "BACK", -1},  // 172 Settings.btnA
-  {"btnB", lgfxsb::PartType::Text, "EDIT", -1},  // 173 Settings.btnB
-  {"btnC", lgfxsb::PartType::Text, "SAVE", -1},  // 174 Settings.btnC
+  {"frame", lgfxsb::PartType::Rect, -1},  // 0 Boot.frame
+  {"logoBox", lgfxsb::PartType::Rect, -1},  // 1 Boot.logoBox
+  {"logoText", lgfxsb::PartType::Text, -1},  // 2 Boot.logoText
+  {"titleText", lgfxsb::PartType::Text, -1},  // 3 Boot.titleText
+  {"subTitleText", lgfxsb::PartType::Text, -1},  // 4 Boot.subTitleText
+  {"progressGuide", lgfxsb::PartType::Rect, -1},  // 5 Boot.progressGuide
+  {"statusArea", lgfxsb::PartType::Rect, -1},  // 6 Boot.statusArea
+  {"versionText", lgfxsb::PartType::Text, -1},  // 7 Boot.versionText
+  {"titleText", lgfxsb::PartType::Text, -1},  // 8 Dashboard.titleText
+  {"clockText", lgfxsb::PartType::Text, -1},  // 9 Dashboard.clockText
+  {"headerLine", lgfxsb::PartType::Line, -1},  // 10 Dashboard.headerLine
+  {"tempCard", lgfxsb::PartType::Rect, -1},  // 11 Dashboard.tempCard
+  {"tempLabel", lgfxsb::PartType::Text, -1},  // 12 Dashboard.tempLabel
+  {"tempValue", lgfxsb::PartType::Text, -1},  // 13 Dashboard.tempValue
+  {"humCard", lgfxsb::PartType::Rect, -1},  // 14 Dashboard.humCard
+  {"humLabel", lgfxsb::PartType::Text, -1},  // 15 Dashboard.humLabel
+  {"humValue", lgfxsb::PartType::Text, -1},  // 16 Dashboard.humValue
+  {"co2Card", lgfxsb::PartType::Rect, -1},  // 17 Dashboard.co2Card
+  {"co2Label", lgfxsb::PartType::Text, -1},  // 18 Dashboard.co2Label
+  {"co2Value", lgfxsb::PartType::Text, -1},  // 19 Dashboard.co2Value
+  {"linePanel", lgfxsb::PartType::Rect, -1},  // 20 Dashboard.linePanel
+  {"lineTitle", lgfxsb::PartType::Text, -1},  // 21 Dashboard.lineTitle
+  {"line1Name", lgfxsb::PartType::Text, -1},  // 22 Dashboard.line1Name
+  {"line1Value", lgfxsb::PartType::Text, -1},  // 23 Dashboard.line1Value
+  {"line2Name", lgfxsb::PartType::Text, -1},  // 24 Dashboard.line2Name
+  {"line2Value", lgfxsb::PartType::Text, -1},  // 25 Dashboard.line2Value
+  {"alertPanel", lgfxsb::PartType::Rect, -1},  // 26 Dashboard.alertPanel
+  {"alertTitle", lgfxsb::PartType::Text, -1},  // 27 Dashboard.alertTitle
+  {"alertCount", lgfxsb::PartType::Text, -1},  // 28 Dashboard.alertCount
+  {"alertState", lgfxsb::PartType::Text, -1},  // 29 Dashboard.alertState
+  {"footerLine", lgfxsb::PartType::Line, -1},  // 30 Dashboard.footerLine
+  {"btnA", lgfxsb::PartType::Text, -1},  // 31 Dashboard.btnA
+  {"btnB", lgfxsb::PartType::Text, -1},  // 32 Dashboard.btnB
+  {"btnC", lgfxsb::PartType::Text, -1},  // 33 Dashboard.btnC
+  {"titleText", lgfxsb::PartType::Text, -1},  // 34 AlertList.titleText
+  {"countText", lgfxsb::PartType::Text, -1},  // 35 AlertList.countText
+  {"headerLine", lgfxsb::PartType::Line, -1},  // 36 AlertList.headerLine
+  {"row1", lgfxsb::PartType::Rect, -1},  // 37 AlertList.row1
+  {"level1", lgfxsb::PartType::Text, -1},  // 38 AlertList.level1
+  {"message1", lgfxsb::PartType::Text, -1},  // 39 AlertList.message1
+  {"meta1", lgfxsb::PartType::Text, -1},  // 40 AlertList.meta1
+  {"row2", lgfxsb::PartType::Rect, -1},  // 41 AlertList.row2
+  {"level2", lgfxsb::PartType::Text, -1},  // 42 AlertList.level2
+  {"message2", lgfxsb::PartType::Text, -1},  // 43 AlertList.message2
+  {"meta2", lgfxsb::PartType::Text, -1},  // 44 AlertList.meta2
+  {"row3", lgfxsb::PartType::Rect, -1},  // 45 AlertList.row3
+  {"level3", lgfxsb::PartType::Text, -1},  // 46 AlertList.level3
+  {"message3", lgfxsb::PartType::Text, -1},  // 47 AlertList.message3
+  {"meta3", lgfxsb::PartType::Text, -1},  // 48 AlertList.meta3
+  {"footerLine", lgfxsb::PartType::Line, -1},  // 49 AlertList.footerLine
+  {"btnA", lgfxsb::PartType::Text, -1},  // 50 AlertList.btnA
+  {"btnB", lgfxsb::PartType::Text, -1},  // 51 AlertList.btnB
+  {"btnC", lgfxsb::PartType::Text, -1},  // 52 AlertList.btnC
+  {"titleText", lgfxsb::PartType::Text, -1},  // 53 SensorDetail.titleText
+  {"sensorNameText", lgfxsb::PartType::Text, -1},  // 54 SensorDetail.sensorNameText
+  {"headerLine", lgfxsb::PartType::Line, -1},  // 55 SensorDetail.headerLine
+  {"mainCard", lgfxsb::PartType::Rect, -1},  // 56 SensorDetail.mainCard
+  {"valueLabel", lgfxsb::PartType::Text, -1},  // 57 SensorDetail.valueLabel
+  {"valueText", lgfxsb::PartType::Text, -1},  // 58 SensorDetail.valueText
+  {"unitText", lgfxsb::PartType::Text, -1},  // 59 SensorDetail.unitText
+  {"stateText", lgfxsb::PartType::Text, -1},  // 60 SensorDetail.stateText
+  {"minCard", lgfxsb::PartType::Rect, -1},  // 61 SensorDetail.minCard
+  {"minLabel", lgfxsb::PartType::Text, -1},  // 62 SensorDetail.minLabel
+  {"minValue", lgfxsb::PartType::Text, -1},  // 63 SensorDetail.minValue
+  {"avgCard", lgfxsb::PartType::Rect, -1},  // 64 SensorDetail.avgCard
+  {"avgLabel", lgfxsb::PartType::Text, -1},  // 65 SensorDetail.avgLabel
+  {"avgValue", lgfxsb::PartType::Text, -1},  // 66 SensorDetail.avgValue
+  {"maxCard", lgfxsb::PartType::Rect, -1},  // 67 SensorDetail.maxCard
+  {"maxLabel", lgfxsb::PartType::Text, -1},  // 68 SensorDetail.maxLabel
+  {"maxValue", lgfxsb::PartType::Text, -1},  // 69 SensorDetail.maxValue
+  {"thresholdPanel", lgfxsb::PartType::Rect, -1},  // 70 SensorDetail.thresholdPanel
+  {"thresholdTitle", lgfxsb::PartType::Text, -1},  // 71 SensorDetail.thresholdTitle
+  {"highLabel", lgfxsb::PartType::Text, -1},  // 72 SensorDetail.highLabel
+  {"highValue", lgfxsb::PartType::Text, -1},  // 73 SensorDetail.highValue
+  {"lowLabel", lgfxsb::PartType::Text, -1},  // 74 SensorDetail.lowLabel
+  {"lowValue", lgfxsb::PartType::Text, -1},  // 75 SensorDetail.lowValue
+  {"trendPanel", lgfxsb::PartType::Rect, -1},  // 76 SensorDetail.trendPanel
+  {"trendTitle", lgfxsb::PartType::Text, -1},  // 77 SensorDetail.trendTitle
+  {"trendGrid1", lgfxsb::PartType::Line, -1},  // 78 SensorDetail.trendGrid1
+  {"trendGrid2", lgfxsb::PartType::Line, -1},  // 79 SensorDetail.trendGrid2
+  {"trendGrid3", lgfxsb::PartType::Line, -1},  // 80 SensorDetail.trendGrid3
+  {"trendAxisL", lgfxsb::PartType::Line, -1},  // 81 SensorDetail.trendAxisL
+  {"trendAxisR", lgfxsb::PartType::Line, -1},  // 82 SensorDetail.trendAxisR
+  {"footerLine", lgfxsb::PartType::Line, -1},  // 83 SensorDetail.footerLine
+  {"btnA", lgfxsb::PartType::Text, -1},  // 84 SensorDetail.btnA
+  {"btnB", lgfxsb::PartType::Text, -1},  // 85 SensorDetail.btnB
+  {"btnC", lgfxsb::PartType::Text, -1},  // 86 SensorDetail.btnC
+  {"titleText", lgfxsb::PartType::Text, -1},  // 87 EquipmentStatus.titleText
+  {"summaryText", lgfxsb::PartType::Text, -1},  // 88 EquipmentStatus.summaryText
+  {"headerLine", lgfxsb::PartType::Line, -1},  // 89 EquipmentStatus.headerLine
+  {"tableHeader", lgfxsb::PartType::Rect, -1},  // 90 EquipmentStatus.tableHeader
+  {"headName", lgfxsb::PartType::Text, -1},  // 91 EquipmentStatus.headName
+  {"headState", lgfxsb::PartType::Text, -1},  // 92 EquipmentStatus.headState
+  {"headLoad", lgfxsb::PartType::Text, -1},  // 93 EquipmentStatus.headLoad
+  {"headCode", lgfxsb::PartType::Text, -1},  // 94 EquipmentStatus.headCode
+  {"row1", lgfxsb::PartType::Rect, -1},  // 95 EquipmentStatus.row1
+  {"name1", lgfxsb::PartType::Text, -1},  // 96 EquipmentStatus.name1
+  {"state1", lgfxsb::PartType::Text, -1},  // 97 EquipmentStatus.state1
+  {"load1", lgfxsb::PartType::Text, -1},  // 98 EquipmentStatus.load1
+  {"code1", lgfxsb::PartType::Text, -1},  // 99 EquipmentStatus.code1
+  {"row2", lgfxsb::PartType::Rect, -1},  // 100 EquipmentStatus.row2
+  {"name2", lgfxsb::PartType::Text, -1},  // 101 EquipmentStatus.name2
+  {"state2", lgfxsb::PartType::Text, -1},  // 102 EquipmentStatus.state2
+  {"load2", lgfxsb::PartType::Text, -1},  // 103 EquipmentStatus.load2
+  {"code2", lgfxsb::PartType::Text, -1},  // 104 EquipmentStatus.code2
+  {"row3", lgfxsb::PartType::Rect, -1},  // 105 EquipmentStatus.row3
+  {"name3", lgfxsb::PartType::Text, -1},  // 106 EquipmentStatus.name3
+  {"state3", lgfxsb::PartType::Text, -1},  // 107 EquipmentStatus.state3
+  {"load3", lgfxsb::PartType::Text, -1},  // 108 EquipmentStatus.load3
+  {"code3", lgfxsb::PartType::Text, -1},  // 109 EquipmentStatus.code3
+  {"row4", lgfxsb::PartType::Rect, -1},  // 110 EquipmentStatus.row4
+  {"name4", lgfxsb::PartType::Text, -1},  // 111 EquipmentStatus.name4
+  {"state4", lgfxsb::PartType::Text, -1},  // 112 EquipmentStatus.state4
+  {"load4", lgfxsb::PartType::Text, -1},  // 113 EquipmentStatus.load4
+  {"code4", lgfxsb::PartType::Text, -1},  // 114 EquipmentStatus.code4
+  {"row5", lgfxsb::PartType::Rect, -1},  // 115 EquipmentStatus.row5
+  {"name5", lgfxsb::PartType::Text, -1},  // 116 EquipmentStatus.name5
+  {"state5", lgfxsb::PartType::Text, -1},  // 117 EquipmentStatus.state5
+  {"load5", lgfxsb::PartType::Text, -1},  // 118 EquipmentStatus.load5
+  {"code5", lgfxsb::PartType::Text, -1},  // 119 EquipmentStatus.code5
+  {"footerLine", lgfxsb::PartType::Line, -1},  // 120 EquipmentStatus.footerLine
+  {"btnA", lgfxsb::PartType::Text, -1},  // 121 EquipmentStatus.btnA
+  {"btnB", lgfxsb::PartType::Text, -1},  // 122 EquipmentStatus.btnB
+  {"btnC", lgfxsb::PartType::Text, -1},  // 123 EquipmentStatus.btnC
+  {"titleText", lgfxsb::PartType::Text, -1},  // 124 NetworkStatus.titleText
+  {"summaryText", lgfxsb::PartType::Text, -1},  // 125 NetworkStatus.summaryText
+  {"headerLine", lgfxsb::PartType::Line, -1},  // 126 NetworkStatus.headerLine
+  {"wifiPanel", lgfxsb::PartType::Rect, -1},  // 127 NetworkStatus.wifiPanel
+  {"wifiTitle", lgfxsb::PartType::Text, -1},  // 128 NetworkStatus.wifiTitle
+  {"wifiStatusLabel", lgfxsb::PartType::Text, -1},  // 129 NetworkStatus.wifiStatusLabel
+  {"wifiStatusValue", lgfxsb::PartType::Text, -1},  // 130 NetworkStatus.wifiStatusValue
+  {"ssidLabel", lgfxsb::PartType::Text, -1},  // 131 NetworkStatus.ssidLabel
+  {"ssidValue", lgfxsb::PartType::Text, -1},  // 132 NetworkStatus.ssidValue
+  {"mqttPanel", lgfxsb::PartType::Rect, -1},  // 133 NetworkStatus.mqttPanel
+  {"mqttTitle", lgfxsb::PartType::Text, -1},  // 134 NetworkStatus.mqttTitle
+  {"mqttStatusLabel", lgfxsb::PartType::Text, -1},  // 135 NetworkStatus.mqttStatusLabel
+  {"mqttStatusValue", lgfxsb::PartType::Text, -1},  // 136 NetworkStatus.mqttStatusValue
+  {"brokerLabel", lgfxsb::PartType::Text, -1},  // 137 NetworkStatus.brokerLabel
+  {"brokerValue", lgfxsb::PartType::Text, -1},  // 138 NetworkStatus.brokerValue
+  {"ipPanel", lgfxsb::PartType::Rect, -1},  // 139 NetworkStatus.ipPanel
+  {"ipTitle", lgfxsb::PartType::Text, -1},  // 140 NetworkStatus.ipTitle
+  {"ipLabel", lgfxsb::PartType::Text, -1},  // 141 NetworkStatus.ipLabel
+  {"ipValue", lgfxsb::PartType::Text, -1},  // 142 NetworkStatus.ipValue
+  {"rssiLabel", lgfxsb::PartType::Text, -1},  // 143 NetworkStatus.rssiLabel
+  {"rssiValue", lgfxsb::PartType::Text, -1},  // 144 NetworkStatus.rssiValue
+  {"devicePanel", lgfxsb::PartType::Rect, -1},  // 145 NetworkStatus.devicePanel
+  {"deviceLabel", lgfxsb::PartType::Text, -1},  // 146 NetworkStatus.deviceLabel
+  {"deviceValue", lgfxsb::PartType::Text, -1},  // 147 NetworkStatus.deviceValue
+  {"footerLine", lgfxsb::PartType::Line, -1},  // 148 NetworkStatus.footerLine
+  {"btnA", lgfxsb::PartType::Text, -1},  // 149 NetworkStatus.btnA
+  {"btnB", lgfxsb::PartType::Text, -1},  // 150 NetworkStatus.btnB
+  {"btnC", lgfxsb::PartType::Text, -1},  // 151 NetworkStatus.btnC
+  {"titleText", lgfxsb::PartType::Text, -1},  // 152 Settings.titleText
+  {"summaryText", lgfxsb::PartType::Text, -1},  // 153 Settings.summaryText
+  {"headerLine", lgfxsb::PartType::Line, -1},  // 154 Settings.headerLine
+  {"brightnessRow", lgfxsb::PartType::Rect, -1},  // 155 Settings.brightnessRow
+  {"brightnessLabel", lgfxsb::PartType::Text, -1},  // 156 Settings.brightnessLabel
+  {"brightnessValue", lgfxsb::PartType::Text, -1},  // 157 Settings.brightnessValue
+  {"brightnessNote", lgfxsb::PartType::Text, -1},  // 158 Settings.brightnessNote
+  {"alertSoundRow", lgfxsb::PartType::Rect, -1},  // 159 Settings.alertSoundRow
+  {"alertSoundLabel", lgfxsb::PartType::Text, -1},  // 160 Settings.alertSoundLabel
+  {"alertSoundValue", lgfxsb::PartType::Text, -1},  // 161 Settings.alertSoundValue
+  {"alertSoundNote", lgfxsb::PartType::Text, -1},  // 162 Settings.alertSoundNote
+  {"sendIntervalRow", lgfxsb::PartType::Rect, -1},  // 163 Settings.sendIntervalRow
+  {"sendIntervalLabel", lgfxsb::PartType::Text, -1},  // 164 Settings.sendIntervalLabel
+  {"sendIntervalValue", lgfxsb::PartType::Text, -1},  // 165 Settings.sendIntervalValue
+  {"sendIntervalNote", lgfxsb::PartType::Text, -1},  // 166 Settings.sendIntervalNote
+  {"deviceIdRow", lgfxsb::PartType::Rect, -1},  // 167 Settings.deviceIdRow
+  {"deviceIdLabel", lgfxsb::PartType::Text, -1},  // 168 Settings.deviceIdLabel
+  {"deviceIdValue", lgfxsb::PartType::Text, -1},  // 169 Settings.deviceIdValue
+  {"deviceIdNote", lgfxsb::PartType::Text, -1},  // 170 Settings.deviceIdNote
+  {"footerLine", lgfxsb::PartType::Line, -1},  // 171 Settings.footerLine
+  {"btnA", lgfxsb::PartType::Text, -1},  // 172 Settings.btnA
+  {"btnB", lgfxsb::PartType::Text, -1},  // 173 Settings.btnB
+  {"btnC", lgfxsb::PartType::Text, -1},  // 174 Settings.btnC
 };
 static constexpr uint16_t kPartCount = 175;
 
@@ -348,536 +348,536 @@ static const lgfxsb::SceneDesc kScenes[] = {
   {6, "Settings", 152, 23},
 };
 
-// {x, y, w, h, x2, y2, r, datum, size, color, fill, visible, font}
+// {x, y, w, h, x2, y2, r, datum, size, color, fill, visible, font, text}
 static const lgfxsb::PartLayout kLayouts[] = {
   // ---- Profile: Core 320x240 rot0 ----
-  {58, 52, 204, 126, 0, 0, 10, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // Boot.frame
-  {114, 76, 92, 38, 0, 0, 6, 0, 0.0f, 0x101a1f, true, true, nullptr},  // Boot.logoBox
-  {160, 95, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Orbitron_Light_24},  // Boot.logoText
-  {160, 133, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18},  // Boot.titleText
-  {160, 155, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12},  // Boot.subTitleText
-  {98, 194, 124, 4, 0, 0, 2, 0, 0.0f, 0x1e2a30, true, true, nullptr},  // Boot.progressGuide
-  {118, 204, 84, 14, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // Boot.statusArea
-  {160, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x455a57, true, true, &lgfx::v1::fonts::Font0},  // Boot.versionText
-  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12},  // Dashboard.titleText
-  {282, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12},  // Dashboard.clockText
-  {0, 30, 0, 0, 320, 30, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // Dashboard.headerLine
-  {10, 42, 95, 62, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // Dashboard.tempCard
-  {57, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.tempLabel
-  {57, 80, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18},  // Dashboard.tempValue
-  {113, 42, 95, 62, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // Dashboard.humCard
-  {160, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.humLabel
-  {160, 80, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18},  // Dashboard.humValue
-  {216, 42, 94, 62, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // Dashboard.co2Card
-  {263, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.co2Label
-  {263, 80, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18},  // Dashboard.co2Value
-  {10, 116, 145, 66, 0, 0, 6, 0, 0.0f, 0x233532, false, true, nullptr},  // Dashboard.linePanel
-  {82, 130, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.lineTitle
-  {45, 151, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.line1Name
-  {112, 151, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.line1Value
-  {45, 167, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.line2Name
-  {112, 167, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.line2Value
-  {165, 116, 145, 66, 0, 0, 6, 0, 0.0f, 0x233532, false, true, nullptr},  // Dashboard.alertPanel
-  {237, 130, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.alertTitle
-  {205, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu24},  // Dashboard.alertCount
-  {265, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12},  // Dashboard.alertState
-  {0, 210, 0, 0, 320, 210, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // Dashboard.footerLine
-  {54, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.btnA
-  {160, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.btnB
-  {266, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.btnC
-  {10, 17, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18},  // AlertList.titleText
-  {286, 17, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu18},  // AlertList.countText
-  {0, 34, 0, 0, 320, 34, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // AlertList.headerLine
-  {10, 46, 300, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // AlertList.row1
-  {31, 65, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12},  // AlertList.level1
-  {166, 58, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // AlertList.message1
-  {166, 73, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // AlertList.meta1
-  {10, 94, 300, 38, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // AlertList.row2
-  {31, 113, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12},  // AlertList.level2
-  {166, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // AlertList.message2
-  {166, 121, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // AlertList.meta2
-  {10, 142, 300, 38, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // AlertList.row3
-  {31, 161, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu12},  // AlertList.level3
-  {166, 154, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // AlertList.message3
-  {166, 169, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // AlertList.meta3
-  {0, 210, 0, 0, 320, 210, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // AlertList.footerLine
-  {54, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // AlertList.btnA
-  {160, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // AlertList.btnB
-  {266, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // AlertList.btnC
-  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12},  // SensorDetail.titleText
-  {252, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12},  // SensorDetail.sensorNameText
-  {0, 30, 0, 0, 320, 30, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // SensorDetail.headerLine
-  {10, 42, 140, 76, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // SensorDetail.mainCard
-  {80, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // SensorDetail.valueLabel
-  {80, 83, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu24},  // SensorDetail.valueText
-  {126, 84, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu12},  // SensorDetail.unitText
-  {80, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // SensorDetail.stateText
-  {160, 42, 46, 36, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // SensorDetail.minCard
-  {183, 53, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.minLabel
-  {183, 68, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.minValue
-  {215, 42, 46, 36, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // SensorDetail.avgCard
-  {238, 53, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.avgLabel
-  {238, 68, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.avgValue
-  {270, 42, 40, 36, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // SensorDetail.maxCard
-  {290, 53, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.maxLabel
-  {290, 68, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.maxValue
-  {160, 86, 150, 32, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // SensorDetail.thresholdPanel
-  {235, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.thresholdTitle
-  {190, 110, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.highLabel
-  {218, 110, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.highValue
-  {258, 110, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.lowLabel
-  {286, 110, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.lowValue
-  {10, 130, 300, 68, 0, 0, 6, 0, 0.0f, 0x233532, false, true, nullptr},  // SensorDetail.trendPanel
-  {42, 142, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.trendTitle
-  {20, 152, 0, 0, 300, 152, 0, 0, 0.0f, 0x1e2a30, true, true, nullptr},  // SensorDetail.trendGrid1
-  {20, 168, 0, 0, 300, 168, 0, 0, 0.0f, 0x1e2a30, true, true, nullptr},  // SensorDetail.trendGrid2
-  {20, 184, 0, 0, 300, 184, 0, 0, 0.0f, 0x1e2a30, true, true, nullptr},  // SensorDetail.trendGrid3
-  {20, 144, 0, 0, 20, 190, 0, 0, 0.0f, 0x1e2a30, true, true, nullptr},  // SensorDetail.trendAxisL
-  {300, 144, 0, 0, 300, 190, 0, 0, 0.0f, 0x1e2a30, true, true, nullptr},  // SensorDetail.trendAxisR
-  {0, 210, 0, 0, 320, 210, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // SensorDetail.footerLine
-  {54, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // SensorDetail.btnA
-  {160, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // SensorDetail.btnB
-  {266, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // SensorDetail.btnC
-  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12},  // EquipmentStatus.titleText
-  {262, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.summaryText
-  {0, 30, 0, 0, 320, 30, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // EquipmentStatus.headerLine
-  {10, 40, 300, 18, 0, 0, 4, 0, 0.0f, 0x101a1f, true, true, nullptr},  // EquipmentStatus.tableHeader
-  {48, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.headName
-  {132, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.headState
-  {210, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.headLoad
-  {278, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.headCode
-  {10, 64, 300, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // EquipmentStatus.row1
-  {48, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.name1
-  {132, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.state1
-  {210, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.load1
-  {278, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.code1
-  {10, 96, 300, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // EquipmentStatus.row2
-  {48, 109, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.name2
-  {132, 109, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.state2
-  {210, 109, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.load2
-  {278, 109, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.code2
-  {10, 128, 300, 26, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // EquipmentStatus.row3
-  {48, 141, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.name3
-  {132, 141, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.state3
-  {210, 141, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.load3
-  {278, 141, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.code3
-  {10, 160, 300, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // EquipmentStatus.row4
-  {48, 173, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.name4
-  {132, 173, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.state4
-  {210, 173, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.load4
-  {278, 173, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.code4
-  {10, 192, 300, 14, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // EquipmentStatus.row5
-  {48, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.name5
-  {132, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.state5
-  {210, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.load5
-  {278, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.code5
-  {0, 214, 0, 0, 320, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // EquipmentStatus.footerLine
-  {54, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.btnA
-  {160, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.btnB
-  {266, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.btnC
-  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12},  // NetworkStatus.titleText
-  {268, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12},  // NetworkStatus.summaryText
-  {0, 30, 0, 0, 320, 30, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // NetworkStatus.headerLine
-  {10, 42, 145, 70, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // NetworkStatus.wifiPanel
-  {82, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // NetworkStatus.wifiTitle
-  {48, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.wifiStatusLabel
-  {112, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.wifiStatusValue
-  {48, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.ssidLabel
-  {112, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.ssidValue
-  {165, 42, 145, 70, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // NetworkStatus.mqttPanel
-  {237, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // NetworkStatus.mqttTitle
-  {202, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.mqttStatusLabel
-  {266, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.mqttStatusValue
-  {202, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.brokerLabel
-  {266, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.brokerValue
-  {10, 124, 300, 54, 0, 0, 6, 0, 0.0f, 0x233532, false, true, nullptr},  // NetworkStatus.ipPanel
-  {160, 138, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // NetworkStatus.ipTitle
-  {54, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.ipLabel
-  {128, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.ipValue
-  {218, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.rssiLabel
-  {278, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.rssiValue
-  {10, 186, 300, 18, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // NetworkStatus.devicePanel
-  {62, 195, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.deviceLabel
-  {190, 195, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.deviceValue
-  {0, 214, 0, 0, 320, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // NetworkStatus.footerLine
-  {54, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // NetworkStatus.btnA
-  {160, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // NetworkStatus.btnB
-  {266, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // NetworkStatus.btnC
-  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12},  // Settings.titleText
-  {268, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12},  // Settings.summaryText
-  {0, 30, 0, 0, 320, 30, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // Settings.headerLine
-  {10, 44, 300, 34, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // Settings.brightnessRow
-  {82, 61, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // Settings.brightnessLabel
-  {235, 61, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12},  // Settings.brightnessValue
-  {235, 72, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Settings.brightnessNote
-  {10, 88, 300, 34, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // Settings.alertSoundRow
-  {82, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // Settings.alertSoundLabel
-  {235, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12},  // Settings.alertSoundValue
-  {235, 116, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Settings.alertSoundNote
-  {10, 132, 300, 34, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // Settings.sendIntervalRow
-  {82, 149, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // Settings.sendIntervalLabel
-  {235, 149, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12},  // Settings.sendIntervalValue
-  {235, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Settings.sendIntervalNote
-  {10, 176, 300, 28, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // Settings.deviceIdRow
-  {82, 190, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // Settings.deviceIdLabel
-  {235, 190, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // Settings.deviceIdValue
-  {235, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Settings.deviceIdNote
-  {0, 214, 0, 0, 320, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // Settings.footerLine
-  {54, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // Settings.btnA
-  {160, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // Settings.btnB
-  {266, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9},  // Settings.btnC
+  {58, 52, 204, 126, 0, 0, 10, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Boot.frame
+  {114, 76, 92, 38, 0, 0, 6, 0, 0.0f, 0x101a1f, true, true, nullptr, nullptr},  // Boot.logoBox
+  {160, 95, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Orbitron_Light_24, "SFM"},  // Boot.logoText
+  {160, 133, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18, "FACTORY MONITOR"},  // Boot.titleText
+  {160, 155, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "SMART FACTORY"},  // Boot.subTitleText
+  {98, 194, 124, 4, 0, 0, 2, 0, 0.0f, 0x1e2a30, true, true, nullptr, nullptr},  // Boot.progressGuide
+  {118, 204, 84, 14, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Boot.statusArea
+  {160, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x455a57, true, true, &lgfx::v1::fonts::Font0, "v1.0.0 / CORE"},  // Boot.versionText
+  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "FACTORY MONITOR"},  // Dashboard.titleText
+  {282, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "14:32"},  // Dashboard.clockText
+  {0, 30, 0, 0, 320, 30, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Dashboard.headerLine
+  {10, 42, 95, 62, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Dashboard.tempCard
+  {57, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "TEMP"},  // Dashboard.tempLabel
+  {57, 80, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18, "26.4C"},  // Dashboard.tempValue
+  {113, 42, 95, 62, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Dashboard.humCard
+  {160, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "HUM"},  // Dashboard.humLabel
+  {160, 80, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18, "48%"},  // Dashboard.humValue
+  {216, 42, 94, 62, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Dashboard.co2Card
+  {263, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "CO2"},  // Dashboard.co2Label
+  {263, 80, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18, "780"},  // Dashboard.co2Value
+  {10, 116, 145, 66, 0, 0, 6, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Dashboard.linePanel
+  {82, 130, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "LINE STATUS"},  // Dashboard.lineTitle
+  {45, 151, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "LINE-1"},  // Dashboard.line1Name
+  {112, 151, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // Dashboard.line1Value
+  {45, 167, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "LINE-2"},  // Dashboard.line2Name
+  {112, 167, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "IDLE"},  // Dashboard.line2Value
+  {165, 116, 145, 66, 0, 0, 6, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Dashboard.alertPanel
+  {237, 130, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "ALERTS"},  // Dashboard.alertTitle
+  {205, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu24, "2"},  // Dashboard.alertCount
+  {265, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "WARN"},  // Dashboard.alertState
+  {0, 210, 0, 0, 320, 210, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Dashboard.footerLine
+  {54, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "MENU"},  // Dashboard.btnA
+  {160, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "DETAIL"},  // Dashboard.btnB
+  {266, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "ACK"},  // Dashboard.btnC
+  {10, 17, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu18, "ALERTS"},  // AlertList.titleText
+  {286, 17, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu18, "3"},  // AlertList.countText
+  {0, 34, 0, 0, 320, 34, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // AlertList.headerLine
+  {10, 46, 300, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // AlertList.row1
+  {31, 65, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "!"},  // AlertList.level1
+  {166, 58, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "MOTOR OVERLOAD"},  // AlertList.message1
+  {166, 73, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "14:28  CRITICAL"},  // AlertList.meta1
+  {10, 94, 300, 38, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // AlertList.row2
+  {31, 113, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "!"},  // AlertList.level2
+  {166, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "TEMP HIGH"},  // AlertList.message2
+  {166, 121, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "14:12  WARNING"},  // AlertList.meta2
+  {10, 142, 300, 38, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // AlertList.row3
+  {31, 161, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu12, "i"},  // AlertList.level3
+  {166, 154, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "FILTER MAINTENANCE"},  // AlertList.message3
+  {166, 169, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "09:40  INFO"},  // AlertList.meta3
+  {0, 210, 0, 0, 320, 210, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // AlertList.footerLine
+  {54, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "BACK"},  // AlertList.btnA
+  {160, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "OPEN"},  // AlertList.btnB
+  {266, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "ACK"},  // AlertList.btnC
+  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "SENSOR DETAIL"},  // SensorDetail.titleText
+  {252, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "TEMP-01"},  // SensorDetail.sensorNameText
+  {0, 30, 0, 0, 320, 30, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // SensorDetail.headerLine
+  {10, 42, 140, 76, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // SensorDetail.mainCard
+  {80, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "TEMPERATURE"},  // SensorDetail.valueLabel
+  {80, 83, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu24, "26.4"},  // SensorDetail.valueText
+  {126, 84, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu12, "C"},  // SensorDetail.unitText
+  {80, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "NORMAL"},  // SensorDetail.stateText
+  {160, 42, 46, 36, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.minCard
+  {183, 53, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MIN"},  // SensorDetail.minLabel
+  {183, 68, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "23.1"},  // SensorDetail.minValue
+  {215, 42, 46, 36, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.avgCard
+  {238, 53, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "AVG"},  // SensorDetail.avgLabel
+  {238, 68, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "25.8"},  // SensorDetail.avgValue
+  {270, 42, 40, 36, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.maxCard
+  {290, 53, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MAX"},  // SensorDetail.maxLabel
+  {290, 68, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "29.4"},  // SensorDetail.maxValue
+  {160, 86, 150, 32, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.thresholdPanel
+  {235, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "THRESHOLD"},  // SensorDetail.thresholdTitle
+  {190, 110, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "HI"},  // SensorDetail.highLabel
+  {218, 110, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "30.0"},  // SensorDetail.highValue
+  {258, 110, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "LO"},  // SensorDetail.lowLabel
+  {286, 110, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "18.0"},  // SensorDetail.lowValue
+  {10, 130, 300, 68, 0, 0, 6, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.trendPanel
+  {42, 142, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "TREND"},  // SensorDetail.trendTitle
+  {20, 152, 0, 0, 300, 152, 0, 0, 0.0f, 0x1e2a30, true, true, nullptr, nullptr},  // SensorDetail.trendGrid1
+  {20, 168, 0, 0, 300, 168, 0, 0, 0.0f, 0x1e2a30, true, true, nullptr, nullptr},  // SensorDetail.trendGrid2
+  {20, 184, 0, 0, 300, 184, 0, 0, 0.0f, 0x1e2a30, true, true, nullptr, nullptr},  // SensorDetail.trendGrid3
+  {20, 144, 0, 0, 20, 190, 0, 0, 0.0f, 0x1e2a30, true, true, nullptr, nullptr},  // SensorDetail.trendAxisL
+  {300, 144, 0, 0, 300, 190, 0, 0, 0.0f, 0x1e2a30, true, true, nullptr, nullptr},  // SensorDetail.trendAxisR
+  {0, 210, 0, 0, 320, 210, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // SensorDetail.footerLine
+  {54, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "BACK"},  // SensorDetail.btnA
+  {160, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "NEXT"},  // SensorDetail.btnB
+  {266, 225, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "ACK"},  // SensorDetail.btnC
+  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "EQUIPMENT"},  // EquipmentStatus.titleText
+  {262, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "4 RUN / 1 ERR"},  // EquipmentStatus.summaryText
+  {0, 30, 0, 0, 320, 30, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // EquipmentStatus.headerLine
+  {10, 40, 300, 18, 0, 0, 4, 0, 0.0f, 0x101a1f, true, true, nullptr, nullptr},  // EquipmentStatus.tableHeader
+  {48, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "UNIT"},  // EquipmentStatus.headName
+  {132, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "STATE"},  // EquipmentStatus.headState
+  {210, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "LOAD"},  // EquipmentStatus.headLoad
+  {278, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "CODE"},  // EquipmentStatus.headCode
+  {10, 64, 300, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row1
+  {48, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "LINE-1"},  // EquipmentStatus.name1
+  {132, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // EquipmentStatus.state1
+  {210, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "92%"},  // EquipmentStatus.load1
+  {278, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code1
+  {10, 96, 300, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row2
+  {48, 109, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "LINE-2"},  // EquipmentStatus.name2
+  {132, 109, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "IDLE"},  // EquipmentStatus.state2
+  {210, 109, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "0%"},  // EquipmentStatus.load2
+  {278, 109, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code2
+  {10, 128, 300, 26, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // EquipmentStatus.row3
+  {48, 141, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "LINE-3"},  // EquipmentStatus.name3
+  {132, 141, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "ERROR"},  // EquipmentStatus.state3
+  {210, 141, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "--"},  // EquipmentStatus.load3
+  {278, 141, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "E104"},  // EquipmentStatus.code3
+  {10, 160, 300, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row4
+  {48, 173, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "PUMP-A"},  // EquipmentStatus.name4
+  {132, 173, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // EquipmentStatus.state4
+  {210, 173, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "68%"},  // EquipmentStatus.load4
+  {278, 173, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code4
+  {10, 192, 300, 14, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row5
+  {48, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "FAN-B"},  // EquipmentStatus.name5
+  {132, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "OFF"},  // EquipmentStatus.state5
+  {210, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "0%"},  // EquipmentStatus.load5
+  {278, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code5
+  {0, 214, 0, 0, 320, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // EquipmentStatus.footerLine
+  {54, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "BACK"},  // EquipmentStatus.btnA
+  {160, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "DETAIL"},  // EquipmentStatus.btnB
+  {266, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "RESET"},  // EquipmentStatus.btnC
+  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "NETWORK"},  // NetworkStatus.titleText
+  {268, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "ONLINE"},  // NetworkStatus.summaryText
+  {0, 30, 0, 0, 320, 30, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // NetworkStatus.headerLine
+  {10, 42, 145, 70, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // NetworkStatus.wifiPanel
+  {82, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "WI-FI"},  // NetworkStatus.wifiTitle
+  {48, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.wifiStatusLabel
+  {112, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "CONNECTED"},  // NetworkStatus.wifiStatusValue
+  {48, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "SSID"},  // NetworkStatus.ssidLabel
+  {112, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "Factory_AP_01"},  // NetworkStatus.ssidValue
+  {165, 42, 145, 70, 0, 0, 6, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // NetworkStatus.mqttPanel
+  {237, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "MQTT"},  // NetworkStatus.mqttTitle
+  {202, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.mqttStatusLabel
+  {266, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "CONNECTED"},  // NetworkStatus.mqttStatusValue
+  {202, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BROKER"},  // NetworkStatus.brokerLabel
+  {266, 96, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "10.0.0.12"},  // NetworkStatus.brokerValue
+  {10, 124, 300, 54, 0, 0, 6, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // NetworkStatus.ipPanel
+  {160, 138, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "DEVICE NETWORK"},  // NetworkStatus.ipTitle
+  {54, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "IP"},  // NetworkStatus.ipLabel
+  {128, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "192.168.10.42"},  // NetworkStatus.ipValue
+  {218, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "RSSI"},  // NetworkStatus.rssiLabel
+  {278, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "-58dBm"},  // NetworkStatus.rssiValue
+  {10, 186, 300, 18, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // NetworkStatus.devicePanel
+  {62, 195, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "DEVICE"},  // NetworkStatus.deviceLabel
+  {190, 195, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "M5-FAC-001"},  // NetworkStatus.deviceValue
+  {0, 214, 0, 0, 320, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // NetworkStatus.footerLine
+  {54, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "BACK"},  // NetworkStatus.btnA
+  {160, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "SCAN"},  // NetworkStatus.btnB
+  {266, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "RESET"},  // NetworkStatus.btnC
+  {10, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::ML, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "SETTINGS"},  // Settings.titleText
+  {268, 15, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "DEVICE"},  // Settings.summaryText
+  {0, 30, 0, 0, 320, 30, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Settings.headerLine
+  {10, 44, 300, 34, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Settings.brightnessRow
+  {82, 61, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "BRIGHTNESS"},  // Settings.brightnessLabel
+  {235, 61, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "80%"},  // Settings.brightnessValue
+  {235, 72, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "LCD LEVEL"},  // Settings.brightnessNote
+  {10, 88, 300, 34, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Settings.alertSoundRow
+  {82, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "ALERT SOUND"},  // Settings.alertSoundLabel
+  {235, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "ON"},  // Settings.alertSoundValue
+  {235, 116, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "BUZZER"},  // Settings.alertSoundNote
+  {10, 132, 300, 34, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Settings.sendIntervalRow
+  {82, 149, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "SEND INTERVAL"},  // Settings.sendIntervalLabel
+  {235, 149, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu12, "5 sec"},  // Settings.sendIntervalValue
+  {235, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "MQTT"},  // Settings.sendIntervalNote
+  {10, 176, 300, 28, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Settings.deviceIdRow
+  {82, 190, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "DEVICE ID"},  // Settings.deviceIdLabel
+  {235, 190, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "M5-FAC-001"},  // Settings.deviceIdValue
+  {235, 199, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "FACTORY NODE"},  // Settings.deviceIdNote
+  {0, 214, 0, 0, 320, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Settings.footerLine
+  {54, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "BACK"},  // Settings.btnA
+  {160, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "EDIT"},  // Settings.btnB
+  {266, 228, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::DejaVu9, "SAVE"},  // Settings.btnC
   // ---- Profile: Stick 135x240 rot0 ----
-  {13, 52, 109, 126, 0, 0, 9, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // Boot.frame
-  {33, 78, 69, 34, 0, 0, 6, 0, 0.0f, 0x101a1f, true, true, nullptr},  // Boot.logoBox
-  {67, 95, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 0.8f, 0xffffff, true, true, &lgfx::v1::fonts::Orbitron_Light_24},  // Boot.logoText
-  {67, 132, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12},  // Boot.titleText
-  {67, 150, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // Boot.subTitleText
-  {27, 196, 81, 4, 0, 0, 2, 0, 0.0f, 0x1e2a30, true, true, nullptr},  // Boot.progressGuide
-  {39, 207, 57, 14, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // Boot.statusArea
-  {67, 229, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x455a57, true, true, &lgfx::v1::fonts::Font0},  // Boot.versionText
-  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12},  // Dashboard.titleText
-  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::DejaVu12},  // Dashboard.clockText
-  {8, 26, 0, 0, 127, 26, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // Dashboard.headerLine
-  {10, 36, 115, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // Dashboard.tempCard
-  {34, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.tempLabel
-  {88, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.tempValue
-  {10, 82, 115, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // Dashboard.humCard
-  {34, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.humLabel
-  {88, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.humValue
-  {10, 82, 115, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, false, nullptr},  // Dashboard.co2Card
-  {34, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::DejaVu9},  // Dashboard.co2Label
-  {88, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::DejaVu9},  // Dashboard.co2Value
-  {10, 128, 115, 38, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // Dashboard.linePanel
-  {34, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.lineTitle
-  {34, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::DejaVu9},  // Dashboard.line1Name
-  {88, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // Dashboard.line1Value
-  {34, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::DejaVu9},  // Dashboard.line2Name
-  {88, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::DejaVu9},  // Dashboard.line2Value
-  {10, 174, 115, 30, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // Dashboard.alertPanel
-  {40, 189, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // Dashboard.alertTitle
-  {96, 189, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // Dashboard.alertCount
-  {96, 189, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0},  // Dashboard.alertState
-  {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // Dashboard.footerLine
-  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // Dashboard.btnA
-  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // Dashboard.btnB
-  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // Dashboard.btnC
-  {67, 14, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12},  // AlertList.titleText
-  {116, 14, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // AlertList.countText
-  {8, 28, 0, 0, 127, 28, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // AlertList.headerLine
-  {8, 42, 119, 42, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // AlertList.row1
-  {19, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // AlertList.level1
-  {73, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // AlertList.message1
-  {73, 73, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // AlertList.meta1
-  {8, 94, 119, 42, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // AlertList.row2
-  {19, 115, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // AlertList.level2
-  {73, 108, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // AlertList.message2
-  {73, 125, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // AlertList.meta2
-  {8, 146, 119, 42, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // AlertList.row3
-  {19, 167, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // AlertList.level3
-  {73, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // AlertList.message3
-  {73, 177, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // AlertList.meta3
-  {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // AlertList.footerLine
-  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // AlertList.btnA
-  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // AlertList.btnB
-  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // AlertList.btnC
-  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12},  // SensorDetail.titleText
-  {67, 25, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.sensorNameText
-  {8, 34, 0, 0, 127, 34, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // SensorDetail.headerLine
-  {10, 44, 115, 58, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // SensorDetail.mainCard
-  {67, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.valueLabel
-  {67, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12},  // SensorDetail.valueText
-  {104, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // SensorDetail.unitText
-  {67, 94, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.stateText
-  {10, 112, 35, 30, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // SensorDetail.minCard
-  {27, 122, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.minLabel
-  {27, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.minValue
-  {50, 112, 35, 30, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // SensorDetail.avgCard
-  {67, 122, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.avgLabel
-  {67, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.avgValue
-  {90, 112, 35, 30, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // SensorDetail.maxCard
-  {107, 122, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.maxLabel
-  {107, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.maxValue
-  {10, 152, 115, 30, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // SensorDetail.thresholdPanel
-  {67, 162, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.thresholdTitle
-  {30, 176, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.highLabel
-  {54, 176, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.highValue
-  {82, 176, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.lowLabel
-  {106, 176, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.lowValue
-  {10, 190, 115, 16, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // SensorDetail.trendPanel
-  {67, 198, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.trendTitle
-  {14, 195, 0, 0, 121, 195, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr},  // SensorDetail.trendGrid1
-  {14, 198, 0, 0, 121, 198, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr},  // SensorDetail.trendGrid2
-  {14, 201, 0, 0, 121, 201, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr},  // SensorDetail.trendGrid3
-  {14, 194, 0, 0, 14, 202, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr},  // SensorDetail.trendAxisL
-  {121, 194, 0, 0, 121, 202, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr},  // SensorDetail.trendAxisR
-  {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // SensorDetail.footerLine
-  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.btnA
-  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.btnB
-  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.btnC
-  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12},  // EquipmentStatus.titleText
-  {67, 25, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.summaryText
-  {8, 34, 0, 0, 127, 34, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // EquipmentStatus.headerLine
-  {10, 42, 115, 14, 0, 0, 4, 0, 0.0f, 0x101a1f, true, true, nullptr},  // EquipmentStatus.tableHeader
-  {34, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.headName
-  {82, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.headState
-  {112, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.headLoad
-  {112, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.headCode
-  {10, 64, 115, 24, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // EquipmentStatus.row1
-  {34, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.name1
-  {82, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.state1
-  {112, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.load1
-  {112, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.code1
-  {10, 94, 115, 24, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // EquipmentStatus.row2
-  {34, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.name2
-  {82, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.state2
-  {112, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.load2
-  {112, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.code2
-  {10, 124, 115, 24, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // EquipmentStatus.row3
-  {34, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.name3
-  {82, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.state3
-  {112, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.load3
-  {112, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.code3
-  {10, 154, 115, 24, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // EquipmentStatus.row4
-  {34, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.name4
-  {82, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // EquipmentStatus.state4
-  {112, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.load4
-  {112, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.code4
-  {10, 184, 115, 20, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // EquipmentStatus.row5
-  {34, 194, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.name5
-  {82, 194, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.state5
-  {112, 194, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.load5
-  {112, 194, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.code5
-  {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // EquipmentStatus.footerLine
-  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.btnA
-  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.btnB
-  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.btnC
-  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12},  // NetworkStatus.titleText
-  {67, 25, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.summaryText
-  {8, 34, 0, 0, 127, 34, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // NetworkStatus.headerLine
-  {10, 44, 115, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // NetworkStatus.wifiPanel
-  {34, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // NetworkStatus.wifiTitle
-  {34, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.wifiStatusLabel
-  {88, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // NetworkStatus.wifiStatusValue
-  {34, 73, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.ssidLabel
-  {88, 73, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.ssidValue
-  {10, 92, 115, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // NetworkStatus.mqttPanel
-  {34, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // NetworkStatus.mqttTitle
-  {34, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.mqttStatusLabel
-  {88, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9},  // NetworkStatus.mqttStatusValue
-  {34, 121, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.brokerLabel
-  {88, 121, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.brokerValue
-  {10, 140, 115, 38, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // NetworkStatus.ipPanel
-  {67, 150, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.ipTitle
-  {34, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.ipLabel
-  {88, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.ipValue
-  {34, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.rssiLabel
-  {88, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.rssiValue
-  {10, 188, 115, 18, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // NetworkStatus.devicePanel
-  {38, 197, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.deviceLabel
-  {86, 197, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.deviceValue
-  {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // NetworkStatus.footerLine
-  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.btnA
-  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.btnB
-  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.btnC
-  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12},  // Settings.titleText
-  {67, 25, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // Settings.summaryText
-  {8, 34, 0, 0, 127, 34, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // Settings.headerLine
-  {10, 46, 115, 34, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // Settings.brightnessRow
-  {42, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // Settings.brightnessLabel
-  {96, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // Settings.brightnessValue
-  {96, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Settings.brightnessNote
-  {10, 90, 115, 34, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // Settings.alertSoundRow
-  {42, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // Settings.alertSoundLabel
-  {96, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // Settings.alertSoundValue
-  {96, 118, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Settings.alertSoundNote
-  {10, 134, 115, 34, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // Settings.sendIntervalRow
-  {42, 151, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // Settings.sendIntervalLabel
-  {96, 151, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // Settings.sendIntervalValue
-  {96, 162, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Settings.sendIntervalNote
-  {10, 178, 115, 28, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr},  // Settings.deviceIdRow
-  {42, 192, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // Settings.deviceIdLabel
-  {96, 192, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // Settings.deviceIdValue
-  {96, 202, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Settings.deviceIdNote
-  {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // Settings.footerLine
-  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // Settings.btnA
-  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // Settings.btnB
-  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // Settings.btnC
+  {13, 52, 109, 126, 0, 0, 9, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Boot.frame
+  {33, 78, 69, 34, 0, 0, 6, 0, 0.0f, 0x101a1f, true, true, nullptr, nullptr},  // Boot.logoBox
+  {67, 95, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 0.8f, 0xffffff, true, true, &lgfx::v1::fonts::Orbitron_Light_24, "SFM"},  // Boot.logoText
+  {67, 132, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "FACTORY"},  // Boot.titleText
+  {67, 150, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "MONITOR"},  // Boot.subTitleText
+  {27, 196, 81, 4, 0, 0, 2, 0, 0.0f, 0x1e2a30, true, true, nullptr, nullptr},  // Boot.progressGuide
+  {39, 207, 57, 14, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Boot.statusArea
+  {67, 229, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x455a57, true, true, &lgfx::v1::fonts::Font0, "v1.0"},  // Boot.versionText
+  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "SFM"},  // Dashboard.titleText
+  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::DejaVu12, "14:32"},  // Dashboard.clockText
+  {8, 26, 0, 0, 127, 26, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Dashboard.headerLine
+  {10, 36, 115, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Dashboard.tempCard
+  {34, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "TEMP"},  // Dashboard.tempLabel
+  {88, 55, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "26.4C"},  // Dashboard.tempValue
+  {10, 82, 115, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Dashboard.humCard
+  {34, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "HUM"},  // Dashboard.humLabel
+  {88, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "48%"},  // Dashboard.humValue
+  {10, 82, 115, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, false, nullptr, nullptr},  // Dashboard.co2Card
+  {34, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::DejaVu9, "CO2"},  // Dashboard.co2Label
+  {88, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::DejaVu9, "780"},  // Dashboard.co2Value
+  {10, 128, 115, 38, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Dashboard.linePanel
+  {34, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "LINE"},  // Dashboard.lineTitle
+  {34, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::DejaVu9, "LINE-1"},  // Dashboard.line1Name
+  {88, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // Dashboard.line1Value
+  {34, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::DejaVu9, "LINE-2"},  // Dashboard.line2Name
+  {88, 147, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::DejaVu9, "IDLE"},  // Dashboard.line2Value
+  {10, 174, 115, 30, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Dashboard.alertPanel
+  {40, 189, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "ALERT"},  // Dashboard.alertTitle
+  {96, 189, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "2"},  // Dashboard.alertCount
+  {96, 189, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "WARN"},  // Dashboard.alertState
+  {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Dashboard.footerLine
+  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MENU"},  // Dashboard.btnA
+  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "SEL"},  // Dashboard.btnB
+  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "ACK"},  // Dashboard.btnC
+  {67, 14, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "ALERTS"},  // AlertList.titleText
+  {116, 14, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "3"},  // AlertList.countText
+  {8, 28, 0, 0, 127, 28, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // AlertList.headerLine
+  {8, 42, 119, 42, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // AlertList.row1
+  {19, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "!"},  // AlertList.level1
+  {73, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "MOTOR ERR"},  // AlertList.message1
+  {73, 73, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "14:28 CRIT"},  // AlertList.meta1
+  {8, 94, 119, 42, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // AlertList.row2
+  {19, 115, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "!"},  // AlertList.level2
+  {73, 108, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "TEMP HIGH"},  // AlertList.message2
+  {73, 125, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "14:12 WARN"},  // AlertList.meta2
+  {8, 146, 119, 42, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // AlertList.row3
+  {19, 167, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "i"},  // AlertList.level3
+  {73, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "FILTER"},  // AlertList.message3
+  {73, 177, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "09:40 INFO"},  // AlertList.meta3
+  {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // AlertList.footerLine
+  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BACK"},  // AlertList.btnA
+  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "OPEN"},  // AlertList.btnB
+  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "ACK"},  // AlertList.btnC
+  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "SENSOR"},  // SensorDetail.titleText
+  {67, 25, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "TEMP-01"},  // SensorDetail.sensorNameText
+  {8, 34, 0, 0, 127, 34, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // SensorDetail.headerLine
+  {10, 44, 115, 58, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // SensorDetail.mainCard
+  {67, 56, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "TEMP"},  // SensorDetail.valueLabel
+  {67, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "26.4C"},  // SensorDetail.valueText
+  {104, 78, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "C"},  // SensorDetail.unitText
+  {67, 94, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "NORMAL"},  // SensorDetail.stateText
+  {10, 112, 35, 30, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.minCard
+  {27, 122, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MIN"},  // SensorDetail.minLabel
+  {27, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "23.1"},  // SensorDetail.minValue
+  {50, 112, 35, 30, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.avgCard
+  {67, 122, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "AVG"},  // SensorDetail.avgLabel
+  {67, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "25.8"},  // SensorDetail.avgValue
+  {90, 112, 35, 30, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.maxCard
+  {107, 122, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MAX"},  // SensorDetail.maxLabel
+  {107, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "29.4"},  // SensorDetail.maxValue
+  {10, 152, 115, 30, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.thresholdPanel
+  {67, 162, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "LIMIT"},  // SensorDetail.thresholdTitle
+  {30, 176, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "HI"},  // SensorDetail.highLabel
+  {54, 176, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "30.0"},  // SensorDetail.highValue
+  {82, 176, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "LO"},  // SensorDetail.lowLabel
+  {106, 176, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "18.0"},  // SensorDetail.lowValue
+  {10, 190, 115, 16, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.trendPanel
+  {67, 198, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "TREND AREA"},  // SensorDetail.trendTitle
+  {14, 195, 0, 0, 121, 195, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendGrid1
+  {14, 198, 0, 0, 121, 198, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendGrid2
+  {14, 201, 0, 0, 121, 201, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendGrid3
+  {14, 194, 0, 0, 14, 202, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendAxisL
+  {121, 194, 0, 0, 121, 202, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendAxisR
+  {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // SensorDetail.footerLine
+  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BACK"},  // SensorDetail.btnA
+  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "NEXT"},  // SensorDetail.btnB
+  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "ACK"},  // SensorDetail.btnC
+  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "EQUIP"},  // EquipmentStatus.titleText
+  {67, 25, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "4RUN 1ERR"},  // EquipmentStatus.summaryText
+  {8, 34, 0, 0, 127, 34, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // EquipmentStatus.headerLine
+  {10, 42, 115, 14, 0, 0, 4, 0, 0.0f, 0x101a1f, true, true, nullptr, nullptr},  // EquipmentStatus.tableHeader
+  {34, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "UNIT"},  // EquipmentStatus.headName
+  {82, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "STAT"},  // EquipmentStatus.headState
+  {112, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "%"},  // EquipmentStatus.headLoad
+  {112, 49, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "CODE"},  // EquipmentStatus.headCode
+  {10, 64, 115, 24, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row1
+  {34, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "L1"},  // EquipmentStatus.name1
+  {82, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // EquipmentStatus.state1
+  {112, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "92"},  // EquipmentStatus.load1
+  {112, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code1
+  {10, 94, 115, 24, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row2
+  {34, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "L2"},  // EquipmentStatus.name2
+  {82, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "IDL"},  // EquipmentStatus.state2
+  {112, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "0"},  // EquipmentStatus.load2
+  {112, 106, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code2
+  {10, 124, 115, 24, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // EquipmentStatus.row3
+  {34, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "L3"},  // EquipmentStatus.name3
+  {82, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "ERR"},  // EquipmentStatus.state3
+  {112, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.load3
+  {112, 136, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "E104"},  // EquipmentStatus.code3
+  {10, 154, 115, 24, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row4
+  {34, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "PMP"},  // EquipmentStatus.name4
+  {82, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "RUN"},  // EquipmentStatus.state4
+  {112, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "68"},  // EquipmentStatus.load4
+  {112, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code4
+  {10, 184, 115, 20, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row5
+  {34, 194, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "FAN"},  // EquipmentStatus.name5
+  {82, 194, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "OFF"},  // EquipmentStatus.state5
+  {112, 194, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "0"},  // EquipmentStatus.load5
+  {112, 194, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code5
+  {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // EquipmentStatus.footerLine
+  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BACK"},  // EquipmentStatus.btnA
+  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "OPEN"},  // EquipmentStatus.btnB
+  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "RST"},  // EquipmentStatus.btnC
+  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "NETWORK"},  // NetworkStatus.titleText
+  {67, 25, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "ONLINE"},  // NetworkStatus.summaryText
+  {8, 34, 0, 0, 127, 34, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // NetworkStatus.headerLine
+  {10, 44, 115, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // NetworkStatus.wifiPanel
+  {34, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "WiFi"},  // NetworkStatus.wifiTitle
+  {34, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.wifiStatusLabel
+  {88, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "OK"},  // NetworkStatus.wifiStatusValue
+  {34, 73, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "SSID"},  // NetworkStatus.ssidLabel
+  {88, 73, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "AP01"},  // NetworkStatus.ssidValue
+  {10, 92, 115, 38, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // NetworkStatus.mqttPanel
+  {34, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "MQTT"},  // NetworkStatus.mqttTitle
+  {34, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.mqttStatusLabel
+  {88, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::DejaVu9, "OK"},  // NetworkStatus.mqttStatusValue
+  {34, 121, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "BRK"},  // NetworkStatus.brokerLabel
+  {88, 121, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "10.0"},  // NetworkStatus.brokerValue
+  {10, 140, 115, 38, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // NetworkStatus.ipPanel
+  {67, 150, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "DEVICE"},  // NetworkStatus.ipTitle
+  {34, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "IP"},  // NetworkStatus.ipLabel
+  {88, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "192.168.10.42"},  // NetworkStatus.ipValue
+  {34, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "RSSI"},  // NetworkStatus.rssiLabel
+  {88, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "-58"},  // NetworkStatus.rssiValue
+  {10, 188, 115, 18, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // NetworkStatus.devicePanel
+  {38, 197, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "ID"},  // NetworkStatus.deviceLabel
+  {86, 197, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "FAC-001"},  // NetworkStatus.deviceValue
+  {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // NetworkStatus.footerLine
+  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BACK"},  // NetworkStatus.btnA
+  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "SCAN"},  // NetworkStatus.btnB
+  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "RST"},  // NetworkStatus.btnC
+  {67, 12, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu12, "SETTINGS"},  // Settings.titleText
+  {67, 25, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "DEVICE"},  // Settings.summaryText
+  {8, 34, 0, 0, 127, 34, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Settings.headerLine
+  {10, 46, 115, 34, 0, 0, 5, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Settings.brightnessRow
+  {42, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "BRIGHT"},  // Settings.brightnessLabel
+  {96, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "80%"},  // Settings.brightnessValue
+  {96, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "LCD"},  // Settings.brightnessNote
+  {10, 90, 115, 34, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Settings.alertSoundRow
+  {42, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "SOUND"},  // Settings.alertSoundLabel
+  {96, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "ON"},  // Settings.alertSoundValue
+  {96, 118, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "BUZ"},  // Settings.alertSoundNote
+  {10, 134, 115, 34, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Settings.sendIntervalRow
+  {42, 151, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "INTVL"},  // Settings.sendIntervalLabel
+  {96, 151, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "5s"},  // Settings.sendIntervalValue
+  {96, 162, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "MQTT"},  // Settings.sendIntervalNote
+  {10, 178, 115, 28, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Settings.deviceIdRow
+  {42, 192, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "ID"},  // Settings.deviceIdLabel
+  {96, 192, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "FAC-001"},  // Settings.deviceIdValue
+  {96, 202, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "NODE"},  // Settings.deviceIdNote
+  {8, 214, 0, 0, 127, 214, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Settings.footerLine
+  {23, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "BACK"},  // Settings.btnA
+  {67, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "EDIT"},  // Settings.btnB
+  {111, 226, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "SAVE"},  // Settings.btnC
   // ---- Profile: AtomS3 128x128 rot0 ----
-  {10, 10, 108, 92, 0, 0, 8, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // Boot.frame
-  {33, 24, 62, 28, 0, 0, 5, 0, 0.0f, 0x101a1f, true, true, nullptr},  // Boot.logoBox
-  {64, 38, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 0.65f, 0xffffff, true, true, &lgfx::v1::fonts::Orbitron_Light_24},  // Boot.logoText
-  {64, 66, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9},  // Boot.titleText
-  {64, 80, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // Boot.subTitleText
-  {28, 108, 72, 4, 0, 0, 2, 0, 0.0f, 0x1e2a30, true, true, nullptr},  // Boot.progressGuide
-  {118, 204, 84, 14, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // Boot.statusArea
-  {64, 122, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x455a57, true, true, &lgfx::v1::fonts::Font0},  // Boot.versionText
-  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // Dashboard.titleText
-  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0},  // Dashboard.clockText
-  {12, 18, 0, 0, 116, 18, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // Dashboard.headerLine
-  {12, 26, 104, 27, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // Dashboard.tempCard
-  {36, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // Dashboard.tempLabel
-  {84, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // Dashboard.tempValue
-  {12, 26, 104, 27, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, false, nullptr},  // Dashboard.humCard
-  {36, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0},  // Dashboard.humLabel
-  {84, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // Dashboard.humValue
-  {12, 26, 104, 27, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, false, nullptr},  // Dashboard.co2Card
-  {36, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0},  // Dashboard.co2Label
-  {84, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // Dashboard.co2Value
-  {12, 61, 104, 27, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // Dashboard.linePanel
-  {36, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // Dashboard.lineTitle
-  {36, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Dashboard.line1Name
-  {84, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // Dashboard.line1Value
-  {36, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Dashboard.line2Name
-  {84, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // Dashboard.line2Value
-  {12, 96, 104, 22, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // Dashboard.alertPanel
-  {44, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // Dashboard.alertTitle
-  {84, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // Dashboard.alertCount
-  {84, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0},  // Dashboard.alertState
-  {12, 121, 0, 0, 116, 121, 0, 0, 0.0f, 0x233532, true, false, nullptr},  // Dashboard.footerLine
-  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Dashboard.btnA
-  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Dashboard.btnB
-  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Dashboard.btnC
-  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // AlertList.titleText
-  {112, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // AlertList.countText
-  {12, 18, 0, 0, 116, 18, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // AlertList.headerLine
-  {12, 26, 104, 28, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // AlertList.row1
-  {25, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // AlertList.level1
-  {72, 36, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // AlertList.message1
-  {72, 47, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // AlertList.meta1
-  {12, 62, 104, 28, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // AlertList.row2
-  {25, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // AlertList.level2
-  {72, 72, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // AlertList.message2
-  {72, 83, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // AlertList.meta2
-  {12, 96, 104, 22, 0, 0, 4, 0, 0.0f, 0x233532, false, false, nullptr},  // AlertList.row3
-  {25, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // AlertList.level3
-  {72, 103, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // AlertList.message3
-  {72, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // AlertList.meta3
-  {12, 121, 0, 0, 116, 121, 0, 0, 0.0f, 0x233532, true, false, nullptr},  // AlertList.footerLine
-  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // AlertList.btnA
-  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // AlertList.btnB
-  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // AlertList.btnC
-  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.titleText
-  {64, 20, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.sensorNameText
-  {12, 28, 0, 0, 116, 28, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // SensorDetail.headerLine
-  {12, 36, 104, 36, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // SensorDetail.mainCard
-  {38, 54, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.valueLabel
-  {84, 54, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.valueText
-  {108, 54, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // SensorDetail.unitText
-  {64, 65, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0},  // SensorDetail.stateText
-  {12, 80, 31, 22, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // SensorDetail.minCard
-  {27, 88, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.minLabel
-  {27, 98, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.minValue
-  {48, 80, 32, 22, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // SensorDetail.avgCard
-  {64, 88, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.avgLabel
-  {64, 98, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.avgValue
-  {85, 80, 31, 22, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // SensorDetail.maxCard
-  {100, 88, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.maxLabel
-  {100, 98, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.maxValue
-  {12, 108, 104, 12, 0, 0, 3, 0, 0.0f, 0x233532, false, true, nullptr},  // SensorDetail.thresholdPanel
-  {64, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // SensorDetail.thresholdTitle
-  {24, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // SensorDetail.highLabel
-  {48, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // SensorDetail.highValue
-  {78, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // SensorDetail.lowLabel
-  {102, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // SensorDetail.lowValue
-  {12, 108, 104, 12, 0, 0, 3, 0, 0.0f, 0x233532, false, false, nullptr},  // SensorDetail.trendPanel
-  {64, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // SensorDetail.trendTitle
-  {12, 112, 0, 0, 116, 112, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr},  // SensorDetail.trendGrid1
-  {12, 115, 0, 0, 116, 115, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr},  // SensorDetail.trendGrid2
-  {12, 118, 0, 0, 116, 118, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr},  // SensorDetail.trendGrid3
-  {12, 110, 0, 0, 12, 118, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr},  // SensorDetail.trendAxisL
-  {116, 110, 0, 0, 116, 118, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr},  // SensorDetail.trendAxisR
-  {12, 122, 0, 0, 116, 122, 0, 0, 0.0f, 0x233532, true, false, nullptr},  // SensorDetail.footerLine
-  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // SensorDetail.btnA
-  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // SensorDetail.btnB
-  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // SensorDetail.btnC
-  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.titleText
-  {64, 20, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.summaryText
-  {12, 28, 0, 0, 116, 28, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // EquipmentStatus.headerLine
-  {12, 36, 104, 12, 0, 0, 3, 0, 0.0f, 0x101a1f, true, true, nullptr},  // EquipmentStatus.tableHeader
-  {36, 42, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.headName
-  {84, 42, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.headState
-  {84, 42, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.headLoad
-  {84, 42, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.headCode
-  {12, 54, 104, 18, 0, 0, 3, 0, 0.0f, 0x233532, false, true, nullptr},  // EquipmentStatus.row1
-  {36, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.name1
-  {84, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.state1
-  {104, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.load1
-  {104, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.code1
-  {12, 78, 104, 18, 0, 0, 3, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // EquipmentStatus.row2
-  {36, 87, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.name2
-  {84, 87, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.state2
-  {104, 87, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.load2
-  {104, 87, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.code2
-  {12, 102, 104, 18, 0, 0, 3, 0, 0.0f, 0x233532, false, true, nullptr},  // EquipmentStatus.row3
-  {36, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.name3
-  {84, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // EquipmentStatus.state3
-  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.load3
-  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.code3
-  {12, 102, 104, 18, 0, 0, 3, 0, 0.0f, 0x233532, false, false, nullptr},  // EquipmentStatus.row4
-  {36, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.name4
-  {84, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.state4
-  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.load4
-  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.code4
-  {12, 102, 104, 18, 0, 0, 3, 0, 0.0f, 0x233532, false, false, nullptr},  // EquipmentStatus.row5
-  {36, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.name5
-  {84, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.state5
-  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.load5
-  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.code5
-  {12, 122, 0, 0, 116, 122, 0, 0, 0.0f, 0x233532, true, false, nullptr},  // EquipmentStatus.footerLine
-  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.btnA
-  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.btnB
-  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // EquipmentStatus.btnC
-  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.titleText
-  {64, 20, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.summaryText
-  {12, 28, 0, 0, 116, 28, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // NetworkStatus.headerLine
-  {12, 36, 104, 20, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // NetworkStatus.wifiPanel
-  {36, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.wifiTitle
-  {36, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.wifiStatusLabel
-  {84, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.wifiStatusValue
-  {36, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.ssidLabel
-  {84, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.ssidValue
-  {12, 64, 104, 20, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // NetworkStatus.mqttPanel
-  {36, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.mqttTitle
-  {36, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.mqttStatusLabel
-  {84, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.mqttStatusValue
-  {36, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.brokerLabel
-  {84, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.brokerValue
-  {12, 92, 104, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // NetworkStatus.ipPanel
-  {64, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.ipTitle
-  {36, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.ipLabel
-  {84, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // NetworkStatus.ipValue
-  {36, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.rssiLabel
-  {84, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.rssiValue
-  {12, 92, 104, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, false, nullptr},  // NetworkStatus.devicePanel
-  {36, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.deviceLabel
-  {84, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.deviceValue
-  {12, 122, 0, 0, 116, 122, 0, 0, 0.0f, 0x233532, true, false, nullptr},  // NetworkStatus.footerLine
-  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.btnA
-  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.btnB
-  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // NetworkStatus.btnC
-  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // Settings.titleText
-  {64, 20, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // Settings.summaryText
-  {12, 28, 0, 0, 116, 28, 0, 0, 0.0f, 0x233532, true, true, nullptr},  // Settings.headerLine
-  {12, 36, 104, 18, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr},  // Settings.brightnessRow
-  {40, 45, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // Settings.brightnessLabel
-  {86, 45, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // Settings.brightnessValue
-  {86, 52, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Settings.brightnessNote
-  {12, 61, 104, 18, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // Settings.alertSoundRow
-  {40, 70, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // Settings.alertSoundLabel
-  {86, 70, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // Settings.alertSoundValue
-  {86, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Settings.alertSoundNote
-  {12, 86, 104, 18, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr},  // Settings.sendIntervalRow
-  {40, 95, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0},  // Settings.sendIntervalLabel
-  {86, 95, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0},  // Settings.sendIntervalValue
-  {86, 102, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Settings.sendIntervalNote
-  {12, 110, 104, 10, 0, 0, 3, 0, 0.0f, 0x233532, false, false, nullptr},  // Settings.deviceIdRow
-  {40, 115, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0},  // Settings.deviceIdLabel
-  {86, 115, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0},  // Settings.deviceIdValue
-  {86, 115, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Settings.deviceIdNote
-  {12, 122, 0, 0, 116, 122, 0, 0, 0.0f, 0x233532, true, false, nullptr},  // Settings.footerLine
-  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Settings.btnA
-  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Settings.btnB
-  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0},  // Settings.btnC
+  {10, 10, 108, 92, 0, 0, 8, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Boot.frame
+  {33, 24, 62, 28, 0, 0, 5, 0, 0.0f, 0x101a1f, true, true, nullptr, nullptr},  // Boot.logoBox
+  {64, 38, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 0.65f, 0xffffff, true, true, &lgfx::v1::fonts::Orbitron_Light_24, "SFM"},  // Boot.logoText
+  {64, 66, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "FACTORY"},  // Boot.titleText
+  {64, 80, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "MONITOR"},  // Boot.subTitleText
+  {28, 108, 72, 4, 0, 0, 2, 0, 0.0f, 0x1e2a30, true, true, nullptr, nullptr},  // Boot.progressGuide
+  {118, 204, 84, 14, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Boot.statusArea
+  {64, 122, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x455a57, true, true, &lgfx::v1::fonts::Font0, "v1.0"},  // Boot.versionText
+  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "SFM"},  // Dashboard.titleText
+  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "14:32"},  // Dashboard.clockText
+  {12, 18, 0, 0, 116, 18, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Dashboard.headerLine
+  {12, 26, 104, 27, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Dashboard.tempCard
+  {36, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "TMP"},  // Dashboard.tempLabel
+  {84, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "26.4"},  // Dashboard.tempValue
+  {12, 26, 104, 27, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, false, nullptr, nullptr},  // Dashboard.humCard
+  {36, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "HUM"},  // Dashboard.humLabel
+  {84, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "48%"},  // Dashboard.humValue
+  {12, 26, 104, 27, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, false, nullptr, nullptr},  // Dashboard.co2Card
+  {36, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "CO2"},  // Dashboard.co2Label
+  {84, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "780"},  // Dashboard.co2Value
+  {12, 61, 104, 27, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Dashboard.linePanel
+  {36, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "LN"},  // Dashboard.lineTitle
+  {36, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "L1"},  // Dashboard.line1Name
+  {84, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "RUN"},  // Dashboard.line1Value
+  {36, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "L2"},  // Dashboard.line2Name
+  {84, 75, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "IDL"},  // Dashboard.line2Value
+  {12, 96, 104, 22, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Dashboard.alertPanel
+  {44, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "ALT"},  // Dashboard.alertTitle
+  {84, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "2"},  // Dashboard.alertCount
+  {84, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "WRN"},  // Dashboard.alertState
+  {12, 121, 0, 0, 116, 121, 0, 0, 0.0f, 0x233532, true, false, nullptr, nullptr},  // Dashboard.footerLine
+  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "A"},  // Dashboard.btnA
+  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // Dashboard.btnB
+  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "C"},  // Dashboard.btnC
+  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "ALERTS"},  // AlertList.titleText
+  {112, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "3"},  // AlertList.countText
+  {12, 18, 0, 0, 116, 18, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // AlertList.headerLine
+  {12, 26, 104, 28, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // AlertList.row1
+  {25, 40, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "!"},  // AlertList.level1
+  {72, 36, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "MOTOR"},  // AlertList.message1
+  {72, 47, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "CRIT"},  // AlertList.meta1
+  {12, 62, 104, 28, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // AlertList.row2
+  {25, 76, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "!"},  // AlertList.level2
+  {72, 72, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "TEMP"},  // AlertList.message2
+  {72, 83, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "WARN"},  // AlertList.meta2
+  {12, 96, 104, 22, 0, 0, 4, 0, 0.0f, 0x233532, false, false, nullptr, nullptr},  // AlertList.row3
+  {25, 107, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "i"},  // AlertList.level3
+  {72, 103, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "FILTER"},  // AlertList.message3
+  {72, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "INFO"},  // AlertList.meta3
+  {12, 121, 0, 0, 116, 121, 0, 0, 0.0f, 0x233532, true, false, nullptr, nullptr},  // AlertList.footerLine
+  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // AlertList.btnA
+  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "O"},  // AlertList.btnB
+  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "A"},  // AlertList.btnC
+  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "SENSOR"},  // SensorDetail.titleText
+  {64, 20, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "TEMP-01"},  // SensorDetail.sensorNameText
+  {12, 28, 0, 0, 116, 28, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // SensorDetail.headerLine
+  {12, 36, 104, 36, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // SensorDetail.mainCard
+  {38, 54, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "TMP"},  // SensorDetail.valueLabel
+  {84, 54, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "26.4"},  // SensorDetail.valueText
+  {108, 54, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "C"},  // SensorDetail.unitText
+  {64, 65, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "NORMAL"},  // SensorDetail.stateText
+  {12, 80, 31, 22, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.minCard
+  {27, 88, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MIN"},  // SensorDetail.minLabel
+  {27, 98, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "23"},  // SensorDetail.minValue
+  {48, 80, 32, 22, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.avgCard
+  {64, 88, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "AVG"},  // SensorDetail.avgLabel
+  {64, 98, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "26"},  // SensorDetail.avgValue
+  {85, 80, 31, 22, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.maxCard
+  {100, 88, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "MAX"},  // SensorDetail.maxLabel
+  {100, 98, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "29"},  // SensorDetail.maxValue
+  {12, 108, 104, 12, 0, 0, 3, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // SensorDetail.thresholdPanel
+  {64, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "HI 30  LO 18"},  // SensorDetail.thresholdTitle
+  {24, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "HI"},  // SensorDetail.highLabel
+  {48, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "30"},  // SensorDetail.highValue
+  {78, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "LO"},  // SensorDetail.lowLabel
+  {102, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "18"},  // SensorDetail.lowValue
+  {12, 108, 104, 12, 0, 0, 3, 0, 0.0f, 0x233532, false, false, nullptr, nullptr},  // SensorDetail.trendPanel
+  {64, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "TREND"},  // SensorDetail.trendTitle
+  {12, 112, 0, 0, 116, 112, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendGrid1
+  {12, 115, 0, 0, 116, 115, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendGrid2
+  {12, 118, 0, 0, 116, 118, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendGrid3
+  {12, 110, 0, 0, 12, 118, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendAxisL
+  {116, 110, 0, 0, 116, 118, 0, 0, 0.0f, 0x1e2a30, true, false, nullptr, nullptr},  // SensorDetail.trendAxisR
+  {12, 122, 0, 0, 116, 122, 0, 0, 0.0f, 0x233532, true, false, nullptr, nullptr},  // SensorDetail.footerLine
+  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // SensorDetail.btnA
+  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "N"},  // SensorDetail.btnB
+  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "A"},  // SensorDetail.btnC
+  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "EQUIP"},  // EquipmentStatus.titleText
+  {64, 20, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "1 ERR"},  // EquipmentStatus.summaryText
+  {12, 28, 0, 0, 116, 28, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // EquipmentStatus.headerLine
+  {12, 36, 104, 12, 0, 0, 3, 0, 0.0f, 0x101a1f, true, true, nullptr, nullptr},  // EquipmentStatus.tableHeader
+  {36, 42, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "UNIT"},  // EquipmentStatus.headName
+  {84, 42, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "STAT"},  // EquipmentStatus.headState
+  {84, 42, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "%"},  // EquipmentStatus.headLoad
+  {84, 42, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "CODE"},  // EquipmentStatus.headCode
+  {12, 54, 104, 18, 0, 0, 3, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row1
+  {36, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "L1"},  // EquipmentStatus.name1
+  {84, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "RUN"},  // EquipmentStatus.state1
+  {104, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "92"},  // EquipmentStatus.load1
+  {104, 63, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code1
+  {12, 78, 104, 18, 0, 0, 3, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // EquipmentStatus.row2
+  {36, 87, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "L3"},  // EquipmentStatus.name2
+  {84, 87, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "ERR"},  // EquipmentStatus.state2
+  {104, 87, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.load2
+  {104, 87, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "E104"},  // EquipmentStatus.code2
+  {12, 102, 104, 18, 0, 0, 3, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // EquipmentStatus.row3
+  {36, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "PMP"},  // EquipmentStatus.name3
+  {84, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "RUN"},  // EquipmentStatus.state3
+  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "68"},  // EquipmentStatus.load3
+  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code3
+  {12, 102, 104, 18, 0, 0, 3, 0, 0.0f, 0x233532, false, false, nullptr, nullptr},  // EquipmentStatus.row4
+  {36, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "L2"},  // EquipmentStatus.name4
+  {84, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "IDL"},  // EquipmentStatus.state4
+  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "0"},  // EquipmentStatus.load4
+  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code4
+  {12, 102, 104, 18, 0, 0, 3, 0, 0.0f, 0x233532, false, false, nullptr, nullptr},  // EquipmentStatus.row5
+  {36, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "FAN"},  // EquipmentStatus.name5
+  {84, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "OFF"},  // EquipmentStatus.state5
+  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "0"},  // EquipmentStatus.load5
+  {104, 111, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "--"},  // EquipmentStatus.code5
+  {12, 122, 0, 0, 116, 122, 0, 0, 0.0f, 0x233532, true, false, nullptr, nullptr},  // EquipmentStatus.footerLine
+  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // EquipmentStatus.btnA
+  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "O"},  // EquipmentStatus.btnB
+  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "R"},  // EquipmentStatus.btnC
+  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "NETWORK"},  // NetworkStatus.titleText
+  {64, 20, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "ONLINE"},  // NetworkStatus.summaryText
+  {12, 28, 0, 0, 116, 28, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // NetworkStatus.headerLine
+  {12, 36, 104, 20, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // NetworkStatus.wifiPanel
+  {36, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "WiFi"},  // NetworkStatus.wifiTitle
+  {36, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.wifiStatusLabel
+  {84, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "OK"},  // NetworkStatus.wifiStatusValue
+  {36, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "SSID"},  // NetworkStatus.ssidLabel
+  {84, 46, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "AP01"},  // NetworkStatus.ssidValue
+  {12, 64, 104, 20, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // NetworkStatus.mqttPanel
+  {36, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "MQTT"},  // NetworkStatus.mqttTitle
+  {36, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "STATE"},  // NetworkStatus.mqttStatusLabel
+  {84, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "OK"},  // NetworkStatus.mqttStatusValue
+  {36, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "BRK"},  // NetworkStatus.brokerLabel
+  {84, 74, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "10.0"},  // NetworkStatus.brokerValue
+  {12, 92, 104, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // NetworkStatus.ipPanel
+  {64, 101, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "DEVICE"},  // NetworkStatus.ipTitle
+  {36, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "IP"},  // NetworkStatus.ipLabel
+  {84, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "192.168.10.42"},  // NetworkStatus.ipValue
+  {36, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "RS"},  // NetworkStatus.rssiLabel
+  {84, 114, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "-58"},  // NetworkStatus.rssiValue
+  {12, 92, 104, 26, 0, 0, 4, 0, 0.0f, 0x233532, false, false, nullptr, nullptr},  // NetworkStatus.devicePanel
+  {36, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "ID"},  // NetworkStatus.deviceLabel
+  {84, 105, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "001"},  // NetworkStatus.deviceValue
+  {12, 122, 0, 0, 116, 122, 0, 0, 0.0f, 0x233532, true, false, nullptr, nullptr},  // NetworkStatus.footerLine
+  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // NetworkStatus.btnA
+  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "S"},  // NetworkStatus.btnB
+  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "R"},  // NetworkStatus.btnC
+  {64, 9, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "SETTINGS"},  // Settings.titleText
+  {64, 20, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "DEVICE"},  // Settings.summaryText
+  {12, 28, 0, 0, 116, 28, 0, 0, 0.0f, 0x233532, true, true, nullptr, nullptr},  // Settings.headerLine
+  {12, 36, 104, 18, 0, 0, 4, 0, 0.0f, 0x2a8f8a, false, true, nullptr, nullptr},  // Settings.brightnessRow
+  {40, 45, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "BRT"},  // Settings.brightnessLabel
+  {86, 45, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "80%"},  // Settings.brightnessValue
+  {86, 52, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "LCD"},  // Settings.brightnessNote
+  {12, 61, 104, 18, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Settings.alertSoundRow
+  {40, 70, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "SND"},  // Settings.alertSoundLabel
+  {86, 70, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "ON"},  // Settings.alertSoundValue
+  {86, 77, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "BUZ"},  // Settings.alertSoundNote
+  {12, 86, 104, 18, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // Settings.sendIntervalRow
+  {40, 95, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "INT"},  // Settings.sendIntervalLabel
+  {86, 95, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, true, &lgfx::v1::fonts::Font0, "5s"},  // Settings.sendIntervalValue
+  {86, 102, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "MQTT"},  // Settings.sendIntervalNote
+  {12, 110, 104, 10, 0, 0, 3, 0, 0.0f, 0x233532, false, false, nullptr, nullptr},  // Settings.deviceIdRow
+  {40, 115, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "ID"},  // Settings.deviceIdLabel
+  {86, 115, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x9ce5ac, true, false, &lgfx::v1::fonts::Font0, "001"},  // Settings.deviceIdValue
+  {86, 115, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "NODE"},  // Settings.deviceIdNote
+  {12, 122, 0, 0, 116, 122, 0, 0, 0.0f, 0x233532, true, false, nullptr, nullptr},  // Settings.footerLine
+  {24, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "B"},  // Settings.btnA
+  {64, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "E"},  // Settings.btnB
+  {104, 124, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "S"},  // Settings.btnC
 };
 
 static const lgfxsb::ProfileDesc kProfiles[] = {
@@ -957,162 +957,162 @@ class Screen : public lgfxsb::RendererT<Canvas> {
   void show(lgfxsb::SceneId id) { renderScene(id, nullptr, 0); }
   void show(const Scene::Boot& s) {
     lgfxsb::Value v[8];
-    v[2] = lgfxsb::Value::text(s.logoText);
-    v[3] = lgfxsb::Value::text(s.titleText);
-    v[4] = lgfxsb::Value::text(s.subTitleText);
-    v[7] = lgfxsb::Value::text(s.versionText);
+    if (s.logoText) v[2] = lgfxsb::Value::text(s.logoText);
+    if (s.titleText) v[3] = lgfxsb::Value::text(s.titleText);
+    if (s.subTitleText) v[4] = lgfxsb::Value::text(s.subTitleText);
+    if (s.versionText) v[7] = lgfxsb::Value::text(s.versionText);
     renderScene(Scene::Boot::id, v, 8, _ov_Boot ? &_ovt_Boot : nullptr, &s, &_ov_Boot);
   }
   void setOverlay(void (*fn)(Canvas&, const Scene::Boot&)) { _ov_Boot = fn; }
   void show(const Scene::Dashboard& s) {
     lgfxsb::Value v[26];
-    v[0] = lgfxsb::Value::text(s.titleText);
-    v[1] = lgfxsb::Value::text(s.clockText);
-    v[4] = lgfxsb::Value::text(s.tempLabel);
-    v[5] = lgfxsb::Value::text(s.tempValue);
-    v[7] = lgfxsb::Value::text(s.humLabel);
-    v[8] = lgfxsb::Value::text(s.humValue);
-    v[10] = lgfxsb::Value::text(s.co2Label);
-    v[11] = lgfxsb::Value::text(s.co2Value);
-    v[13] = lgfxsb::Value::text(s.lineTitle);
-    v[14] = lgfxsb::Value::text(s.line1Name);
-    v[15] = lgfxsb::Value::text(s.line1Value);
-    v[16] = lgfxsb::Value::text(s.line2Name);
-    v[17] = lgfxsb::Value::text(s.line2Value);
-    v[19] = lgfxsb::Value::text(s.alertTitle);
-    v[20] = lgfxsb::Value::text(s.alertCount);
-    v[21] = lgfxsb::Value::text(s.alertState);
-    v[23] = lgfxsb::Value::text(s.btnA);
-    v[24] = lgfxsb::Value::text(s.btnB);
-    v[25] = lgfxsb::Value::text(s.btnC);
+    if (s.titleText) v[0] = lgfxsb::Value::text(s.titleText);
+    if (s.clockText) v[1] = lgfxsb::Value::text(s.clockText);
+    if (s.tempLabel) v[4] = lgfxsb::Value::text(s.tempLabel);
+    if (s.tempValue) v[5] = lgfxsb::Value::text(s.tempValue);
+    if (s.humLabel) v[7] = lgfxsb::Value::text(s.humLabel);
+    if (s.humValue) v[8] = lgfxsb::Value::text(s.humValue);
+    if (s.co2Label) v[10] = lgfxsb::Value::text(s.co2Label);
+    if (s.co2Value) v[11] = lgfxsb::Value::text(s.co2Value);
+    if (s.lineTitle) v[13] = lgfxsb::Value::text(s.lineTitle);
+    if (s.line1Name) v[14] = lgfxsb::Value::text(s.line1Name);
+    if (s.line1Value) v[15] = lgfxsb::Value::text(s.line1Value);
+    if (s.line2Name) v[16] = lgfxsb::Value::text(s.line2Name);
+    if (s.line2Value) v[17] = lgfxsb::Value::text(s.line2Value);
+    if (s.alertTitle) v[19] = lgfxsb::Value::text(s.alertTitle);
+    if (s.alertCount) v[20] = lgfxsb::Value::text(s.alertCount);
+    if (s.alertState) v[21] = lgfxsb::Value::text(s.alertState);
+    if (s.btnA) v[23] = lgfxsb::Value::text(s.btnA);
+    if (s.btnB) v[24] = lgfxsb::Value::text(s.btnB);
+    if (s.btnC) v[25] = lgfxsb::Value::text(s.btnC);
     renderScene(Scene::Dashboard::id, v, 26, _ov_Dashboard ? &_ovt_Dashboard : nullptr, &s, &_ov_Dashboard);
   }
   void setOverlay(void (*fn)(Canvas&, const Scene::Dashboard&)) { _ov_Dashboard = fn; }
   void show(const Scene::AlertList& s) {
     lgfxsb::Value v[19];
-    v[0] = lgfxsb::Value::text(s.titleText);
-    v[1] = lgfxsb::Value::text(s.countText);
-    v[4] = lgfxsb::Value::text(s.level1);
-    v[5] = lgfxsb::Value::text(s.message1);
-    v[6] = lgfxsb::Value::text(s.meta1);
-    v[8] = lgfxsb::Value::text(s.level2);
-    v[9] = lgfxsb::Value::text(s.message2);
-    v[10] = lgfxsb::Value::text(s.meta2);
-    v[12] = lgfxsb::Value::text(s.level3);
-    v[13] = lgfxsb::Value::text(s.message3);
-    v[14] = lgfxsb::Value::text(s.meta3);
-    v[16] = lgfxsb::Value::text(s.btnA);
-    v[17] = lgfxsb::Value::text(s.btnB);
-    v[18] = lgfxsb::Value::text(s.btnC);
+    if (s.titleText) v[0] = lgfxsb::Value::text(s.titleText);
+    if (s.countText) v[1] = lgfxsb::Value::text(s.countText);
+    if (s.level1) v[4] = lgfxsb::Value::text(s.level1);
+    if (s.message1) v[5] = lgfxsb::Value::text(s.message1);
+    if (s.meta1) v[6] = lgfxsb::Value::text(s.meta1);
+    if (s.level2) v[8] = lgfxsb::Value::text(s.level2);
+    if (s.message2) v[9] = lgfxsb::Value::text(s.message2);
+    if (s.meta2) v[10] = lgfxsb::Value::text(s.meta2);
+    if (s.level3) v[12] = lgfxsb::Value::text(s.level3);
+    if (s.message3) v[13] = lgfxsb::Value::text(s.message3);
+    if (s.meta3) v[14] = lgfxsb::Value::text(s.meta3);
+    if (s.btnA) v[16] = lgfxsb::Value::text(s.btnA);
+    if (s.btnB) v[17] = lgfxsb::Value::text(s.btnB);
+    if (s.btnC) v[18] = lgfxsb::Value::text(s.btnC);
     renderScene(Scene::AlertList::id, v, 19, _ov_AlertList ? &_ovt_AlertList : nullptr, &s, &_ov_AlertList);
   }
   void setOverlay(void (*fn)(Canvas&, const Scene::AlertList&)) { _ov_AlertList = fn; }
   void show(const Scene::SensorDetail& s) {
     lgfxsb::Value v[34];
-    v[0] = lgfxsb::Value::text(s.titleText);
-    v[1] = lgfxsb::Value::text(s.sensorNameText);
-    v[4] = lgfxsb::Value::text(s.valueLabel);
-    v[5] = lgfxsb::Value::text(s.valueText);
-    v[6] = lgfxsb::Value::text(s.unitText);
-    v[7] = lgfxsb::Value::text(s.stateText);
-    v[9] = lgfxsb::Value::text(s.minLabel);
-    v[10] = lgfxsb::Value::text(s.minValue);
-    v[12] = lgfxsb::Value::text(s.avgLabel);
-    v[13] = lgfxsb::Value::text(s.avgValue);
-    v[15] = lgfxsb::Value::text(s.maxLabel);
-    v[16] = lgfxsb::Value::text(s.maxValue);
-    v[18] = lgfxsb::Value::text(s.thresholdTitle);
-    v[19] = lgfxsb::Value::text(s.highLabel);
-    v[20] = lgfxsb::Value::text(s.highValue);
-    v[21] = lgfxsb::Value::text(s.lowLabel);
-    v[22] = lgfxsb::Value::text(s.lowValue);
-    v[24] = lgfxsb::Value::text(s.trendTitle);
-    v[31] = lgfxsb::Value::text(s.btnA);
-    v[32] = lgfxsb::Value::text(s.btnB);
-    v[33] = lgfxsb::Value::text(s.btnC);
+    if (s.titleText) v[0] = lgfxsb::Value::text(s.titleText);
+    if (s.sensorNameText) v[1] = lgfxsb::Value::text(s.sensorNameText);
+    if (s.valueLabel) v[4] = lgfxsb::Value::text(s.valueLabel);
+    if (s.valueText) v[5] = lgfxsb::Value::text(s.valueText);
+    if (s.unitText) v[6] = lgfxsb::Value::text(s.unitText);
+    if (s.stateText) v[7] = lgfxsb::Value::text(s.stateText);
+    if (s.minLabel) v[9] = lgfxsb::Value::text(s.minLabel);
+    if (s.minValue) v[10] = lgfxsb::Value::text(s.minValue);
+    if (s.avgLabel) v[12] = lgfxsb::Value::text(s.avgLabel);
+    if (s.avgValue) v[13] = lgfxsb::Value::text(s.avgValue);
+    if (s.maxLabel) v[15] = lgfxsb::Value::text(s.maxLabel);
+    if (s.maxValue) v[16] = lgfxsb::Value::text(s.maxValue);
+    if (s.thresholdTitle) v[18] = lgfxsb::Value::text(s.thresholdTitle);
+    if (s.highLabel) v[19] = lgfxsb::Value::text(s.highLabel);
+    if (s.highValue) v[20] = lgfxsb::Value::text(s.highValue);
+    if (s.lowLabel) v[21] = lgfxsb::Value::text(s.lowLabel);
+    if (s.lowValue) v[22] = lgfxsb::Value::text(s.lowValue);
+    if (s.trendTitle) v[24] = lgfxsb::Value::text(s.trendTitle);
+    if (s.btnA) v[31] = lgfxsb::Value::text(s.btnA);
+    if (s.btnB) v[32] = lgfxsb::Value::text(s.btnB);
+    if (s.btnC) v[33] = lgfxsb::Value::text(s.btnC);
     renderScene(Scene::SensorDetail::id, v, 34, _ov_SensorDetail ? &_ovt_SensorDetail : nullptr, &s, &_ov_SensorDetail);
   }
   void setOverlay(void (*fn)(Canvas&, const Scene::SensorDetail&)) { _ov_SensorDetail = fn; }
   void show(const Scene::EquipmentStatus& s) {
     lgfxsb::Value v[37];
-    v[0] = lgfxsb::Value::text(s.titleText);
-    v[1] = lgfxsb::Value::text(s.summaryText);
-    v[4] = lgfxsb::Value::text(s.headName);
-    v[5] = lgfxsb::Value::text(s.headState);
-    v[6] = lgfxsb::Value::text(s.headLoad);
-    v[7] = lgfxsb::Value::text(s.headCode);
-    v[9] = lgfxsb::Value::text(s.name1);
-    v[10] = lgfxsb::Value::text(s.state1);
-    v[11] = lgfxsb::Value::text(s.load1);
-    v[12] = lgfxsb::Value::text(s.code1);
-    v[14] = lgfxsb::Value::text(s.name2);
-    v[15] = lgfxsb::Value::text(s.state2);
-    v[16] = lgfxsb::Value::text(s.load2);
-    v[17] = lgfxsb::Value::text(s.code2);
-    v[19] = lgfxsb::Value::text(s.name3);
-    v[20] = lgfxsb::Value::text(s.state3);
-    v[21] = lgfxsb::Value::text(s.load3);
-    v[22] = lgfxsb::Value::text(s.code3);
-    v[24] = lgfxsb::Value::text(s.name4);
-    v[25] = lgfxsb::Value::text(s.state4);
-    v[26] = lgfxsb::Value::text(s.load4);
-    v[27] = lgfxsb::Value::text(s.code4);
-    v[29] = lgfxsb::Value::text(s.name5);
-    v[30] = lgfxsb::Value::text(s.state5);
-    v[31] = lgfxsb::Value::text(s.load5);
-    v[32] = lgfxsb::Value::text(s.code5);
-    v[34] = lgfxsb::Value::text(s.btnA);
-    v[35] = lgfxsb::Value::text(s.btnB);
-    v[36] = lgfxsb::Value::text(s.btnC);
+    if (s.titleText) v[0] = lgfxsb::Value::text(s.titleText);
+    if (s.summaryText) v[1] = lgfxsb::Value::text(s.summaryText);
+    if (s.headName) v[4] = lgfxsb::Value::text(s.headName);
+    if (s.headState) v[5] = lgfxsb::Value::text(s.headState);
+    if (s.headLoad) v[6] = lgfxsb::Value::text(s.headLoad);
+    if (s.headCode) v[7] = lgfxsb::Value::text(s.headCode);
+    if (s.name1) v[9] = lgfxsb::Value::text(s.name1);
+    if (s.state1) v[10] = lgfxsb::Value::text(s.state1);
+    if (s.load1) v[11] = lgfxsb::Value::text(s.load1);
+    if (s.code1) v[12] = lgfxsb::Value::text(s.code1);
+    if (s.name2) v[14] = lgfxsb::Value::text(s.name2);
+    if (s.state2) v[15] = lgfxsb::Value::text(s.state2);
+    if (s.load2) v[16] = lgfxsb::Value::text(s.load2);
+    if (s.code2) v[17] = lgfxsb::Value::text(s.code2);
+    if (s.name3) v[19] = lgfxsb::Value::text(s.name3);
+    if (s.state3) v[20] = lgfxsb::Value::text(s.state3);
+    if (s.load3) v[21] = lgfxsb::Value::text(s.load3);
+    if (s.code3) v[22] = lgfxsb::Value::text(s.code3);
+    if (s.name4) v[24] = lgfxsb::Value::text(s.name4);
+    if (s.state4) v[25] = lgfxsb::Value::text(s.state4);
+    if (s.load4) v[26] = lgfxsb::Value::text(s.load4);
+    if (s.code4) v[27] = lgfxsb::Value::text(s.code4);
+    if (s.name5) v[29] = lgfxsb::Value::text(s.name5);
+    if (s.state5) v[30] = lgfxsb::Value::text(s.state5);
+    if (s.load5) v[31] = lgfxsb::Value::text(s.load5);
+    if (s.code5) v[32] = lgfxsb::Value::text(s.code5);
+    if (s.btnA) v[34] = lgfxsb::Value::text(s.btnA);
+    if (s.btnB) v[35] = lgfxsb::Value::text(s.btnB);
+    if (s.btnC) v[36] = lgfxsb::Value::text(s.btnC);
     renderScene(Scene::EquipmentStatus::id, v, 37, _ov_EquipmentStatus ? &_ovt_EquipmentStatus : nullptr, &s, &_ov_EquipmentStatus);
   }
   void setOverlay(void (*fn)(Canvas&, const Scene::EquipmentStatus&)) { _ov_EquipmentStatus = fn; }
   void show(const Scene::NetworkStatus& s) {
     lgfxsb::Value v[28];
-    v[0] = lgfxsb::Value::text(s.titleText);
-    v[1] = lgfxsb::Value::text(s.summaryText);
-    v[4] = lgfxsb::Value::text(s.wifiTitle);
-    v[5] = lgfxsb::Value::text(s.wifiStatusLabel);
-    v[6] = lgfxsb::Value::text(s.wifiStatusValue);
-    v[7] = lgfxsb::Value::text(s.ssidLabel);
-    v[8] = lgfxsb::Value::text(s.ssidValue);
-    v[10] = lgfxsb::Value::text(s.mqttTitle);
-    v[11] = lgfxsb::Value::text(s.mqttStatusLabel);
-    v[12] = lgfxsb::Value::text(s.mqttStatusValue);
-    v[13] = lgfxsb::Value::text(s.brokerLabel);
-    v[14] = lgfxsb::Value::text(s.brokerValue);
-    v[16] = lgfxsb::Value::text(s.ipTitle);
-    v[17] = lgfxsb::Value::text(s.ipLabel);
-    v[18] = lgfxsb::Value::text(s.ipValue);
-    v[19] = lgfxsb::Value::text(s.rssiLabel);
-    v[20] = lgfxsb::Value::text(s.rssiValue);
-    v[22] = lgfxsb::Value::text(s.deviceLabel);
-    v[23] = lgfxsb::Value::text(s.deviceValue);
-    v[25] = lgfxsb::Value::text(s.btnA);
-    v[26] = lgfxsb::Value::text(s.btnB);
-    v[27] = lgfxsb::Value::text(s.btnC);
+    if (s.titleText) v[0] = lgfxsb::Value::text(s.titleText);
+    if (s.summaryText) v[1] = lgfxsb::Value::text(s.summaryText);
+    if (s.wifiTitle) v[4] = lgfxsb::Value::text(s.wifiTitle);
+    if (s.wifiStatusLabel) v[5] = lgfxsb::Value::text(s.wifiStatusLabel);
+    if (s.wifiStatusValue) v[6] = lgfxsb::Value::text(s.wifiStatusValue);
+    if (s.ssidLabel) v[7] = lgfxsb::Value::text(s.ssidLabel);
+    if (s.ssidValue) v[8] = lgfxsb::Value::text(s.ssidValue);
+    if (s.mqttTitle) v[10] = lgfxsb::Value::text(s.mqttTitle);
+    if (s.mqttStatusLabel) v[11] = lgfxsb::Value::text(s.mqttStatusLabel);
+    if (s.mqttStatusValue) v[12] = lgfxsb::Value::text(s.mqttStatusValue);
+    if (s.brokerLabel) v[13] = lgfxsb::Value::text(s.brokerLabel);
+    if (s.brokerValue) v[14] = lgfxsb::Value::text(s.brokerValue);
+    if (s.ipTitle) v[16] = lgfxsb::Value::text(s.ipTitle);
+    if (s.ipLabel) v[17] = lgfxsb::Value::text(s.ipLabel);
+    if (s.ipValue) v[18] = lgfxsb::Value::text(s.ipValue);
+    if (s.rssiLabel) v[19] = lgfxsb::Value::text(s.rssiLabel);
+    if (s.rssiValue) v[20] = lgfxsb::Value::text(s.rssiValue);
+    if (s.deviceLabel) v[22] = lgfxsb::Value::text(s.deviceLabel);
+    if (s.deviceValue) v[23] = lgfxsb::Value::text(s.deviceValue);
+    if (s.btnA) v[25] = lgfxsb::Value::text(s.btnA);
+    if (s.btnB) v[26] = lgfxsb::Value::text(s.btnB);
+    if (s.btnC) v[27] = lgfxsb::Value::text(s.btnC);
     renderScene(Scene::NetworkStatus::id, v, 28, _ov_NetworkStatus ? &_ovt_NetworkStatus : nullptr, &s, &_ov_NetworkStatus);
   }
   void setOverlay(void (*fn)(Canvas&, const Scene::NetworkStatus&)) { _ov_NetworkStatus = fn; }
   void show(const Scene::Settings& s) {
     lgfxsb::Value v[23];
-    v[0] = lgfxsb::Value::text(s.titleText);
-    v[1] = lgfxsb::Value::text(s.summaryText);
-    v[4] = lgfxsb::Value::text(s.brightnessLabel);
-    v[5] = lgfxsb::Value::text(s.brightnessValue);
-    v[6] = lgfxsb::Value::text(s.brightnessNote);
-    v[8] = lgfxsb::Value::text(s.alertSoundLabel);
-    v[9] = lgfxsb::Value::text(s.alertSoundValue);
-    v[10] = lgfxsb::Value::text(s.alertSoundNote);
-    v[12] = lgfxsb::Value::text(s.sendIntervalLabel);
-    v[13] = lgfxsb::Value::text(s.sendIntervalValue);
-    v[14] = lgfxsb::Value::text(s.sendIntervalNote);
-    v[16] = lgfxsb::Value::text(s.deviceIdLabel);
-    v[17] = lgfxsb::Value::text(s.deviceIdValue);
-    v[18] = lgfxsb::Value::text(s.deviceIdNote);
-    v[20] = lgfxsb::Value::text(s.btnA);
-    v[21] = lgfxsb::Value::text(s.btnB);
-    v[22] = lgfxsb::Value::text(s.btnC);
+    if (s.titleText) v[0] = lgfxsb::Value::text(s.titleText);
+    if (s.summaryText) v[1] = lgfxsb::Value::text(s.summaryText);
+    if (s.brightnessLabel) v[4] = lgfxsb::Value::text(s.brightnessLabel);
+    if (s.brightnessValue) v[5] = lgfxsb::Value::text(s.brightnessValue);
+    if (s.brightnessNote) v[6] = lgfxsb::Value::text(s.brightnessNote);
+    if (s.alertSoundLabel) v[8] = lgfxsb::Value::text(s.alertSoundLabel);
+    if (s.alertSoundValue) v[9] = lgfxsb::Value::text(s.alertSoundValue);
+    if (s.alertSoundNote) v[10] = lgfxsb::Value::text(s.alertSoundNote);
+    if (s.sendIntervalLabel) v[12] = lgfxsb::Value::text(s.sendIntervalLabel);
+    if (s.sendIntervalValue) v[13] = lgfxsb::Value::text(s.sendIntervalValue);
+    if (s.sendIntervalNote) v[14] = lgfxsb::Value::text(s.sendIntervalNote);
+    if (s.deviceIdLabel) v[16] = lgfxsb::Value::text(s.deviceIdLabel);
+    if (s.deviceIdValue) v[17] = lgfxsb::Value::text(s.deviceIdValue);
+    if (s.deviceIdNote) v[18] = lgfxsb::Value::text(s.deviceIdNote);
+    if (s.btnA) v[20] = lgfxsb::Value::text(s.btnA);
+    if (s.btnB) v[21] = lgfxsb::Value::text(s.btnB);
+    if (s.btnC) v[22] = lgfxsb::Value::text(s.btnC);
     renderScene(Scene::Settings::id, v, 23, _ov_Settings ? &_ovt_Settings : nullptr, &s, &_ov_Settings);
   }
   void setOverlay(void (*fn)(Canvas&, const Scene::Settings&)) { _ov_Settings = fn; }
@@ -1140,7 +1140,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 8
+          "height": null
         },
         {
           "name": "Font2",
@@ -1148,7 +1148,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 16
+          "height": null
         },
         {
           "name": "Font7",
@@ -1156,15 +1156,15 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "Font6",
           "family": "Font6",
-          "content": "digits",
+          "content": "latin",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "Font8",
@@ -1172,7 +1172,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": 75
+          "height": null
         },
         {
           "name": "Font4",
@@ -1180,7 +1180,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 26
+          "height": null
         },
         {
           "name": "TomThumb",
@@ -1188,7 +1188,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 6
+          "height": null
         },
         {
           "name": "Font8x8C64",
@@ -1196,7 +1196,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 8
+          "height": null
         },
         {
           "name": "DejaVu9",
@@ -1204,7 +1204,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "px",
-          "height": 10
+          "height": 9
         },
         {
           "name": "FreeMono9pt7b",
@@ -1212,7 +1212,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 15
+          "height": null
         },
         {
           "name": "DejaVu12",
@@ -1220,7 +1220,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "px",
-          "height": 13
+          "height": 12
         },
         {
           "name": "AsciiFont8x16",
@@ -1228,7 +1228,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 16
+          "height": null
         },
         {
           "name": "FreeSerif9pt7b",
@@ -1236,7 +1236,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 17
+          "height": null
         },
         {
           "name": "DejaVu18",
@@ -1252,7 +1252,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 18
+          "height": null
         },
         {
           "name": "FreeMono12pt7b",
@@ -1260,7 +1260,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 20
+          "height": null
         },
         {
           "name": "FreeSans12pt7b",
@@ -1268,7 +1268,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 23
+          "height": null
         },
         {
           "name": "FreeSerif12pt7b",
@@ -1276,7 +1276,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 22
+          "height": null
         },
         {
           "name": "DejaVu24",
@@ -1284,7 +1284,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 25
+          "height": 24
         },
         {
           "name": "Roboto_Thin_24",
@@ -1292,7 +1292,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 26
+          "height": 24
         },
         {
           "name": "FreeMono18pt7b",
@@ -1300,7 +1300,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 30
+          "height": null
         },
         {
           "name": "FreeSerif18pt7b",
@@ -1308,7 +1308,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 33
+          "height": null
         },
         {
           "name": "Orbitron_Light_24",
@@ -1316,7 +1316,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 30
+          "height": 24
         },
         {
           "name": "Satisfy_24",
@@ -1324,7 +1324,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 34
+          "height": 24
         },
         {
           "name": "FreeSans18pt7b",
@@ -1332,7 +1332,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 35
+          "height": null
         },
         {
           "name": "FreeMono24pt7b",
@@ -1340,7 +1340,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 40
+          "height": null
         },
         {
           "name": "Orbitron_Light_32",
@@ -1348,7 +1348,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 41
+          "height": 32
         },
         {
           "name": "Yellowtail_32",
@@ -1356,7 +1356,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 37
+          "height": 32
         },
         {
           "name": "DejaVu40",
@@ -1364,7 +1364,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 40,
           "unit": "px",
-          "height": 42
+          "height": 40
         },
         {
           "name": "FreeSans24pt7b",
@@ -1372,7 +1372,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 45
+          "height": null
         },
         {
           "name": "FreeSerif24pt7b",
@@ -1380,7 +1380,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 44
+          "height": null
         },
         {
           "name": "AsciiFont24x48",
@@ -1388,7 +1388,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "DejaVu56",
@@ -1396,7 +1396,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 56,
           "unit": "px",
-          "height": 58
+          "height": 56
         },
         {
           "name": "DejaVu72",
@@ -1404,7 +1404,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 72,
           "unit": "px",
-          "height": 75
+          "height": 72
         }
       ],
       "profiles": [
@@ -1844,7 +1844,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 8
+          "height": null
         },
         {
           "name": "Font2",
@@ -1852,7 +1852,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 16
+          "height": null
         },
         {
           "name": "Font7",
@@ -1860,15 +1860,15 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "Font6",
           "family": "Font6",
-          "content": "digits",
+          "content": "latin",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "Font8",
@@ -1876,7 +1876,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": 75
+          "height": null
         },
         {
           "name": "Font4",
@@ -1884,7 +1884,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 26
+          "height": null
         },
         {
           "name": "TomThumb",
@@ -1892,7 +1892,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 6
+          "height": null
         },
         {
           "name": "Font8x8C64",
@@ -1900,7 +1900,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 8
+          "height": null
         },
         {
           "name": "DejaVu9",
@@ -1908,7 +1908,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "px",
-          "height": 10
+          "height": 9
         },
         {
           "name": "FreeMono9pt7b",
@@ -1916,7 +1916,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 15
+          "height": null
         },
         {
           "name": "DejaVu12",
@@ -1924,7 +1924,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "px",
-          "height": 13
+          "height": 12
         },
         {
           "name": "AsciiFont8x16",
@@ -1932,7 +1932,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 16
+          "height": null
         },
         {
           "name": "FreeSerif9pt7b",
@@ -1940,7 +1940,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 17
+          "height": null
         },
         {
           "name": "DejaVu18",
@@ -1956,7 +1956,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 18
+          "height": null
         },
         {
           "name": "FreeMono12pt7b",
@@ -1964,7 +1964,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 20
+          "height": null
         },
         {
           "name": "FreeSans12pt7b",
@@ -1972,7 +1972,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 23
+          "height": null
         },
         {
           "name": "FreeSerif12pt7b",
@@ -1980,7 +1980,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 22
+          "height": null
         },
         {
           "name": "DejaVu24",
@@ -1988,7 +1988,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 25
+          "height": 24
         },
         {
           "name": "Roboto_Thin_24",
@@ -1996,7 +1996,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 26
+          "height": 24
         },
         {
           "name": "FreeMono18pt7b",
@@ -2004,7 +2004,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 30
+          "height": null
         },
         {
           "name": "FreeSerif18pt7b",
@@ -2012,7 +2012,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 33
+          "height": null
         },
         {
           "name": "Orbitron_Light_24",
@@ -2020,7 +2020,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 30
+          "height": 24
         },
         {
           "name": "Satisfy_24",
@@ -2028,7 +2028,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 34
+          "height": 24
         },
         {
           "name": "FreeSans18pt7b",
@@ -2036,7 +2036,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 35
+          "height": null
         },
         {
           "name": "FreeMono24pt7b",
@@ -2044,7 +2044,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 40
+          "height": null
         },
         {
           "name": "Orbitron_Light_32",
@@ -2052,7 +2052,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 41
+          "height": 32
         },
         {
           "name": "Yellowtail_32",
@@ -2060,7 +2060,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 37
+          "height": 32
         },
         {
           "name": "DejaVu40",
@@ -2068,7 +2068,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 40,
           "unit": "px",
-          "height": 42
+          "height": 40
         },
         {
           "name": "FreeSans24pt7b",
@@ -2076,7 +2076,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 45
+          "height": null
         },
         {
           "name": "FreeSerif24pt7b",
@@ -2084,7 +2084,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 44
+          "height": null
         },
         {
           "name": "AsciiFont24x48",
@@ -2092,7 +2092,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "DejaVu56",
@@ -2100,7 +2100,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 56,
           "unit": "px",
-          "height": 58
+          "height": 56
         },
         {
           "name": "DejaVu72",
@@ -2108,7 +2108,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 72,
           "unit": "px",
-          "height": 75
+          "height": 72
         }
       ],
       "profiles": [
@@ -3184,7 +3184,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 8
+          "height": null
         },
         {
           "name": "Font2",
@@ -3192,7 +3192,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 16
+          "height": null
         },
         {
           "name": "Font7",
@@ -3200,15 +3200,15 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "Font6",
           "family": "Font6",
-          "content": "digits",
+          "content": "latin",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "Font8",
@@ -3216,7 +3216,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": 75
+          "height": null
         },
         {
           "name": "Font4",
@@ -3224,7 +3224,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 26
+          "height": null
         },
         {
           "name": "TomThumb",
@@ -3232,7 +3232,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 6
+          "height": null
         },
         {
           "name": "Font8x8C64",
@@ -3240,7 +3240,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 8
+          "height": null
         },
         {
           "name": "DejaVu9",
@@ -3248,7 +3248,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "px",
-          "height": 10
+          "height": 9
         },
         {
           "name": "FreeMono9pt7b",
@@ -3256,7 +3256,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 15
+          "height": null
         },
         {
           "name": "DejaVu12",
@@ -3264,7 +3264,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "px",
-          "height": 13
+          "height": 12
         },
         {
           "name": "AsciiFont8x16",
@@ -3272,7 +3272,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 16
+          "height": null
         },
         {
           "name": "FreeSerif9pt7b",
@@ -3280,7 +3280,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 17
+          "height": null
         },
         {
           "name": "DejaVu18",
@@ -3296,7 +3296,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 18
+          "height": null
         },
         {
           "name": "FreeMono12pt7b",
@@ -3304,7 +3304,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 20
+          "height": null
         },
         {
           "name": "FreeSans12pt7b",
@@ -3312,7 +3312,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 23
+          "height": null
         },
         {
           "name": "FreeSerif12pt7b",
@@ -3320,7 +3320,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 22
+          "height": null
         },
         {
           "name": "DejaVu24",
@@ -3328,7 +3328,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 25
+          "height": 24
         },
         {
           "name": "Roboto_Thin_24",
@@ -3336,7 +3336,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 26
+          "height": 24
         },
         {
           "name": "FreeMono18pt7b",
@@ -3344,7 +3344,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 30
+          "height": null
         },
         {
           "name": "FreeSerif18pt7b",
@@ -3352,7 +3352,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 33
+          "height": null
         },
         {
           "name": "Orbitron_Light_24",
@@ -3360,7 +3360,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 30
+          "height": 24
         },
         {
           "name": "Satisfy_24",
@@ -3368,7 +3368,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 34
+          "height": 24
         },
         {
           "name": "FreeSans18pt7b",
@@ -3376,7 +3376,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 35
+          "height": null
         },
         {
           "name": "FreeMono24pt7b",
@@ -3384,7 +3384,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 40
+          "height": null
         },
         {
           "name": "Orbitron_Light_32",
@@ -3392,7 +3392,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 41
+          "height": 32
         },
         {
           "name": "Yellowtail_32",
@@ -3400,7 +3400,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 37
+          "height": 32
         },
         {
           "name": "DejaVu40",
@@ -3408,7 +3408,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 40,
           "unit": "px",
-          "height": 42
+          "height": 40
         },
         {
           "name": "FreeSans24pt7b",
@@ -3416,7 +3416,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 45
+          "height": null
         },
         {
           "name": "FreeSerif24pt7b",
@@ -3424,7 +3424,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 44
+          "height": null
         },
         {
           "name": "AsciiFont24x48",
@@ -3432,7 +3432,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "DejaVu56",
@@ -3440,7 +3440,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 56,
           "unit": "px",
-          "height": 58
+          "height": 56
         },
         {
           "name": "DejaVu72",
@@ -3448,7 +3448,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 72,
           "unit": "px",
-          "height": 75
+          "height": 72
         }
       ],
       "profiles": [
@@ -4272,7 +4272,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 8
+          "height": null
         },
         {
           "name": "Font2",
@@ -4280,7 +4280,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 16
+          "height": null
         },
         {
           "name": "Font7",
@@ -4288,15 +4288,15 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "Font6",
           "family": "Font6",
-          "content": "digits",
+          "content": "latin",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "Font8",
@@ -4304,7 +4304,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": 75
+          "height": null
         },
         {
           "name": "Font4",
@@ -4312,7 +4312,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 26
+          "height": null
         },
         {
           "name": "TomThumb",
@@ -4320,7 +4320,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 6
+          "height": null
         },
         {
           "name": "Font8x8C64",
@@ -4328,7 +4328,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 8
+          "height": null
         },
         {
           "name": "DejaVu9",
@@ -4336,7 +4336,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "px",
-          "height": 10
+          "height": 9
         },
         {
           "name": "FreeMono9pt7b",
@@ -4344,7 +4344,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 15
+          "height": null
         },
         {
           "name": "DejaVu12",
@@ -4352,7 +4352,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "px",
-          "height": 13
+          "height": 12
         },
         {
           "name": "AsciiFont8x16",
@@ -4360,7 +4360,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 16
+          "height": null
         },
         {
           "name": "FreeSerif9pt7b",
@@ -4368,7 +4368,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 17
+          "height": null
         },
         {
           "name": "DejaVu18",
@@ -4384,7 +4384,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 18
+          "height": null
         },
         {
           "name": "FreeMono12pt7b",
@@ -4392,7 +4392,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 20
+          "height": null
         },
         {
           "name": "FreeSans12pt7b",
@@ -4400,7 +4400,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 23
+          "height": null
         },
         {
           "name": "FreeSerif12pt7b",
@@ -4408,7 +4408,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 22
+          "height": null
         },
         {
           "name": "DejaVu24",
@@ -4416,7 +4416,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 25
+          "height": 24
         },
         {
           "name": "Roboto_Thin_24",
@@ -4424,7 +4424,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 26
+          "height": 24
         },
         {
           "name": "FreeMono18pt7b",
@@ -4432,7 +4432,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 30
+          "height": null
         },
         {
           "name": "FreeSerif18pt7b",
@@ -4440,7 +4440,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 33
+          "height": null
         },
         {
           "name": "Orbitron_Light_24",
@@ -4448,7 +4448,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 30
+          "height": 24
         },
         {
           "name": "Satisfy_24",
@@ -4456,7 +4456,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 34
+          "height": 24
         },
         {
           "name": "FreeSans18pt7b",
@@ -4464,7 +4464,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 35
+          "height": null
         },
         {
           "name": "FreeMono24pt7b",
@@ -4472,7 +4472,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 40
+          "height": null
         },
         {
           "name": "Orbitron_Light_32",
@@ -4480,7 +4480,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 41
+          "height": 32
         },
         {
           "name": "Yellowtail_32",
@@ -4488,7 +4488,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 37
+          "height": 32
         },
         {
           "name": "DejaVu40",
@@ -4496,7 +4496,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 40,
           "unit": "px",
-          "height": 42
+          "height": 40
         },
         {
           "name": "FreeSans24pt7b",
@@ -4504,7 +4504,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 45
+          "height": null
         },
         {
           "name": "FreeSerif24pt7b",
@@ -4512,7 +4512,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 44
+          "height": null
         },
         {
           "name": "AsciiFont24x48",
@@ -4520,7 +4520,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "DejaVu56",
@@ -4528,7 +4528,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 56,
           "unit": "px",
-          "height": 58
+          "height": 56
         },
         {
           "name": "DejaVu72",
@@ -4536,7 +4536,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 72,
           "unit": "px",
-          "height": 75
+          "height": 72
         }
       ],
       "profiles": [
@@ -5870,7 +5870,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 8
+          "height": null
         },
         {
           "name": "Font2",
@@ -5878,7 +5878,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 16
+          "height": null
         },
         {
           "name": "Font7",
@@ -5886,15 +5886,15 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "Font6",
           "family": "Font6",
-          "content": "digits",
+          "content": "latin",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "Font8",
@@ -5902,7 +5902,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": 75
+          "height": null
         },
         {
           "name": "Font4",
@@ -5910,7 +5910,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 26
+          "height": null
         },
         {
           "name": "TomThumb",
@@ -5918,7 +5918,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 6
+          "height": null
         },
         {
           "name": "Font8x8C64",
@@ -5926,7 +5926,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 8
+          "height": null
         },
         {
           "name": "DejaVu9",
@@ -5934,7 +5934,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "px",
-          "height": 10
+          "height": 9
         },
         {
           "name": "FreeMono9pt7b",
@@ -5942,7 +5942,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 15
+          "height": null
         },
         {
           "name": "DejaVu12",
@@ -5950,7 +5950,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "px",
-          "height": 13
+          "height": 12
         },
         {
           "name": "AsciiFont8x16",
@@ -5958,7 +5958,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 16
+          "height": null
         },
         {
           "name": "FreeSerif9pt7b",
@@ -5966,7 +5966,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 17
+          "height": null
         },
         {
           "name": "DejaVu18",
@@ -5982,7 +5982,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 18
+          "height": null
         },
         {
           "name": "FreeMono12pt7b",
@@ -5990,7 +5990,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 20
+          "height": null
         },
         {
           "name": "FreeSans12pt7b",
@@ -5998,7 +5998,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 23
+          "height": null
         },
         {
           "name": "FreeSerif12pt7b",
@@ -6006,7 +6006,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 22
+          "height": null
         },
         {
           "name": "DejaVu24",
@@ -6014,7 +6014,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 25
+          "height": 24
         },
         {
           "name": "Roboto_Thin_24",
@@ -6022,7 +6022,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 26
+          "height": 24
         },
         {
           "name": "FreeMono18pt7b",
@@ -6030,7 +6030,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 30
+          "height": null
         },
         {
           "name": "FreeSerif18pt7b",
@@ -6038,7 +6038,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 33
+          "height": null
         },
         {
           "name": "Orbitron_Light_24",
@@ -6046,7 +6046,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 30
+          "height": 24
         },
         {
           "name": "Satisfy_24",
@@ -6054,7 +6054,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 34
+          "height": 24
         },
         {
           "name": "FreeSans18pt7b",
@@ -6062,7 +6062,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 35
+          "height": null
         },
         {
           "name": "FreeMono24pt7b",
@@ -6070,7 +6070,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 40
+          "height": null
         },
         {
           "name": "Orbitron_Light_32",
@@ -6078,7 +6078,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 41
+          "height": 32
         },
         {
           "name": "Yellowtail_32",
@@ -6086,7 +6086,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 37
+          "height": 32
         },
         {
           "name": "DejaVu40",
@@ -6094,7 +6094,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 40,
           "unit": "px",
-          "height": 42
+          "height": 40
         },
         {
           "name": "FreeSans24pt7b",
@@ -6102,7 +6102,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 45
+          "height": null
         },
         {
           "name": "FreeSerif24pt7b",
@@ -6110,7 +6110,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 44
+          "height": null
         },
         {
           "name": "AsciiFont24x48",
@@ -6118,7 +6118,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "DejaVu56",
@@ -6126,7 +6126,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 56,
           "unit": "px",
-          "height": 58
+          "height": 56
         },
         {
           "name": "DejaVu72",
@@ -6134,7 +6134,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 72,
           "unit": "px",
-          "height": 75
+          "height": 72
         }
       ],
       "profiles": [
@@ -7606,7 +7606,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 8
+          "height": null
         },
         {
           "name": "Font2",
@@ -7614,7 +7614,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 16
+          "height": null
         },
         {
           "name": "Font7",
@@ -7622,15 +7622,15 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "Font6",
           "family": "Font6",
-          "content": "digits",
+          "content": "latin",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "Font8",
@@ -7638,7 +7638,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": 75
+          "height": null
         },
         {
           "name": "Font4",
@@ -7646,7 +7646,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 26
+          "height": null
         },
         {
           "name": "TomThumb",
@@ -7654,7 +7654,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 6
+          "height": null
         },
         {
           "name": "Font8x8C64",
@@ -7662,7 +7662,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 8
+          "height": null
         },
         {
           "name": "DejaVu9",
@@ -7670,7 +7670,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "px",
-          "height": 10
+          "height": 9
         },
         {
           "name": "FreeMono9pt7b",
@@ -7678,7 +7678,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 15
+          "height": null
         },
         {
           "name": "DejaVu12",
@@ -7686,7 +7686,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "px",
-          "height": 13
+          "height": 12
         },
         {
           "name": "AsciiFont8x16",
@@ -7694,7 +7694,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 16
+          "height": null
         },
         {
           "name": "FreeSerif9pt7b",
@@ -7702,7 +7702,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 17
+          "height": null
         },
         {
           "name": "DejaVu18",
@@ -7718,7 +7718,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 18
+          "height": null
         },
         {
           "name": "FreeMono12pt7b",
@@ -7726,7 +7726,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 20
+          "height": null
         },
         {
           "name": "FreeSans12pt7b",
@@ -7734,7 +7734,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 23
+          "height": null
         },
         {
           "name": "FreeSerif12pt7b",
@@ -7742,7 +7742,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 22
+          "height": null
         },
         {
           "name": "DejaVu24",
@@ -7750,7 +7750,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 25
+          "height": 24
         },
         {
           "name": "Roboto_Thin_24",
@@ -7758,7 +7758,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 26
+          "height": 24
         },
         {
           "name": "FreeMono18pt7b",
@@ -7766,7 +7766,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 30
+          "height": null
         },
         {
           "name": "FreeSerif18pt7b",
@@ -7774,7 +7774,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 33
+          "height": null
         },
         {
           "name": "Orbitron_Light_24",
@@ -7782,7 +7782,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 30
+          "height": 24
         },
         {
           "name": "Satisfy_24",
@@ -7790,7 +7790,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 34
+          "height": 24
         },
         {
           "name": "FreeSans18pt7b",
@@ -7798,7 +7798,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 35
+          "height": null
         },
         {
           "name": "FreeMono24pt7b",
@@ -7806,7 +7806,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 40
+          "height": null
         },
         {
           "name": "Orbitron_Light_32",
@@ -7814,7 +7814,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 41
+          "height": 32
         },
         {
           "name": "Yellowtail_32",
@@ -7822,7 +7822,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 37
+          "height": 32
         },
         {
           "name": "DejaVu40",
@@ -7830,7 +7830,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 40,
           "unit": "px",
-          "height": 42
+          "height": 40
         },
         {
           "name": "FreeSans24pt7b",
@@ -7838,7 +7838,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 45
+          "height": null
         },
         {
           "name": "FreeSerif24pt7b",
@@ -7846,7 +7846,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 44
+          "height": null
         },
         {
           "name": "AsciiFont24x48",
@@ -7854,7 +7854,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "DejaVu56",
@@ -7862,7 +7862,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 56,
           "unit": "px",
-          "height": 58
+          "height": 56
         },
         {
           "name": "DejaVu72",
@@ -7870,7 +7870,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 72,
           "unit": "px",
-          "height": 75
+          "height": 72
         }
       ],
       "profiles": [
@@ -8514,7 +8514,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
               "datum": "MC",
               "size": 1,
               "color": "#ffffff",
-              "text": ".10.42",
+              "text": "192.168.10.42",
               "font": "Font0",
               "visible": true
             },
@@ -8890,7 +8890,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
               "datum": "MC",
               "size": 1,
               "color": "#ffffff",
-              "text": ".10.42",
+              "text": "192.168.10.42",
               "font": "Font0",
               "visible": true
             },
@@ -9018,7 +9018,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 8
+          "height": null
         },
         {
           "name": "Font2",
@@ -9026,7 +9026,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 16
+          "height": null
         },
         {
           "name": "Font7",
@@ -9034,15 +9034,15 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "Font6",
           "family": "Font6",
-          "content": "digits",
+          "content": "latin",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "Font8",
@@ -9050,7 +9050,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": 75
+          "height": null
         },
         {
           "name": "Font4",
@@ -9058,7 +9058,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 26
+          "height": null
         },
         {
           "name": "TomThumb",
@@ -9066,7 +9066,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 6
+          "height": null
         },
         {
           "name": "Font8x8C64",
@@ -9074,7 +9074,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 8
+          "height": null
         },
         {
           "name": "DejaVu9",
@@ -9082,7 +9082,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "px",
-          "height": 10
+          "height": 9
         },
         {
           "name": "FreeMono9pt7b",
@@ -9090,7 +9090,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 15
+          "height": null
         },
         {
           "name": "DejaVu12",
@@ -9098,7 +9098,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "px",
-          "height": 13
+          "height": 12
         },
         {
           "name": "AsciiFont8x16",
@@ -9106,7 +9106,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 16
+          "height": null
         },
         {
           "name": "FreeSerif9pt7b",
@@ -9114,7 +9114,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 17
+          "height": null
         },
         {
           "name": "DejaVu18",
@@ -9130,7 +9130,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": 18
+          "height": null
         },
         {
           "name": "FreeMono12pt7b",
@@ -9138,7 +9138,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 20
+          "height": null
         },
         {
           "name": "FreeSans12pt7b",
@@ -9146,7 +9146,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 23
+          "height": null
         },
         {
           "name": "FreeSerif12pt7b",
@@ -9154,7 +9154,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": 22
+          "height": null
         },
         {
           "name": "DejaVu24",
@@ -9162,7 +9162,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 25
+          "height": 24
         },
         {
           "name": "Roboto_Thin_24",
@@ -9170,7 +9170,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 26
+          "height": 24
         },
         {
           "name": "FreeMono18pt7b",
@@ -9178,7 +9178,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 30
+          "height": null
         },
         {
           "name": "FreeSerif18pt7b",
@@ -9186,7 +9186,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 33
+          "height": null
         },
         {
           "name": "Orbitron_Light_24",
@@ -9194,7 +9194,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 30
+          "height": 24
         },
         {
           "name": "Satisfy_24",
@@ -9202,7 +9202,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 34
+          "height": 24
         },
         {
           "name": "FreeSans18pt7b",
@@ -9210,7 +9210,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": 35
+          "height": null
         },
         {
           "name": "FreeMono24pt7b",
@@ -9218,7 +9218,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 40
+          "height": null
         },
         {
           "name": "Orbitron_Light_32",
@@ -9226,7 +9226,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 41
+          "height": 32
         },
         {
           "name": "Yellowtail_32",
@@ -9234,7 +9234,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 37
+          "height": 32
         },
         {
           "name": "DejaVu40",
@@ -9242,7 +9242,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 40,
           "unit": "px",
-          "height": 42
+          "height": 40
         },
         {
           "name": "FreeSans24pt7b",
@@ -9250,7 +9250,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 45
+          "height": null
         },
         {
           "name": "FreeSerif24pt7b",
@@ -9258,7 +9258,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": 44
+          "height": null
         },
         {
           "name": "AsciiFont24x48",
@@ -9266,7 +9266,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": 48
+          "height": null
         },
         {
           "name": "DejaVu56",
@@ -9274,7 +9274,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 56,
           "unit": "px",
-          "height": 58
+          "height": 56
         },
         {
           "name": "DejaVu72",
@@ -9282,7 +9282,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 72,
           "unit": "px",
-          "height": 75
+          "height": 72
         }
       ],
       "profiles": [
