@@ -1140,7 +1140,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 8
         },
         {
           "name": "Font2",
@@ -1148,7 +1148,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 16
         },
         {
           "name": "Font7",
@@ -1156,15 +1156,15 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "Font6",
           "family": "Font6",
-          "content": "latin",
+          "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "Font8",
@@ -1172,7 +1172,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 75
         },
         {
           "name": "Font4",
@@ -1180,7 +1180,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 26
         },
         {
           "name": "TomThumb",
@@ -1188,7 +1188,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 6
         },
         {
           "name": "Font8x8C64",
@@ -1196,7 +1196,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 8
         },
         {
           "name": "DejaVu9",
@@ -1204,7 +1204,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "px",
-          "height": 9
+          "height": 10
         },
         {
           "name": "FreeMono9pt7b",
@@ -1212,7 +1212,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 15
         },
         {
           "name": "DejaVu12",
@@ -1220,7 +1220,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "px",
-          "height": 12
+          "height": 13
         },
         {
           "name": "AsciiFont8x16",
@@ -1228,7 +1228,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 16
         },
         {
           "name": "FreeSerif9pt7b",
@@ -1236,7 +1236,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 17
         },
         {
           "name": "DejaVu18",
@@ -1252,7 +1252,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 18
         },
         {
           "name": "FreeMono12pt7b",
@@ -1260,7 +1260,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 20
         },
         {
           "name": "FreeSans12pt7b",
@@ -1268,7 +1268,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 23
         },
         {
           "name": "FreeSerif12pt7b",
@@ -1276,7 +1276,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 22
         },
         {
           "name": "DejaVu24",
@@ -1284,7 +1284,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 25
         },
         {
           "name": "Roboto_Thin_24",
@@ -1292,7 +1292,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 26
         },
         {
           "name": "FreeMono18pt7b",
@@ -1300,7 +1300,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 30
         },
         {
           "name": "FreeSerif18pt7b",
@@ -1308,7 +1308,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 33
         },
         {
           "name": "Orbitron_Light_24",
@@ -1316,7 +1316,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 30
         },
         {
           "name": "Satisfy_24",
@@ -1324,7 +1324,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 34
         },
         {
           "name": "FreeSans18pt7b",
@@ -1332,7 +1332,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 35
         },
         {
           "name": "FreeMono24pt7b",
@@ -1340,7 +1340,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 40
         },
         {
           "name": "Orbitron_Light_32",
@@ -1348,7 +1348,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 32
+          "height": 41
         },
         {
           "name": "Yellowtail_32",
@@ -1356,7 +1356,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 32
+          "height": 37
         },
         {
           "name": "DejaVu40",
@@ -1364,7 +1364,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 40,
           "unit": "px",
-          "height": 40
+          "height": 42
         },
         {
           "name": "FreeSans24pt7b",
@@ -1372,7 +1372,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 45
         },
         {
           "name": "FreeSerif24pt7b",
@@ -1380,7 +1380,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 44
         },
         {
           "name": "AsciiFont24x48",
@@ -1388,7 +1388,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "DejaVu56",
@@ -1396,7 +1396,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 56,
           "unit": "px",
-          "height": 56
+          "height": 58
         },
         {
           "name": "DejaVu72",
@@ -1404,7 +1404,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 72,
           "unit": "px",
-          "height": 72
+          "height": 75
         }
       ],
       "profiles": [
@@ -1844,7 +1844,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 8
         },
         {
           "name": "Font2",
@@ -1852,7 +1852,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 16
         },
         {
           "name": "Font7",
@@ -1860,15 +1860,15 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "Font6",
           "family": "Font6",
-          "content": "latin",
+          "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "Font8",
@@ -1876,7 +1876,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 75
         },
         {
           "name": "Font4",
@@ -1884,7 +1884,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 26
         },
         {
           "name": "TomThumb",
@@ -1892,7 +1892,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 6
         },
         {
           "name": "Font8x8C64",
@@ -1900,7 +1900,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 8
         },
         {
           "name": "DejaVu9",
@@ -1908,7 +1908,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "px",
-          "height": 9
+          "height": 10
         },
         {
           "name": "FreeMono9pt7b",
@@ -1916,7 +1916,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 15
         },
         {
           "name": "DejaVu12",
@@ -1924,7 +1924,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "px",
-          "height": 12
+          "height": 13
         },
         {
           "name": "AsciiFont8x16",
@@ -1932,7 +1932,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 16
         },
         {
           "name": "FreeSerif9pt7b",
@@ -1940,7 +1940,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 17
         },
         {
           "name": "DejaVu18",
@@ -1956,7 +1956,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 18
         },
         {
           "name": "FreeMono12pt7b",
@@ -1964,7 +1964,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 20
         },
         {
           "name": "FreeSans12pt7b",
@@ -1972,7 +1972,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 23
         },
         {
           "name": "FreeSerif12pt7b",
@@ -1980,7 +1980,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 22
         },
         {
           "name": "DejaVu24",
@@ -1988,7 +1988,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 25
         },
         {
           "name": "Roboto_Thin_24",
@@ -1996,7 +1996,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 26
         },
         {
           "name": "FreeMono18pt7b",
@@ -2004,7 +2004,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 30
         },
         {
           "name": "FreeSerif18pt7b",
@@ -2012,7 +2012,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 33
         },
         {
           "name": "Orbitron_Light_24",
@@ -2020,7 +2020,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 30
         },
         {
           "name": "Satisfy_24",
@@ -2028,7 +2028,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 34
         },
         {
           "name": "FreeSans18pt7b",
@@ -2036,7 +2036,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 35
         },
         {
           "name": "FreeMono24pt7b",
@@ -2044,7 +2044,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 40
         },
         {
           "name": "Orbitron_Light_32",
@@ -2052,7 +2052,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 32
+          "height": 41
         },
         {
           "name": "Yellowtail_32",
@@ -2060,7 +2060,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 32
+          "height": 37
         },
         {
           "name": "DejaVu40",
@@ -2068,7 +2068,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 40,
           "unit": "px",
-          "height": 40
+          "height": 42
         },
         {
           "name": "FreeSans24pt7b",
@@ -2076,7 +2076,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 45
         },
         {
           "name": "FreeSerif24pt7b",
@@ -2084,7 +2084,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 44
         },
         {
           "name": "AsciiFont24x48",
@@ -2092,7 +2092,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "DejaVu56",
@@ -2100,7 +2100,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 56,
           "unit": "px",
-          "height": 56
+          "height": 58
         },
         {
           "name": "DejaVu72",
@@ -2108,7 +2108,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 72,
           "unit": "px",
-          "height": 72
+          "height": 75
         }
       ],
       "profiles": [
@@ -3184,7 +3184,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 8
         },
         {
           "name": "Font2",
@@ -3192,7 +3192,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 16
         },
         {
           "name": "Font7",
@@ -3200,15 +3200,15 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "Font6",
           "family": "Font6",
-          "content": "latin",
+          "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "Font8",
@@ -3216,7 +3216,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 75
         },
         {
           "name": "Font4",
@@ -3224,7 +3224,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 26
         },
         {
           "name": "TomThumb",
@@ -3232,7 +3232,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 6
         },
         {
           "name": "Font8x8C64",
@@ -3240,7 +3240,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 8
         },
         {
           "name": "DejaVu9",
@@ -3248,7 +3248,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "px",
-          "height": 9
+          "height": 10
         },
         {
           "name": "FreeMono9pt7b",
@@ -3256,7 +3256,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 15
         },
         {
           "name": "DejaVu12",
@@ -3264,7 +3264,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "px",
-          "height": 12
+          "height": 13
         },
         {
           "name": "AsciiFont8x16",
@@ -3272,7 +3272,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 16
         },
         {
           "name": "FreeSerif9pt7b",
@@ -3280,7 +3280,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 17
         },
         {
           "name": "DejaVu18",
@@ -3296,7 +3296,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 18
         },
         {
           "name": "FreeMono12pt7b",
@@ -3304,7 +3304,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 20
         },
         {
           "name": "FreeSans12pt7b",
@@ -3312,7 +3312,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 23
         },
         {
           "name": "FreeSerif12pt7b",
@@ -3320,7 +3320,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 22
         },
         {
           "name": "DejaVu24",
@@ -3328,7 +3328,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 25
         },
         {
           "name": "Roboto_Thin_24",
@@ -3336,7 +3336,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 26
         },
         {
           "name": "FreeMono18pt7b",
@@ -3344,7 +3344,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 30
         },
         {
           "name": "FreeSerif18pt7b",
@@ -3352,7 +3352,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 33
         },
         {
           "name": "Orbitron_Light_24",
@@ -3360,7 +3360,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 30
         },
         {
           "name": "Satisfy_24",
@@ -3368,7 +3368,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 34
         },
         {
           "name": "FreeSans18pt7b",
@@ -3376,7 +3376,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 35
         },
         {
           "name": "FreeMono24pt7b",
@@ -3384,7 +3384,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 40
         },
         {
           "name": "Orbitron_Light_32",
@@ -3392,7 +3392,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 32
+          "height": 41
         },
         {
           "name": "Yellowtail_32",
@@ -3400,7 +3400,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 32
+          "height": 37
         },
         {
           "name": "DejaVu40",
@@ -3408,7 +3408,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 40,
           "unit": "px",
-          "height": 40
+          "height": 42
         },
         {
           "name": "FreeSans24pt7b",
@@ -3416,7 +3416,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 45
         },
         {
           "name": "FreeSerif24pt7b",
@@ -3424,7 +3424,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 44
         },
         {
           "name": "AsciiFont24x48",
@@ -3432,7 +3432,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "DejaVu56",
@@ -3440,7 +3440,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 56,
           "unit": "px",
-          "height": 56
+          "height": 58
         },
         {
           "name": "DejaVu72",
@@ -3448,7 +3448,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 72,
           "unit": "px",
-          "height": 72
+          "height": 75
         }
       ],
       "profiles": [
@@ -4272,7 +4272,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 8
         },
         {
           "name": "Font2",
@@ -4280,7 +4280,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 16
         },
         {
           "name": "Font7",
@@ -4288,15 +4288,15 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "Font6",
           "family": "Font6",
-          "content": "latin",
+          "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "Font8",
@@ -4304,7 +4304,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 75
         },
         {
           "name": "Font4",
@@ -4312,7 +4312,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 26
         },
         {
           "name": "TomThumb",
@@ -4320,7 +4320,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 6
         },
         {
           "name": "Font8x8C64",
@@ -4328,7 +4328,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 8
         },
         {
           "name": "DejaVu9",
@@ -4336,7 +4336,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "px",
-          "height": 9
+          "height": 10
         },
         {
           "name": "FreeMono9pt7b",
@@ -4344,7 +4344,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 15
         },
         {
           "name": "DejaVu12",
@@ -4352,7 +4352,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "px",
-          "height": 12
+          "height": 13
         },
         {
           "name": "AsciiFont8x16",
@@ -4360,7 +4360,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 16
         },
         {
           "name": "FreeSerif9pt7b",
@@ -4368,7 +4368,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 17
         },
         {
           "name": "DejaVu18",
@@ -4384,7 +4384,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 18
         },
         {
           "name": "FreeMono12pt7b",
@@ -4392,7 +4392,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 20
         },
         {
           "name": "FreeSans12pt7b",
@@ -4400,7 +4400,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 23
         },
         {
           "name": "FreeSerif12pt7b",
@@ -4408,7 +4408,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 22
         },
         {
           "name": "DejaVu24",
@@ -4416,7 +4416,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 25
         },
         {
           "name": "Roboto_Thin_24",
@@ -4424,7 +4424,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 26
         },
         {
           "name": "FreeMono18pt7b",
@@ -4432,7 +4432,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 30
         },
         {
           "name": "FreeSerif18pt7b",
@@ -4440,7 +4440,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 33
         },
         {
           "name": "Orbitron_Light_24",
@@ -4448,7 +4448,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 30
         },
         {
           "name": "Satisfy_24",
@@ -4456,7 +4456,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 34
         },
         {
           "name": "FreeSans18pt7b",
@@ -4464,7 +4464,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 35
         },
         {
           "name": "FreeMono24pt7b",
@@ -4472,7 +4472,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 40
         },
         {
           "name": "Orbitron_Light_32",
@@ -4480,7 +4480,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 32
+          "height": 41
         },
         {
           "name": "Yellowtail_32",
@@ -4488,7 +4488,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 32
+          "height": 37
         },
         {
           "name": "DejaVu40",
@@ -4496,7 +4496,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 40,
           "unit": "px",
-          "height": 40
+          "height": 42
         },
         {
           "name": "FreeSans24pt7b",
@@ -4504,7 +4504,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 45
         },
         {
           "name": "FreeSerif24pt7b",
@@ -4512,7 +4512,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 44
         },
         {
           "name": "AsciiFont24x48",
@@ -4520,7 +4520,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "DejaVu56",
@@ -4528,7 +4528,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 56,
           "unit": "px",
-          "height": 56
+          "height": 58
         },
         {
           "name": "DejaVu72",
@@ -4536,7 +4536,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 72,
           "unit": "px",
-          "height": 72
+          "height": 75
         }
       ],
       "profiles": [
@@ -5870,7 +5870,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 8
         },
         {
           "name": "Font2",
@@ -5878,7 +5878,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 16
         },
         {
           "name": "Font7",
@@ -5886,15 +5886,15 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "Font6",
           "family": "Font6",
-          "content": "latin",
+          "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "Font8",
@@ -5902,7 +5902,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 75
         },
         {
           "name": "Font4",
@@ -5910,7 +5910,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 26
         },
         {
           "name": "TomThumb",
@@ -5918,7 +5918,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 6
         },
         {
           "name": "Font8x8C64",
@@ -5926,7 +5926,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 8
         },
         {
           "name": "DejaVu9",
@@ -5934,7 +5934,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "px",
-          "height": 9
+          "height": 10
         },
         {
           "name": "FreeMono9pt7b",
@@ -5942,7 +5942,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 15
         },
         {
           "name": "DejaVu12",
@@ -5950,7 +5950,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "px",
-          "height": 12
+          "height": 13
         },
         {
           "name": "AsciiFont8x16",
@@ -5958,7 +5958,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 16
         },
         {
           "name": "FreeSerif9pt7b",
@@ -5966,7 +5966,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 17
         },
         {
           "name": "DejaVu18",
@@ -5982,7 +5982,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 18
         },
         {
           "name": "FreeMono12pt7b",
@@ -5990,7 +5990,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 20
         },
         {
           "name": "FreeSans12pt7b",
@@ -5998,7 +5998,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 23
         },
         {
           "name": "FreeSerif12pt7b",
@@ -6006,7 +6006,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 22
         },
         {
           "name": "DejaVu24",
@@ -6014,7 +6014,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 25
         },
         {
           "name": "Roboto_Thin_24",
@@ -6022,7 +6022,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 26
         },
         {
           "name": "FreeMono18pt7b",
@@ -6030,7 +6030,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 30
         },
         {
           "name": "FreeSerif18pt7b",
@@ -6038,7 +6038,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 33
         },
         {
           "name": "Orbitron_Light_24",
@@ -6046,7 +6046,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 30
         },
         {
           "name": "Satisfy_24",
@@ -6054,7 +6054,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 34
         },
         {
           "name": "FreeSans18pt7b",
@@ -6062,7 +6062,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 35
         },
         {
           "name": "FreeMono24pt7b",
@@ -6070,7 +6070,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 40
         },
         {
           "name": "Orbitron_Light_32",
@@ -6078,7 +6078,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 32
+          "height": 41
         },
         {
           "name": "Yellowtail_32",
@@ -6086,7 +6086,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 32
+          "height": 37
         },
         {
           "name": "DejaVu40",
@@ -6094,7 +6094,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 40,
           "unit": "px",
-          "height": 40
+          "height": 42
         },
         {
           "name": "FreeSans24pt7b",
@@ -6102,7 +6102,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 45
         },
         {
           "name": "FreeSerif24pt7b",
@@ -6110,7 +6110,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 44
         },
         {
           "name": "AsciiFont24x48",
@@ -6118,7 +6118,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "DejaVu56",
@@ -6126,7 +6126,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 56,
           "unit": "px",
-          "height": 56
+          "height": 58
         },
         {
           "name": "DejaVu72",
@@ -6134,7 +6134,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 72,
           "unit": "px",
-          "height": 72
+          "height": 75
         }
       ],
       "profiles": [
@@ -7606,7 +7606,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 8
         },
         {
           "name": "Font2",
@@ -7614,7 +7614,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 16
         },
         {
           "name": "Font7",
@@ -7622,15 +7622,15 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "Font6",
           "family": "Font6",
-          "content": "latin",
+          "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "Font8",
@@ -7638,7 +7638,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 75
         },
         {
           "name": "Font4",
@@ -7646,7 +7646,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 26
         },
         {
           "name": "TomThumb",
@@ -7654,7 +7654,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 6
         },
         {
           "name": "Font8x8C64",
@@ -7662,7 +7662,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 8
         },
         {
           "name": "DejaVu9",
@@ -7670,7 +7670,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "px",
-          "height": 9
+          "height": 10
         },
         {
           "name": "FreeMono9pt7b",
@@ -7678,7 +7678,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 15
         },
         {
           "name": "DejaVu12",
@@ -7686,7 +7686,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "px",
-          "height": 12
+          "height": 13
         },
         {
           "name": "AsciiFont8x16",
@@ -7694,7 +7694,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 16
         },
         {
           "name": "FreeSerif9pt7b",
@@ -7702,7 +7702,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 17
         },
         {
           "name": "DejaVu18",
@@ -7718,7 +7718,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 18
         },
         {
           "name": "FreeMono12pt7b",
@@ -7726,7 +7726,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 20
         },
         {
           "name": "FreeSans12pt7b",
@@ -7734,7 +7734,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 23
         },
         {
           "name": "FreeSerif12pt7b",
@@ -7742,7 +7742,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 22
         },
         {
           "name": "DejaVu24",
@@ -7750,7 +7750,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 25
         },
         {
           "name": "Roboto_Thin_24",
@@ -7758,7 +7758,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 26
         },
         {
           "name": "FreeMono18pt7b",
@@ -7766,7 +7766,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 30
         },
         {
           "name": "FreeSerif18pt7b",
@@ -7774,7 +7774,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 33
         },
         {
           "name": "Orbitron_Light_24",
@@ -7782,7 +7782,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 30
         },
         {
           "name": "Satisfy_24",
@@ -7790,7 +7790,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 34
         },
         {
           "name": "FreeSans18pt7b",
@@ -7798,7 +7798,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 35
         },
         {
           "name": "FreeMono24pt7b",
@@ -7806,7 +7806,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 40
         },
         {
           "name": "Orbitron_Light_32",
@@ -7814,7 +7814,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 32
+          "height": 41
         },
         {
           "name": "Yellowtail_32",
@@ -7822,7 +7822,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 32
+          "height": 37
         },
         {
           "name": "DejaVu40",
@@ -7830,7 +7830,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 40,
           "unit": "px",
-          "height": 40
+          "height": 42
         },
         {
           "name": "FreeSans24pt7b",
@@ -7838,7 +7838,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 45
         },
         {
           "name": "FreeSerif24pt7b",
@@ -7846,7 +7846,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 44
         },
         {
           "name": "AsciiFont24x48",
@@ -7854,7 +7854,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "DejaVu56",
@@ -7862,7 +7862,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 56,
           "unit": "px",
-          "height": 56
+          "height": 58
         },
         {
           "name": "DejaVu72",
@@ -7870,7 +7870,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 72,
           "unit": "px",
-          "height": 72
+          "height": 75
         }
       ],
       "profiles": [
@@ -9018,7 +9018,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 8
         },
         {
           "name": "Font2",
@@ -9026,7 +9026,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 16
         },
         {
           "name": "Font7",
@@ -9034,15 +9034,15 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "Font6",
           "family": "Font6",
-          "content": "latin",
+          "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "Font8",
@@ -9050,7 +9050,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "digits",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 75
         },
         {
           "name": "Font4",
@@ -9058,7 +9058,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 26
         },
         {
           "name": "TomThumb",
@@ -9066,7 +9066,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 6
         },
         {
           "name": "Font8x8C64",
@@ -9074,7 +9074,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 8
         },
         {
           "name": "DejaVu9",
@@ -9082,7 +9082,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "px",
-          "height": 9
+          "height": 10
         },
         {
           "name": "FreeMono9pt7b",
@@ -9090,7 +9090,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 15
         },
         {
           "name": "DejaVu12",
@@ -9098,7 +9098,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "px",
-          "height": 12
+          "height": 13
         },
         {
           "name": "AsciiFont8x16",
@@ -9106,7 +9106,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 16
         },
         {
           "name": "FreeSerif9pt7b",
@@ -9114,7 +9114,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 17
         },
         {
           "name": "DejaVu18",
@@ -9130,7 +9130,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 9,
           "unit": "pt",
-          "height": null
+          "height": 18
         },
         {
           "name": "FreeMono12pt7b",
@@ -9138,7 +9138,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 20
         },
         {
           "name": "FreeSans12pt7b",
@@ -9146,7 +9146,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 23
         },
         {
           "name": "FreeSerif12pt7b",
@@ -9154,7 +9154,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 12,
           "unit": "pt",
-          "height": null
+          "height": 22
         },
         {
           "name": "DejaVu24",
@@ -9162,7 +9162,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 25
         },
         {
           "name": "Roboto_Thin_24",
@@ -9170,7 +9170,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 26
         },
         {
           "name": "FreeMono18pt7b",
@@ -9178,7 +9178,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 30
         },
         {
           "name": "FreeSerif18pt7b",
@@ -9186,7 +9186,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 33
         },
         {
           "name": "Orbitron_Light_24",
@@ -9194,7 +9194,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 30
         },
         {
           "name": "Satisfy_24",
@@ -9202,7 +9202,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "px",
-          "height": 24
+          "height": 34
         },
         {
           "name": "FreeSans18pt7b",
@@ -9210,7 +9210,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 18,
           "unit": "pt",
-          "height": null
+          "height": 35
         },
         {
           "name": "FreeMono24pt7b",
@@ -9218,7 +9218,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 40
         },
         {
           "name": "Orbitron_Light_32",
@@ -9226,7 +9226,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 32
+          "height": 41
         },
         {
           "name": "Yellowtail_32",
@@ -9234,7 +9234,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 32,
           "unit": "px",
-          "height": 32
+          "height": 37
         },
         {
           "name": "DejaVu40",
@@ -9242,7 +9242,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 40,
           "unit": "px",
-          "height": 40
+          "height": 42
         },
         {
           "name": "FreeSans24pt7b",
@@ -9250,7 +9250,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 45
         },
         {
           "name": "FreeSerif24pt7b",
@@ -9258,7 +9258,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 24,
           "unit": "pt",
-          "height": null
+          "height": 44
         },
         {
           "name": "AsciiFont24x48",
@@ -9266,7 +9266,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": null,
           "unit": null,
-          "height": null
+          "height": 48
         },
         {
           "name": "DejaVu56",
@@ -9274,7 +9274,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 56,
           "unit": "px",
-          "height": 56
+          "height": 58
         },
         {
           "name": "DejaVu72",
@@ -9282,7 +9282,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
           "content": "latin",
           "size": 72,
           "unit": "px",
-          "height": 72
+          "height": 75
         }
       ],
       "profiles": [

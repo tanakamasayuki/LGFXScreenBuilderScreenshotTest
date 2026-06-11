@@ -6525,5 +6525,6 @@
     {
       "name": "DejaVu72"
     }
-  ]
+  ],
+  "embedAiLayouts": true
 }

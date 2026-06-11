@@ -15,8 +15,12 @@ AI-layout payload:
 生成ヘッダ `Sfm.h` を唯一のソースとする（埋め込み AI レイアウトのコメントブロック
 = SPEC §10.2）。プロジェクトファイルには依存しない。Python 標準ライブラリのみ。
 
+Normally invoked indirectly by `uv run pytest screenshot/` (the capture suite
+imports build_gallery and verifies its output). The CLI below is for building
+the gallery on its own:
+
 Usage:
-    python3 gen_gallery.py [--header Sfm.h] [--shots screenshot/output] [--out docs]
+    uv run python screenshot/gen_gallery.py [--header Sfm.h] [--shots screenshot/output] [--out docs]
 """
 
 from __future__ import annotations
@@ -27,9 +31,12 @@ import html
 import json
 import re
 import shutil
+from dataclasses import dataclass
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent
+# This script lives in screenshot/; the repo root (where Sfm.h and docs/ live)
+# is one level up. Default --shots/--out are resolved relative to it.
+REPO_ROOT = Path(__file__).resolve().parent.parent
 
 # The comment block emitted by the tool (SPEC §10.2). `/` is escaped as `\/`
 # inside it, which is valid JSON, so json.loads reads it directly.
@@ -299,16 +306,34 @@ def render_by_scene(profiles, scenes, present, project, generated) -> str:
     )
 
 
-def main():
-    ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--header", default=None, help="path to the generated .h")
-    ap.add_argument("--shots", default="screenshot/output", help="captured PNG dir")
-    ap.add_argument("--out", default="docs", help="output gallery dir")
-    args = ap.parse_args()
+@dataclass
+class GalleryResult:
+    """Outcome of one build_gallery() run -- the test asserts on these."""
 
-    header_path = find_header(args.header)
-    shots_dir = (REPO_ROOT / args.shots).resolve()
-    out_dir = (REPO_ROOT / args.out).resolve()
+    name: str
+    out_dir: Path
+    profiles: list
+    scenes: list
+    present: int  # number of (profile, scene) shots copied into the gallery
+    total: int  # len(profiles) * len(scenes), the full grid
+    missing: list  # ["<profile>__<scene>", ...] for shots that were absent
+    pages: list  # absolute paths of every file written under out_dir
+
+
+def build_gallery(
+    header: str | None = None,
+    shots: str = "screenshot/output",
+    out: str = "docs",
+) -> GalleryResult:
+    """Parse the header, copy shots, and write the static gallery into `out`.
+
+    Importable from the pytest suite so the gallery is generated and verified
+    in the same `uv run pytest` invocation (no separate `python3` call, which
+    is also why this stays Windows-friendly). Returns a GalleryResult.
+    """
+    header_path = find_header(header)
+    shots_dir = (REPO_ROOT / shots).resolve()
+    out_dir = (REPO_ROOT / out).resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
 
     name, profiles, scenes, layouts = load_model(header_path)
@@ -316,27 +341,52 @@ def main():
     generated = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     # AI-layout payloads for the copy buttons (loaded by both pages).
-    (out_dir / "ai-layouts.js").write_text(
+    ai_js = out_dir / "ai-layouts.js"
+    ai_js.write_text(
         "window.AI_LAYOUTS = " + json.dumps(layouts, separators=(",", ":")) + ";\n",
         encoding="utf-8",
     )
-    (out_dir / "index.html").write_text(
+    index = out_dir / "index.html"
+    index.write_text(
         render_by_profile(profiles, scenes, present, name, generated), encoding="utf-8"
     )
-    (out_dir / "by-scene.html").write_text(
+    by_scene = out_dir / "by-scene.html"
+    by_scene.write_text(
         render_by_scene(profiles, scenes, present, name, generated), encoding="utf-8"
     )
 
-    total = len(profiles) * len(scenes)
-    print(f"gallery: {len(present)}/{total} shots, {len(scenes)} scenes -> {out_dir}")
     missing = [
         f"{p['id']}__{s['id']}"
         for p in profiles
         for s in scenes
         if (p["id"], s["id"]) not in present
     ]
-    if missing:
-        print("missing shots:", ", ".join(missing))
+    return GalleryResult(
+        name=name,
+        out_dir=out_dir,
+        profiles=profiles,
+        scenes=scenes,
+        present=len(present),
+        total=len(profiles) * len(scenes),
+        missing=missing,
+        pages=[index, by_scene, ai_js],
+    )
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--header", default=None, help="path to the generated .h")
+    ap.add_argument("--shots", default="screenshot/output", help="captured PNG dir")
+    ap.add_argument("--out", default="docs", help="output gallery dir")
+    args = ap.parse_args()
+
+    res = build_gallery(args.header, args.shots, args.out)
+    print(
+        f"gallery: {res.present}/{res.total} shots, "
+        f"{len(res.scenes)} scenes -> {res.out_dir}"
+    )
+    if res.missing:
+        print("missing shots:", ", ".join(res.missing))
 
 
 if __name__ == "__main__":

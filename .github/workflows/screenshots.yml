@@ -13,8 +13,7 @@ on:
     # Do NOT include docs/** here, or the gallery commit would retrigger the run.
     paths:
       - "Sfm.h"
-      - "screenshot/**"
-      - "gen_gallery.py"
+      - "screenshot/**" # capture sketch, tests, and gen_gallery.py all live here
       - ".github/workflows/screenshots.yml"
 
 permissions:
@@ -63,13 +62,12 @@ jobs:
 
       # The sketch.yaml `host` profile auto-installs the lang-ship:host platform
       # (from its platform_index_url) and the LovyanGFX library on first compile.
-      - name: Capture screenshots
+      # pytest captures the shots AND builds+verifies docs/ in one step
+      # (screenshot/test_screenshot.py::test_gallery), so there's no separate
+      # `python3 gen_gallery.py` call anymore.
+      - name: Capture screenshots and build gallery
         working-directory: LGFXScreenBuilderScreenshotTest
         run: uv run pytest screenshot/ -v
-
-      - name: Generate gallery
-        working-directory: LGFXScreenBuilderScreenshotTest
-        run: python3 gen_gallery.py
 
       - name: Commit gallery
         working-directory: LGFXScreenBuilderScreenshotTest

@@ -34,8 +34,9 @@ Sfm.lgfxsb.json            # project file — NOT needed by the gallery; kept on
 screenshot/                # headless capture harness
   screenshot.ino           #   renders all profiles × scenes to output/*.png
   sketch.yaml              #   lang-ship:host:host:mode=lgfx profile
-  test_screenshot.py       #   pytest-embedded driver
-gen_gallery.py             # builds docs/ gallery by parsing Sfm.h (stdlib only)
+  test_screenshot.py       #   pytest-embedded driver + gallery build/verify
+  conftest.py              #   wipes output/ before the capture test
+  gen_gallery.py           #   builds docs/ gallery by parsing Sfm.h (stdlib only)
 docs/                      # committed gallery (GitHub Pages source)
   index.html / by-scene.html / ai-layouts.js
   shots/<profile>/<scene>.png
@@ -54,7 +55,9 @@ docs/                      # committed gallery (GitHub Pages source)
 3. `gen_gallery.py` parses the embedded AI-layout block in `Sfm.h` for scene
    names, descriptions, and profiles, copies the PNGs under `docs/shots/`, and
    emits the two HTML pages plus `ai-layouts.js` (the copy-button payloads) —
-   Python standard library only, no Node, no dependencies.
+   Python standard library only, no Node, no dependencies. `test_screenshot.py`
+   imports it and runs this right after capture, so the gallery is built **and
+   verified** (every profile × scene present, pages non-empty) in the same run.
 
 ## Run locally
 
@@ -64,12 +67,13 @@ library repo must sit next to this one (sibling directory), matching
 `sketch.yaml`'s `dir: ../../LGFXScreenBuilder`.
 
 ```bash
-uv run pytest screenshot/ -v   # capture → screenshot/output/*.png
-python3 gen_gallery.py         # gallery → docs/
+uv run pytest screenshot/ -v   # capture → screenshot/output/*.png, then build + verify docs/
 ```
 
-Open `docs/index.html` in a browser. **GitHub Actions is optional** — the Action
-just automates these two commands.
+That single command captures the shots and regenerates the gallery. Open
+`docs/index.html` in a browser. **GitHub Actions is optional** — the Action just
+runs this command and commits `docs/` back. (To rebuild only the gallery from
+existing shots: `uv run python screenshot/gen_gallery.py`.)
 
 ## Use it in your own project
 
@@ -79,9 +83,9 @@ that you only ever touch the header.
 
 1. In LGFXScreenBuilder, export the header with **"Embed AI layouts" on** (so
    the gallery can read scenes/profiles/layouts from the `.h` alone).
-2. Copy the file set into a new repo: the generated header, `screenshot/`,
-   `gen_gallery.py`, `conftest.py`, `pyproject.toml`, `.github/`, `.gitignore`.
-   No project file is needed.
+2. Copy the file set into a new repo: the generated header, `screenshot/` (which
+   now contains `gen_gallery.py` and `conftest.py`), `pyproject.toml`,
+   `.github/`, `.gitignore`. No project file is needed.
 3. Delete `docs/` — it is fully regenerated.
 4. Point the harness at your header: rename the header to yours and update the
    `#include "../<YourHeader>.h"` line in `screenshot/screenshot.ino` to match.
