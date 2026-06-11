@@ -1,5 +1,7 @@
 # LGFXScreenBuilder Screenshot Test
 
+🌐 English | [日本語](README.ja.md)
+
 Screenshot fixture repo for [LGFXScreenBuilder](https://github.com/tanakamasayuki/LGFXScreenBuilder):
 it renders the generated header `Sfm.h` on the headless `lang-ship:host` SDL
 backend and publishes a gallery of **every profile × every scene**.

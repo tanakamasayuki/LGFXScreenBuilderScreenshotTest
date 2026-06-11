@@ -1,5 +1,7 @@
 # LGFXScreenBuilder スクリーンショットテスト
 
+🌐 [English](README.md) | 日本語
+
 [LGFXScreenBuilder](https://github.com/tanakamasayuki/LGFXScreenBuilder) の
 スクリーンショット専用リポジトリ。生成ヘッダ `Sfm.h` をヘッドレスの
 `lang-ship:host` SDL バックエンドでレンダリングし、**全プロファイル × 全シーン**
