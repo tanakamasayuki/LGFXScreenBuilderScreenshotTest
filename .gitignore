@@ -12,5 +12,6 @@ uv.lock
 
 # Editor
 .vscode/
+*:Zone.Identifier
 
 # Generated gallery images and pages are committed (docs/) for GitHub Pages.
