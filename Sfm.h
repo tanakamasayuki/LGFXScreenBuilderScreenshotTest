@@ -126,7 +126,7 @@ namespace Scene {
     const char* brokerValue = nullptr;  // design: 10.0.0.12
     const char* ipTitle = nullptr;  // design: DEVICE NETWORK
     const char* ipLabel = nullptr;  // design: IP
-    const char* ipValue = nullptr;  // design: 192.168.10.42
+    const char* ipValue = nullptr;  // design: 192.168.100.142
     const char* rssiLabel = nullptr;  // design: RSSI
     const char* rssiValue = nullptr;  // design: -58dBm
     const char* deviceLabel = nullptr;  // design: DEVICE
@@ -493,7 +493,7 @@ static const lgfxsb::PartLayout kLayouts[] = {
   {10, 124, 300, 54, 0, 0, 6, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // NetworkStatus.ipPanel
   {160, 138, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::DejaVu9, "DEVICE NETWORK"},  // NetworkStatus.ipTitle
   {54, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "IP"},  // NetworkStatus.ipLabel
-  {128, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "192.168.10.42"},  // NetworkStatus.ipValue
+  {128, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "192.168.100.142"},  // NetworkStatus.ipValue
   {218, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "RSSI"},  // NetworkStatus.rssiLabel
   {278, 160, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "-58dBm"},  // NetworkStatus.rssiValue
   {10, 186, 300, 18, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // NetworkStatus.devicePanel
@@ -669,7 +669,7 @@ static const lgfxsb::PartLayout kLayouts[] = {
   {10, 140, 115, 38, 0, 0, 5, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // NetworkStatus.ipPanel
   {67, 150, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "DEVICE"},  // NetworkStatus.ipTitle
   {28, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, true, &lgfx::v1::fonts::Font0, "IP"},  // NetworkStatus.ipLabel
-  {78, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "192.168.10.42"},  // NetworkStatus.ipValue
+  {78, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, true, &lgfx::v1::fonts::Font0, "192.168.100.142"},  // NetworkStatus.ipValue
   {34, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0x6f8f89, true, false, &lgfx::v1::fonts::Font0, "RSSI"},  // NetworkStatus.rssiLabel
   {88, 166, 0, 0, 0, 0, 0, (uint8_t)lgfxsb::Datum::MC, 1.0f, 0xffffff, true, false, &lgfx::v1::fonts::Font0, "-58"},  // NetworkStatus.rssiValue
   {10, 188, 115, 18, 0, 0, 4, 0, 0.0f, 0x233532, false, true, nullptr, nullptr},  // NetworkStatus.devicePanel
@@ -8138,7 +8138,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
               "datum": "MC",
               "size": 1,
               "color": "#ffffff",
-              "text": "192.168.10.42",
+              "text": "192.168.100.142",
               "font": "Font0",
               "visible": true
             },
@@ -8514,7 +8514,7 @@ class Screen : public lgfxsb::RendererT<Canvas> {
               "datum": "MC",
               "size": 1,
               "color": "#ffffff",
-              "text": "192.168.10.42",
+              "text": "192.168.100.142",
               "font": "Font0",
               "visible": true
             },
